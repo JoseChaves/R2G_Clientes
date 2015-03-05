@@ -10,5 +10,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)R2G_Clientes.Shared.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DBConnection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LoginAuth.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Payments.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CarRegister.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UserRegister.cs" />
   </ItemGroup>
 </Project>

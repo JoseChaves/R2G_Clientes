@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "R2G_Clientes", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity (Label = "R2G_Clientes", MainLauncher = true, Icon = "@drawable/icon", Theme="@android:style/Theme.Holo.Light.NoActionBar.TranslucentDecor")]
 	public class MainActivity : Activity
 	{
 		int count = 1;
@@ -21,13 +21,19 @@ namespace R2G_Clientes
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
-			// Get our button from the layout resource,
-			// and attach an event to it
-			Button button = FindViewById<Button> (Resource.Id.myButton);
-			
-			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks!", count++);
+			Button signInbutt = FindViewById<Button> (Resource.Id.signIn);
+			Button registerButt = FindViewById<Button> (Resource.Id.register);
+
+			signInbutt.Click += (sender, e) => {
+				var intent1=new Intent(this, typeof(MainMenu));
+				StartActivity(intent1);
 			};
+
+			registerButt.Click += (sender, e) => {
+				var intent2=new Intent(this, typeof(UserRegister));
+				StartActivity(intent2);
+			};
+
 		}
 	}
 }

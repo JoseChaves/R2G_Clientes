@@ -16,21 +16,41 @@ namespace R2G_Clients.iOS
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnLogin { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UITapGestureRecognizer tapDismiss { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UITextField txtPassword { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UITextField txtUsername { get; set; }
+		UITextField txtUserName { get; set; }
+
+		[Action ("btnLogin_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void btnLogin_TouchUpInside (UIButton sender);
 
 		void ReleaseDesignerOutlets ()
 		{
+			if (btnLogin != null) {
+				btnLogin.Dispose ();
+				btnLogin = null;
+			}
+			if (tapDismiss != null) {
+				tapDismiss.Dispose ();
+				tapDismiss = null;
+			}
 			if (txtPassword != null) {
 				txtPassword.Dispose ();
 				txtPassword = null;
 			}
-			if (txtUsername != null) {
-				txtUsername.Dispose ();
-				txtUsername = null;
+			if (txtUserName != null) {
+				txtUserName.Dispose ();
+				txtUserName = null;
 			}
 		}
 	}

@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R2G_Clients.iOS", "R2G_Clie
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "R2G_Clientes.Shared", "R2G_Clientes.Shared\R2G_Clientes.Shared.shproj", "{F3F2CC7F-F543-4C4A-A462-4766E6E8D1ED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0177040E-6194-45C5-B98D-DF5DCC9B46F7}"
+	ProjectSection(SolutionItems) = preProject
+		activity_payment_options.axml = activity_payment_options.axml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,5 +56,7 @@ Global
 		{CCFC02B7-F394-4C3B-B214-0FC3478DBEAA}.Release|iPhone.Build.0 = Release|Any CPU
 		{CCFC02B7-F394-4C3B-B214-0FC3478DBEAA}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{CCFC02B7-F394-4C3B-B214-0FC3478DBEAA}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal
