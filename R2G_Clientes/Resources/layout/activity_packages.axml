@@ -3,6 +3,13 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
+    <TextView
+        android:text="@string/availablepacks"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_margin="8dp" />
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,30 +24,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="RadioButton"
+            android:text="@string/fourservices"
             android:id="@+id/radioButton1"
             android:layout_margin="8dp" />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="@string/sixServices"
             android:id="@+id/radioButton2"
             android:layout_margin="8dp" />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="@string/eightServices"
             android:id="@+id/radioButton3"
             android:layout_margin="8dp" />
         <RadioButton
-            android:text="RadioButton"
+            android:text="@string/twelveServices"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/radioButton4"
             android:layout_margin="8dp" />
     </RadioGroup>
     <Button
-        android:text="Button"
+        android:text="@string/next"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:id="@+id/submitbutt"

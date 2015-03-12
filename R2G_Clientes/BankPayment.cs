@@ -13,12 +13,23 @@ using Android.Widget;
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "BankPayment")]			
+	[Activity (Label = "BankPayment", ParentActivity=typeof(PaymentOptions))]			
 	public class BankPayment : Activity
 	{
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
+
+
+			int dep = Intent.GetIntExtra ("dep", 1);
+
+			if (dep == 1)
+				SetContentView (Resource.Layout.activity_payment_bank_transaction);
+			else
+				SetContentView (Resource.Layout.activity_banki_ach);
+
+			Button buttDone = FindViewById<Button> (Resource.Id.buttDone);
+
 
 			// Create your application here
 		}

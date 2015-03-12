@@ -10,35 +10,36 @@
         p1:id="@+id/space1"
         p1:layout_margin="8dp" />
     <Button
-        p1:text="Button"
+        p1:text="@string/packs"
         p1:layout_width="160dp"
         p1:layout_height="wrap_content"
         p1:id="@+id/purchase"
         p1:layout_margin="8dp"
-        p1:layout_gravity="center_horizontal" />
+        p1:layout_gravity="center_horizontal"
+        p1:gravity="center" />
     <Button
-        p1:text="Button"
+        p1:text="@string/details"
         p1:layout_width="160dp"
         p1:layout_height="wrap_content"
         p1:id="@+id/details"
         p1:layout_margin="8dp"
         p1:layout_gravity="center_horizontal" />
     <Button
-        p1:text="Button"
+        p1:text="@string/carRegister"
         p1:layout_width="160dp"
         p1:layout_height="wrap_content"
         p1:id="@+id/cars"
         p1:layout_margin="8dp"
         p1:layout_gravity="center_horizontal" />
     <Button
-        p1:text="Button"
+        p1:text="@string/history"
         p1:layout_width="160dp"
         p1:layout_height="wrap_content"
         p1:id="@+id/history"
         p1:layout_margin="8dp"
         p1:layout_gravity="center_horizontal" />
     <Button
-        p1:text="Button"
+        p1:text="@string/settings"
         p1:layout_width="160dp"
         p1:layout_height="wrap_content"
         p1:id="@+id/config"

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="@string/paymentoptions"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_margin="8dp" />
+    <Button
+        android:text="@string/wallet"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/googlePayment"
+        android:layout_margin="8dp"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:text="@string/credit"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/creditCard"
+        android:layout_margin="8dp"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:text="@string/bankDep"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bankDeposit"
+        android:layout_margin="8dp"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:text="@string/bankACH"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/achdeposit"
+        android:layout_margin="8dp"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

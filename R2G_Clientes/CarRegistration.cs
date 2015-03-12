@@ -13,14 +13,23 @@ using Android.Widget;
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "CarRegistration")]			
+	[Activity (Label = "CarRegistration", ParentActivity=typeof(MainMenu))]			
 	public class CarRegistration : Activity
 	{
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
+			SetContentView (Resource.Layout.activity_car_register);
+			Button save = FindViewById<Button> (Resource.Id.saveButt);
+			Button editbutt = FindViewById<Button> (Resource.Id.editButt);
 
 			// Create your application here
+
+			editbutt.Click += (sender, e) => {
+				var tent=new Intent(this,typeof(CarChanged));
+				StartActivity(tent);
+			};
+
 		}
 	}
 }

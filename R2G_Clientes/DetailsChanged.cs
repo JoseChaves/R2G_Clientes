@@ -19,8 +19,14 @@ namespace R2G_Clientes
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-
+			SetContentView (Resource.Layout.activity_details_changed);
+			Button homebutt = FindViewById<Button> (Resource.Id.done);
 			// Create your application here
+
+			homebutt.Click += (sender, e) => {
+				var home=new Intent(this, typeof(MainMenu));
+				StartActivity(home);
+			};
 		}
 	}
 }

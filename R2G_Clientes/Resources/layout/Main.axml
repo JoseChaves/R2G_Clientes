@@ -10,6 +10,10 @@
         p1:layout_width="match_parent"
         p1:layout_height="match_parent"
         p1:id="@+id/linearLayout1">
+        <Space
+            p1:layout_width="match_parent"
+            p1:layout_height="24dp"
+            p1:id="@+id/space1" />
         <ImageView
             p1:src="@drawable/rapid_logo"
             p1:layout_width="match_parent"
@@ -18,6 +22,7 @@
             p1:layout_margin="8dp"
             p1:layout_marginTop="34dp" />
         <EditText
+            p1:hint="@string/username"
             p1:inputType="textEmailAddress"
             p1:layout_width="240dp"
             p1:layout_height="wrap_content"
@@ -25,6 +30,7 @@
             p1:layout_margin="8dp"
             p1:layout_gravity="center_horizontal" />
         <EditText
+            p1:hint="@string/password"
             p1:inputType="textPassword"
             p1:layout_width="240dp"
             p1:layout_height="wrap_content"
@@ -32,18 +38,23 @@
             p1:layout_margin="8dp"
             p1:layout_gravity="center_horizontal" />
         <Button
-            p1:text="Button"
+            p1:text="@string/signin"
             p1:layout_width="160dp"
             p1:layout_height="wrap_content"
             p1:id="@+id/signIn"
             p1:layout_gravity="center_horizontal"
             p1:layout_margin="8dp" />
         <Button
-            p1:text="Button"
+            p1:text="@string/register"
             p1:layout_width="160dp"
             p1:layout_height="wrap_content"
             p1:id="@+id/register"
             p1:layout_margin="8dp"
             p1:layout_gravity="center_horizontal" />
+        <Button
+            p1:text="Sign In With Google"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/button1" />
     </LinearLayout>
 </ScrollView>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">Ready2Go</string>
+	<string name="signin">Inicio de Sesion</string>
+	<string name="register">Registrarse</string>
+	<string name="username">Nombre de Usuario</string>
+	<string name="password">Contraseña</string>
+	<string name="packs">Comprar Paquetes</string>
+	<string name="details">Detalles del Servicio</string>
+	<string name="carRegister">Registro de Carros</string>
+	<string name="settings">Configuraciones</string>
+	<string name="save">Guardar</string>
+	<string name="done">Hecho</string>
+	<string name="next">Siguiente</string>
+	<string name="fourservices">Cuatro Servicios</string>
+	<string name="sixServices">Seis Servicios</string>
+	<string name="eightServices">Ocho Servicios</string>
+	<string name="history">Historial de Servicios</string>
+	<string name="packsamounts">Cantidad de Servicios</string>
+	<string name="twelveServices">Doce Servicios</string>
+	<string name="availablepacks">Paquetes Disponibles</string>
+	<string name="locations">Ubicaciones para los Servicios</string>
+	<string name="servicedays">Dias en que desea los Servicios</string>
+	<string name="timewindow">Ventana de Tiempo en que desea los Servicios</string>
+	<string name="startTime">Hora de Inicio</string>
+	<string name="finishTime">Hora de finalización</string>
+	<string name="mon">Lunes</string>
+	<string name="tue">Martes</string>
+	<string name="wed">Miércoles</string>
+	<string name="thu">Jueves</string>
+	<string name="fri">Viernes</string>
+	<string name="sat">Sábado</string>
+	<string name="sun">Domingo</string>
+	<string name="paymentoptions">Opciones de Pago</string>
+	<string name="wallet">Google Wallet</string>
+	<string name="credit">Tarjeta de Crédito</string>
+	<string name="bankDep">Depósito Bancario</string>
+	<string name="bankACH">Transferencia Bancaria</string>
+</resources>
+

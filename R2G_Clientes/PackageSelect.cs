@@ -1,36 +1,39 @@
 ﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
 
 using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
+//using Android.Runtime;
+//using Android.Views;
 using Android.Widget;
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "PackageSelect")]			
+	[Activity (Label = "PackageSelect", ParentActivity=typeof(MainMenu))]
 	public class PackageSelect : Activity
 	{
-		protected override void OnCreate (Bundle bundle)
-		{
+		protected override void OnCreate (Bundle bundle){
 			base.OnCreate (bundle);
 
 			SetContentView (Resource.Layout.activity_packages);
 
-			Button submitbutt = FindViewById<Button> (resource.id.submitbutt);
+			Button submitbutt = FindViewById<Button> (Resource.Id.submitbutt);
 			Spinner spinny = FindViewById<Spinner> (Resource.Id.spinner1);
 
-			spinny.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs> (spinner_ItemSelected);
-			var adapter = ArrayAdapter.CreateFromResource (
-				this, Resource.Array.cars, Android.Resource.Layout.SimpleSpinnerItem);
+		submitbutt.Click += (sender, e) => {
+			var subtent = new Intent (this, typeof(PurchaseDetails));
+			StartActivity (subtent);
+		};
+			//spinny.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs> (spinner_ItemSelected);
+			//var adapter = ArrayAdapter.CreateFromResource (
+			//	this, Resource.Array.cars, Android.Resource.Layout.SimpleSpinnerItem);
 
-			adapter.SetDropDownViewResource (Android.Resource.Layout.SimpleSpinnerDropDownItem);
-			spinny.Adapter = adapter;
+			//adapter.SetDropDownViewResource (Android.Resource.Layout.SimpleSpinnerDropDownItem);
+			//spinny.Adapter = adapter;
 			// Create your application here
 		}
 

@@ -26,6 +26,7 @@ namespace R2G_Clientes
 		
 		public static void UpdateIdValues()
 		{
+			global::Auth0.SDK.Resource.String.library_name = global::R2G_Clientes.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
@@ -63,107 +64,176 @@ namespace R2G_Clientes
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050004
-			public const int cars = 2131034116;
+			// aapt resource value: 0x7f06002f
+			public const int achdeposit = 2131099695;
 			
-			// aapt resource value: 0x7f050012
-			public const int checkBox1 = 2131034130;
+			// aapt resource value: 0x7f06002e
+			public const int bankDeposit = 2131099694;
 			
-			// aapt resource value: 0x7f050013
-			public const int checkBox2 = 2131034131;
+			// aapt resource value: 0x7f060002
+			public const int buttDone = 2131099650;
 			
-			// aapt resource value: 0x7f050014
-			public const int checkBox3 = 2131034132;
+			// aapt resource value: 0x7f06002a
+			public const int button1 = 2131099690;
 			
-			// aapt resource value: 0x7f050015
-			public const int checkBox4 = 2131034133;
+			// aapt resource value: 0x7f060036
+			public const int callOfficeforChanges = 2131099702;
 			
-			// aapt resource value: 0x7f050016
-			public const int checkBox5 = 2131034134;
+			// aapt resource value: 0x7f060021
+			public const int cars = 2131099681;
 			
-			// aapt resource value: 0x7f050017
-			public const int checkBox6 = 2131034135;
+			// aapt resource value: 0x7f06000f
+			public const int checkBox1 = 2131099663;
 			
-			// aapt resource value: 0x7f050018
-			public const int checkBox7 = 2131034136;
+			// aapt resource value: 0x7f060010
+			public const int checkBox2 = 2131099664;
 			
-			// aapt resource value: 0x7f050006
-			public const int config = 2131034118;
+			// aapt resource value: 0x7f060011
+			public const int checkBox3 = 2131099665;
 			
-			// aapt resource value: 0x7f050003
-			public const int details = 2131034115;
+			// aapt resource value: 0x7f060016
+			public const int checkBox4 = 2131099670;
 			
-			// aapt resource value: 0x7f050010
-			public const int editText1 = 2131034128;
+			// aapt resource value: 0x7f060017
+			public const int checkBox5 = 2131099671;
 			
-			// aapt resource value: 0x7f05001b
-			public const int editText2 = 2131034139;
+			// aapt resource value: 0x7f060018
+			public const int checkBox6 = 2131099672;
 			
-			// aapt resource value: 0x7f05001d
-			public const int editText3 = 2131034141;
+			// aapt resource value: 0x7f060019
+			public const int checkBox7 = 2131099673;
 			
-			// aapt resource value: 0x7f050005
-			public const int history = 2131034117;
+			// aapt resource value: 0x7f060023
+			public const int config = 2131099683;
 			
-			// aapt resource value: 0x7f05001f
-			public const int imageView1 = 2131034143;
+			// aapt resource value: 0x7f06002d
+			public const int creditCard = 2131099693;
 			
-			// aapt resource value: 0x7f050000
-			public const int linearLayout1 = 2131034112;
+			// aapt resource value: 0x7f060020
+			public const int details = 2131099680;
 			
-			// aapt resource value: 0x7f050002
-			public const int purchase = 2131034114;
+			// aapt resource value: 0x7f06001d
+			public const int done = 2131099677;
 			
-			// aapt resource value: 0x7f050009
-			public const int radioButton1 = 2131034121;
+			// aapt resource value: 0x7f060015
+			public const int editButt = 2131099669;
 			
-			// aapt resource value: 0x7f05000a
-			public const int radioButton2 = 2131034122;
+			// aapt resource value: 0x7f060003
+			public const int editText1 = 2131099651;
 			
-			// aapt resource value: 0x7f05000b
-			public const int radioButton3 = 2131034123;
+			// aapt resource value: 0x7f060004
+			public const int editText2 = 2131099652;
 			
-			// aapt resource value: 0x7f05000c
-			public const int radioButton4 = 2131034124;
+			// aapt resource value: 0x7f06000b
+			public const int editText3 = 2131099659;
 			
-			// aapt resource value: 0x7f050008
-			public const int radioGroup1 = 2131034120;
+			// aapt resource value: 0x7f06000d
+			public const int editText4 = 2131099661;
 			
-			// aapt resource value: 0x7f050021
-			public const int register = 2131034145;
+			// aapt resource value: 0x7f060013
+			public const int editText5 = 2131099667;
 			
-			// aapt resource value: 0x7f05000e
-			public const int scrollView1 = 2131034126;
+			// aapt resource value: 0x7f06002c
+			public const int googlePayment = 2131099692;
 			
-			// aapt resource value: 0x7f050020
-			public const int signIn = 2131034144;
+			// aapt resource value: 0x7f060022
+			public const int history = 2131099682;
 			
-			// aapt resource value: 0x7f050001
-			public const int space1 = 2131034113;
+			// aapt resource value: 0x7f06002b
+			public const int imageView1 = 2131099691;
 			
-			// aapt resource value: 0x7f050007
-			public const int spinner1 = 2131034119;
+			// aapt resource value: 0x7f060007
+			public const int linearLayout1 = 2131099655;
 			
-			// aapt resource value: 0x7f05001e
-			public const int submitButt = 2131034142;
+			// aapt resource value: 0x7f060031
+			public const int listView1 = 2131099697;
 			
-			// aapt resource value: 0x7f05000d
-			public const int submitbutt = 2131034125;
+			// aapt resource value: 0x7f060030
+			public const int load = 2131099696;
 			
-			// aapt resource value: 0x7f05000f
-			public const int textView1 = 2131034127;
+			// aapt resource value: 0x7f06001f
+			public const int purchase = 2131099679;
 			
-			// aapt resource value: 0x7f050011
-			public const int textView2 = 2131034129;
+			// aapt resource value: 0x7f060025
+			public const int radioButton1 = 2131099685;
 			
-			// aapt resource value: 0x7f050019
-			public const int textView3 = 2131034137;
+			// aapt resource value: 0x7f060026
+			public const int radioButton2 = 2131099686;
 			
-			// aapt resource value: 0x7f05001a
-			public const int textView4 = 2131034138;
+			// aapt resource value: 0x7f060027
+			public const int radioButton3 = 2131099687;
 			
-			// aapt resource value: 0x7f05001c
-			public const int textView5 = 2131034140;
+			// aapt resource value: 0x7f060028
+			public const int radioButton4 = 2131099688;
+			
+			// aapt resource value: 0x7f060024
+			public const int radioGroup1 = 2131099684;
+			
+			// aapt resource value: 0x7f060038
+			public const int register = 2131099704;
+			
+			// aapt resource value: 0x7f060005
+			public const int save = 2131099653;
+			
+			// aapt resource value: 0x7f060014
+			public const int saveButt = 2131099668;
+			
+			// aapt resource value: 0x7f060006
+			public const int scrollView1 = 2131099654;
+			
+			// aapt resource value: 0x7f060037
+			public const int signIn = 2131099703;
+			
+			// aapt resource value: 0x7f060035
+			public const int signout = 2131099701;
+			
+			// aapt resource value: 0x7f06001e
+			public const int space1 = 2131099678;
+			
+			// aapt resource value: 0x7f060008
+			public const int spinner1 = 2131099656;
+			
+			// aapt resource value: 0x7f06001a
+			public const int submitButt = 2131099674;
+			
+			// aapt resource value: 0x7f060029
+			public const int submitbutt = 2131099689;
+			
+			// aapt resource value: 0x7f060032
+			public const int switch1 = 2131099698;
+			
+			// aapt resource value: 0x7f060033
+			public const int switch3 = 2131099699;
+			
+			// aapt resource value: 0x7f060034
+			public const int switch4 = 2131099700;
+			
+			// aapt resource value: 0x7f060000
+			public const int textView1 = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int textView2 = 2131099649;
+			
+			// aapt resource value: 0x7f060009
+			public const int textView3 = 2131099657;
+			
+			// aapt resource value: 0x7f06000a
+			public const int textView4 = 2131099658;
+			
+			// aapt resource value: 0x7f06000c
+			public const int textView5 = 2131099660;
+			
+			// aapt resource value: 0x7f06000e
+			public const int textView6 = 2131099662;
+			
+			// aapt resource value: 0x7f060012
+			public const int textView7 = 2131099666;
+			
+			// aapt resource value: 0x7f06001b
+			public const int textView8 = 2131099675;
+			
+			// aapt resource value: 0x7f06001c
+			public const int textView9 = 2131099676;
 			
 			static Id()
 			{
@@ -179,46 +249,52 @@ namespace R2G_Clientes
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int activity_car_detail_change = 2130903040;
+			public const int activity_banki_ach = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int activity_car_register = 2130903041;
+			public const int activity_car_detail_change = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int activity_details = 2130903042;
+			public const int activity_car_register = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int activity_details_changed = 2130903043;
+			public const int activity_details = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int activity_menu = 2130903044;
+			public const int activity_details_changed = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int activity_packages = 2130903045;
+			public const int activity_menu = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int activity_payment_bank_transaction = 2130903046;
+			public const int activity_packages = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int activity_payment_credit_card = 2130903047;
+			public const int activity_payment_bank_transaction = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int activity_purchase_details = 2130903048;
+			public const int activity_payment_credit_card = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int activity_service_history = 2130903049;
+			public const int activity_payment_options = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int activity_settings = 2130903050;
+			public const int activity_purchase_details = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int activity_splash = 2130903051;
+			public const int activity_service_history = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int activity_user_register = 2130903052;
+			public const int activity_settings = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int Main = 2130903053;
+			public const int activity_splash = 2130903053;
+			
+			// aapt resource value: 0x7f03000e
+			public const int activity_user_register = 2130903054;
+			
+			// aapt resource value: 0x7f03000f
+			public const int Main = 2130903055;
 			
 			static Layout()
 			{
@@ -233,11 +309,119 @@ namespace R2G_Clientes
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f040002
+			public const int app_name = 2130968578;
+			
+			// aapt resource value: 0x7f040014
+			public const int availablepacks = 2130968596;
+			
+			// aapt resource value: 0x7f040025
+			public const int bankACH = 2130968613;
+			
+			// aapt resource value: 0x7f040024
+			public const int bankDep = 2130968612;
+			
+			// aapt resource value: 0x7f040009
+			public const int carRegister = 2130968585;
+			
+			// aapt resource value: 0x7f040023
+			public const int credit = 2130968611;
+			
+			// aapt resource value: 0x7f040008
+			public const int details = 2130968584;
+			
+			// aapt resource value: 0x7f04000c
+			public const int done = 2130968588;
+			
+			// aapt resource value: 0x7f040010
+			public const int eightServices = 2130968592;
+			
+			// aapt resource value: 0x7f040019
+			public const int finishTime = 2130968601;
+			
+			// aapt resource value: 0x7f04000e
+			public const int fourservices = 2130968590;
+			
+			// aapt resource value: 0x7f04001e
+			public const int fri = 2130968606;
+			
 			// aapt resource value: 0x7f040001
-			public const int app_name = 2130968577;
+			public const int hello = 2130968577;
+			
+			// aapt resource value: 0x7f040011
+			public const int history = 2130968593;
 			
 			// aapt resource value: 0x7f040000
-			public const int hello = 2130968576;
+			public const int library_name = 2130968576;
+			
+			// aapt resource value: 0x7f040015
+			public const int locations = 2130968597;
+			
+			// aapt resource value: 0x7f04001a
+			public const int mon = 2130968602;
+			
+			// aapt resource value: 0x7f04000d
+			public const int next = 2130968589;
+			
+			// aapt resource value: 0x7f040007
+			public const int packs = 2130968583;
+			
+			// aapt resource value: 0x7f040012
+			public const int packsamounts = 2130968594;
+			
+			// aapt resource value: 0x7f040006
+			public const int password = 2130968582;
+			
+			// aapt resource value: 0x7f040021
+			public const int paymentoptions = 2130968609;
+			
+			// aapt resource value: 0x7f040004
+			public const int register = 2130968580;
+			
+			// aapt resource value: 0x7f04001f
+			public const int sat = 2130968607;
+			
+			// aapt resource value: 0x7f04000b
+			public const int save = 2130968587;
+			
+			// aapt resource value: 0x7f040016
+			public const int servicedays = 2130968598;
+			
+			// aapt resource value: 0x7f04000a
+			public const int settings = 2130968586;
+			
+			// aapt resource value: 0x7f040003
+			public const int signin = 2130968579;
+			
+			// aapt resource value: 0x7f04000f
+			public const int sixServices = 2130968591;
+			
+			// aapt resource value: 0x7f040018
+			public const int startTime = 2130968600;
+			
+			// aapt resource value: 0x7f040020
+			public const int sun = 2130968608;
+			
+			// aapt resource value: 0x7f04001d
+			public const int thu = 2130968605;
+			
+			// aapt resource value: 0x7f040017
+			public const int timewindow = 2130968599;
+			
+			// aapt resource value: 0x7f04001b
+			public const int tue = 2130968603;
+			
+			// aapt resource value: 0x7f040013
+			public const int twelveServices = 2130968595;
+			
+			// aapt resource value: 0x7f040005
+			public const int username = 2130968581;
+			
+			// aapt resource value: 0x7f040022
+			public const int wallet = 2130968610;
+			
+			// aapt resource value: 0x7f04001c
+			public const int wed = 2130968604;
 			
 			static String()
 			{
@@ -245,6 +429,22 @@ namespace R2G_Clientes
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int Theme_Splash = 2131034112;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}

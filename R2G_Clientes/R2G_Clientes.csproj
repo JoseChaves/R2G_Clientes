@@ -38,10 +38,20 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Auth.Android">
+      <HintPath>..\Components\Auth0Client-0.4.1\lib\android\Xamarin.Auth.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Auth0Client.Android">
+      <HintPath>..\Components\Auth0Client-0.4.1\lib\android\Auth0Client.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\Auth0Client-0.4.1\lib\android\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Mono.Data.Tds" />
+    <Reference Include="Mono.Android.Support.v13" />
+    <Reference Include="Mono.Data.Sqlite" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -67,6 +77,8 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -79,7 +91,6 @@
     <AndroidResource Include="Resources\drawable-hdpi\rapid_logo.png" />
     <AndroidResource Include="Resources\layout\activity_menu.axml" />
     <AndroidResource Include="Resources\layout\activity_user_register.axml" />
-    <AndroidResource Include="Resources\layout\activity_packages.axml" />
     <AndroidResource Include="Resources\layout\activity_purchase_details.axml" />
     <AndroidResource Include="Resources\layout\activity_payment_bank_transaction.axml" />
     <AndroidResource Include="Resources\layout\activity_payment_credit_card.axml" />
@@ -90,7 +101,28 @@
     <AndroidResource Include="Resources\layout\activity_service_history.axml" />
     <AndroidResource Include="Resources\layout\activity_settings.axml" />
     <AndroidResource Include="Resources\layout\activity_splash.axml" />
+    <AndroidResource Include="Resources\layout\activity_payment_options.axml" />
+    <AndroidResource Include="Resources\layout\activity_banki_ach.axml" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\values-es\Strings.xml" />
+    <AndroidResource Include="Resources\layout\activity_packages.axml" />
   </ItemGroup>
   <Import Project="..\R2G_Clientes.Shared\R2G_Clientes.Shared.projitems" Label="Shared" Condition="Exists('..\R2G_Clientes.Shared\R2G_Clientes.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <XamarinComponentReference Include="xamarin.auth">
+      <Version>1.2.3.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="Auth0Client">
+      <Version>0.4.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\values-es\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\client_secret_1011842775122-kmjq0ap02qhrsv7jc54uec2p6gupomja.apps.googleusercontent.com.json" />
+  </ItemGroup>
 </Project>

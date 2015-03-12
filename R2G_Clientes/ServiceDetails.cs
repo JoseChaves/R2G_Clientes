@@ -19,8 +19,15 @@ namespace R2G_Clientes
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
+			SetContentView (Resource.Layout.activity_details);
+			Button subButt = FindViewById<Button> (Resource.Id.submitButt);
 
 			// Create your application here
+
+			subButt.Click += (sender, e) => {
+				var actintent=new Intent(this, typeof(DetailsChanged));
+				StartActivity(actintent);
+			};
 		}
 	}
 }

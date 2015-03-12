@@ -1,4 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+//using System.Net;
+using System.Threading.Tasks;
+
+using R2G_Clientes.Shared;
 
 using Android.App;
 using Android.Content;
@@ -6,10 +12,16 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Auth0.SDK;
+using Xamarin.Auth;
+using Newtonsoft.Json;
+using Android.Accounts;
+//using System.Data.Common;
+
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "R2G_Clientes", MainLauncher = true, Icon = "@drawable/icon", Theme="@android:style/Theme.Holo.Light.NoActionBar.TranslucentDecor")]
+	[Activity (Label = "R2G_Clientes", MainLauncher=true,  Icon = "@drawable/icon", Theme="@android:style/Theme.Holo.Light.NoActionBar.TranslucentDecor")]
 	public class MainActivity : Activity
 	{
 		int count = 1;
@@ -23,6 +35,7 @@ namespace R2G_Clientes
 
 			Button signInbutt = FindViewById<Button> (Resource.Id.signIn);
 			Button registerButt = FindViewById<Button> (Resource.Id.register);
+			Button googlesign = FindViewById<Button> (Resource.Id.button1);
 
 			signInbutt.Click += (sender, e) => {
 				var intent1=new Intent(this, typeof(MainMenu));
@@ -34,8 +47,17 @@ namespace R2G_Clientes
 				StartActivity(intent2);
 			};
 
-		}
-	}
-}
+			googlesign.Click += (sender, e) => {
+				/*DbProviderFactory factory = MySql.Data.MySqlClient.MySqlClientFactory.Instance;
 
+				DatabaseSchemaReader.Utilities.FactoryTools.AddFactory(factory);*/
+			//	DBConnection.DBConnect();
+				Toast.MakeText(this, "Connection Succesful", ToastLength.Short).Show();
+			};
+
+		}
+
+
+}
+}
 

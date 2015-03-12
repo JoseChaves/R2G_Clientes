@@ -1,14 +1,14 @@
 ﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
 
 using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
+///using Android.Runtime;
+//using Android.Views;
 using Android.Widget;
 
 namespace R2G_Clientes
@@ -47,7 +47,7 @@ namespace R2G_Clientes
 			};
 
 			historu.Click += (sender, e) => {
-				var histent=new Intent(this, typeof(CarRegistration));
+				var histent=new Intent(this, typeof(ServiceHistory));
 				StartActivity(histent);
 			};
 

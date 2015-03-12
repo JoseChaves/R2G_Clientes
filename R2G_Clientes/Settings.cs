@@ -19,7 +19,8 @@ namespace R2G_Clientes
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-
+			SetContentView (Resource.Layout.activity_settings);
+			Button signout = FindViewById<Button> (Resource.Id.signout);
 			// Create your application here
 		}
 	}
