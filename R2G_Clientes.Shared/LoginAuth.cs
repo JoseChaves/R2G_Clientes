@@ -1,12 +1,12 @@
 ﻿using System;
 //using System.Threading.Tasks;
 
-using Android.OS;
+//using Android.OS;
 using Auth0.SDK;
 using Xamarin.Auth;
-using Android.App;
-using Android.Widget;
-using Android.Content;
+//using Android.App;
+//using Android.Widget;
+//using Android.Content;
 using Newtonsoft.Json;
 
 namespace R2G_Clientes.Shared

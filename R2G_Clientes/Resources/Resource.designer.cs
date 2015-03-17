@@ -133,6 +133,15 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f060013
 			public const int editText5 = 2131099667;
 			
+			// aapt resource value: 0x7f060037
+			public const int editText6 = 2131099703;
+			
+			// aapt resource value: 0x7f060038
+			public const int editText7 = 2131099704;
+			
+			// aapt resource value: 0x7f06003a
+			public const int editText8 = 2131099706;
+			
 			// aapt resource value: 0x7f06002c
 			public const int googlePayment = 2131099692;
 			
@@ -169,8 +178,8 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f060024
 			public const int radioGroup1 = 2131099684;
 			
-			// aapt resource value: 0x7f060038
-			public const int register = 2131099704;
+			// aapt resource value: 0x7f06003c
+			public const int register = 2131099708;
 			
 			// aapt resource value: 0x7f060005
 			public const int save = 2131099653;
@@ -181,8 +190,8 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f060006
 			public const int scrollView1 = 2131099654;
 			
-			// aapt resource value: 0x7f060037
-			public const int signIn = 2131099703;
+			// aapt resource value: 0x7f06003b
+			public const int signIn = 2131099707;
 			
 			// aapt resource value: 0x7f060035
 			public const int signout = 2131099701;
@@ -210,6 +219,9 @@ namespace R2G_Clientes
 			
 			// aapt resource value: 0x7f060000
 			public const int textView1 = 2131099648;
+			
+			// aapt resource value: 0x7f060039
+			public const int textView10 = 2131099705;
 			
 			// aapt resource value: 0x7f060001
 			public const int textView2 = 2131099649;

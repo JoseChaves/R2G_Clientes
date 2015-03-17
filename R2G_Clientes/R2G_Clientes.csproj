@@ -40,7 +40,7 @@
   <ItemGroup>
     <Reference Include="Mono.Android" />
     <Reference Include="Xamarin.Auth.Android">
-      <HintPath>..\Components\Auth0Client-0.4.1\lib\android\Xamarin.Auth.Android.dll</HintPath>
+      <HintPath>..\Components\xamarin.auth-1.2.3.1\lib\android\Xamarin.Auth.Android.dll</HintPath>
     </Reference>
     <Reference Include="Auth0Client.Android">
       <HintPath>..\Components\Auth0Client-0.4.1\lib\android\Auth0Client.Android.dll</HintPath>
@@ -49,9 +49,11 @@
       <HintPath>..\Components\Auth0Client-0.4.1\lib\android\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="Mono.Data.Tds" />
     <Reference Include="Mono.Android.Support.v13" />
-    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="RestSharp.MonoDroid">
+      <HintPath>..\Components\restsharp-105.0.1.0\lib\android\RestSharp.MonoDroid.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -116,6 +118,10 @@
     </XamarinComponentReference>
     <XamarinComponentReference Include="Auth0Client">
       <Version>0.4.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="restsharp">
+      <Version>105.0.1.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>
