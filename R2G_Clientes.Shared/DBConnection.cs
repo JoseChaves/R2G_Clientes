@@ -12,7 +12,7 @@ namespace R2G_Clientes.Shared
 
 		public static void registerUser(string username, string email, int phone, int wphone, string addr, string waddr, string password, string wemail){
 			var cliente = new RestClient ("htttp://192.168.1.107:8080/rapidtoREST/service/user");
-			var request = new RestRequest("add", Method.GET);
+			var request = new RestRequest("add{usern}{email}{password}{uaddr}{wphone}{phone}{waddr}{wemail}", Method.GET);
 			request.AddParameter ("usern", username);
 			request.AddParameter ("email", email);
 			request.AddParameter ("password", password);
