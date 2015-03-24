@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "PurchaseDetails")]			
+	[Activity (Label = "@string/details", ParentActivity=typeof(PackageSelect))]			
 	public class PurchaseDetails : Activity
 	{
 		protected override void OnCreate (Bundle bundle)

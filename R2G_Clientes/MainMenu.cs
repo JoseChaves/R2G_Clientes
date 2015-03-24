@@ -7,13 +7,13 @@
 using Android.App;
 using Android.Content;
 using Android.OS;
-///using Android.Runtime;
+//using Android.Runtime;
 //using Android.Views;
 using Android.Widget;
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "MainMenu")]			
+	[Activity (Label = "MainMenu", Icon="@drawable/Untitled")]			
 	public class MainMenu : Activity
 	{
 		protected override void OnCreate (Bundle bundle)

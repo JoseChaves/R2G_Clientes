@@ -4,21 +4,22 @@
     p1:minHeight="25px"
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
-    p1:id="@+id/scrollView1">
+    p1:id="@+id/scrollView1"
+    style="@string/workPhone">
     <LinearLayout
         p1:orientation="vertical"
         p1:layout_width="match_parent"
         p1:layout_height="match_parent"
         p1:id="@+id/linearLayout1">
         <TextView
-            p1:text="Large Text"
+            p1:text="@string/basics"
             p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/textView5"
             p1:layout_margin="8dp" />
         <TextView
-            p1:text="Medium Text"
+            p1:text="@string/name"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
@@ -28,9 +29,10 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/editText1"
-            p1:layout_margin="8dp" />
+            p1:layout_margin="8dp"
+            p1:hint="@string/name" />
         <TextView
-            p1:text="Medium Text"
+            p1:text="@string/address"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
@@ -41,7 +43,8 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/editText2"
-            p1:layout_margin="8dp" />
+            p1:layout_margin="8dp"
+            p1:hint="@string/address" />
         <TextView
             p1:text="@string/password"
             p1:textAppearance="?android:attr/textAppearanceMedium"
@@ -57,7 +60,7 @@
             p1:layout_margin="8dp"
             p1:hint="@string/password" />
         <TextView
-            p1:text="Medium Text"
+            p1:text="@string/phone"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
@@ -68,9 +71,10 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/editText4"
-            p1:layout_margin="8dp" />
+            p1:layout_margin="8dp"
+            p1:hint="@string/phone" />
         <TextView
-            p1:text="Medium Text"
+            p1:text="@string/email"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
@@ -81,16 +85,17 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/editText6"
-            p1:layout_margin="8dp" />
+            p1:layout_margin="8dp"
+            p1:hint="@string/email" />
         <TextView
-            p1:text="Large Text"
+            p1:text="@string/workDetails"
             p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/textView6"
             p1:layout_margin="8dp" />
         <TextView
-            p1:text="Medium Text"
+            p1:text="@string/workAddress"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
@@ -101,9 +106,10 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/editText5"
-            p1:layout_margin="8dp" />
+            p1:layout_margin="8dp"
+            p1:hint="@string/workAddress" />
         <TextView
-            p1:text="Medium Text"
+            p1:text="@string/workEmail"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
@@ -114,9 +120,10 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/editText7"
-            p1:layout_margin="8dp" />
+            p1:layout_margin="8dp"
+            p1:hint="@string/workEmail" />
         <TextView
-            p1:text="Medium Text"
+            p1:text="@string/workPhone"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
@@ -127,12 +134,15 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/editText8"
-            p1:layout_margin="8dp" />
+            p1:layout_margin="8dp"
+            p1:hint="@string/workPhone" />
         <Button
-            p1:text="Button"
-            p1:layout_width="match_parent"
+            p1:text="@string/save"
+            p1:layout_width="180dp"
             p1:layout_height="wrap_content"
             p1:id="@+id/button1"
-            p1:layout_margin="8dp" />
+            p1:layout_margin="8dp"
+            p1:layout_gravity="center"
+            p1:drawableLeft="@android:drawable/ic_menu_save" />
     </LinearLayout>
 </ScrollView>

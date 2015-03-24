@@ -21,7 +21,7 @@ using Android.Accounts;
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "R2G_Clientes", MainLauncher=true,  Icon = "@drawable/icon", Theme="@android:style/Theme.Holo.Light.NoActionBar.TranslucentDecor")]
+	[Activity (Label = "R2G_Clientes", MainLauncher=true,  Icon = "@drawable/rapilogo", Theme="@android:style/Theme.Holo.Light.NoActionBar.TranslucentDecor")]
 	public class MainActivity : Activity
 	{
 		int count = 1;
@@ -35,7 +35,7 @@ namespace R2G_Clientes
 
 			Button signInbutt = FindViewById<Button> (Resource.Id.signIn);
 			Button registerButt = FindViewById<Button> (Resource.Id.register);
-			Button googlesign = FindViewById<Button> (Resource.Id.button1);
+
 
 			signInbutt.Click += (sender, e) => {
 				var intent1=new Intent(this, typeof(MainMenu));
@@ -47,13 +47,6 @@ namespace R2G_Clientes
 				StartActivity(intent2);
 			};
 
-			googlesign.Click += (sender, e) => {
-				/*DbProviderFactory factory = MySql.Data.MySqlClient.MySqlClientFactory.Instance;
-
-				DatabaseSchemaReader.Utilities.FactoryTools.AddFactory(factory);*/
-			//	DBConnection.DBConnect();
-				Toast.MakeText(this, "Connection Succesful", ToastLength.Short).Show();
-			};
 
 		}
 

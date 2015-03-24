@@ -15,7 +15,7 @@
             p1:layout_height="24dp"
             p1:id="@+id/space1" />
         <ImageView
-            p1:src="@drawable/rapid_logo"
+            p1:src="@drawable/Untitled"
             p1:layout_width="match_parent"
             p1:layout_height="160dp"
             p1:id="@+id/imageView1"
@@ -51,10 +51,5 @@
             p1:id="@+id/register"
             p1:layout_margin="8dp"
             p1:layout_gravity="center_horizontal" />
-        <Button
-            p1:text="Sign In With Google"
-            p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/button1" />
     </LinearLayout>
 </ScrollView>

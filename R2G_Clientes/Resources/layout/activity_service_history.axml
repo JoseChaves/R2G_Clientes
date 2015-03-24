@@ -11,26 +11,65 @@
         p1:layout_height="match_parent"
         p1:id="@+id/linearLayout1">
         <TextView
-            p1:text="Large Text"
+            p1:text="@string/history"
             p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/textView1" />
+            p1:id="@+id/textView1"
+            p1:layout_margin="8dp" />
         <Spinner
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/spinner1" />
+            p1:id="@+id/spinner1"
+            p1:layout_margin="8dp" />
         <Button
             p1:text="Button"
+            p1:layout_width="180dp"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/load"
+            p1:layout_margin="8dp"
+            p1:layout_gravity="center" />
+        <TextView
+            p1:text="Medium Text"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/load" />
-        <ListView
-            p1:minWidth="25px"
-            p1:minHeight="25px"
+            p1:id="@+id/textView2" />
+        <TextView
+            p1:text="Medium Text"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
-            p1:layout_height="48dp"
-            p1:id="@+id/listView1"
-            p1:layout_margin="8dp" />
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView3" />
+        <TextView
+            p1:text="Medium Text"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView4" />
+        <TextView
+            p1:text="Medium Text"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView5" />
+        <TextView
+            p1:text="Medium Text"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView6" />
+        <TextView
+            p1:text="Medium Text"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView7" />
+        <TextView
+            p1:text="Medium Text"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView8" />
     </LinearLayout>
 </ScrollView>

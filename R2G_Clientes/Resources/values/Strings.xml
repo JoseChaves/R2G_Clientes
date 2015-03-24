@@ -37,4 +37,25 @@
 	<string name="credit">Credit Card</string>
 	<string name="bankDep">Bank Deposit</string>
 	<string name="bankACH">Bank Transference</string>
+	<string name="basics">Basic Details</string>
+	<string name="name">Name</string>
+	<string name="email">Email</string>
+	<string name="address">Address</string>
+	<string name="phone">Phone Number</string>
+	<string name="workDetails">Work Details</string>
+	<string name="workAddress">Work Address</string>
+   	<string name="workEmail">Work Email</string>
+   	<string name="workPhone">Work Phone</string>
+   	<string name="licenseplate">License Plate</string>
+   	<string name="carmake">Car Make</string>
+   	<string name="carcolor">Car Color</string>
+   	<string name="carmodel">Car Model</string>
+   	<string name="packageselect">Package Selection</string>
+   	<string name="notifications">Notifications</string>
+   	<string name="startnotf">Notify when Started</string>
+   	<string name="endnotif">Notify when Ended</string>
+   	<string name="specialsnotif">Notify Specials and Discounts</string>
+   	<string name="comments">Comments</string>
+   	<string name="notavailable">This option is not yet Available</string>
+   	<string name="notyet">Unavailable!</string>
 </resources>

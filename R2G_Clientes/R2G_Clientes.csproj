@@ -45,15 +45,18 @@
     <Reference Include="Auth0Client.Android">
       <HintPath>..\Components\Auth0Client-0.4.1\lib\android\Auth0Client.Android.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\Components\Auth0Client-0.4.1\lib\android\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="Mono.Android.Support.v13" />
     <Reference Include="RestSharp.MonoDroid">
       <HintPath>..\Components\restsharp-105.0.1.0\lib\android\RestSharp.MonoDroid.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Json">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -108,6 +111,8 @@
     <AndroidResource Include="Resources\values\Styles.xml" />
     <AndroidResource Include="Resources\values-es\Strings.xml" />
     <AndroidResource Include="Resources\layout\activity_packages.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Untitled.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\rapilogo.png" />
   </ItemGroup>
   <Import Project="..\R2G_Clientes.Shared\R2G_Clientes.Shared.projitems" Label="Shared" Condition="Exists('..\R2G_Clientes.Shared\R2G_Clientes.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
@@ -122,6 +127,10 @@
     </XamarinComponentReference>
     <XamarinComponentReference Include="restsharp">
       <Version>105.0.1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="json.net">
+      <Version>6.0.8.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>

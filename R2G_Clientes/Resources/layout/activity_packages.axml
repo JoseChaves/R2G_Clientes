@@ -1,56 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-    <TextView
-        android:text="@string/availablepacks"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:layout_margin="8dp" />
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner1"
-        android:layout_margin="8dp" />
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/radioGroup1"
-        android:layout_margin="8dp">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/fourservices"
-            android:id="@+id/radioButton1"
-            android:layout_margin="8dp" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sixServices"
-            android:id="@+id/radioButton2"
-            android:layout_margin="8dp" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/eightServices"
-            android:id="@+id/radioButton3"
-            android:layout_margin="8dp" />
-        <RadioButton
-            android:text="@string/twelveServices"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="@string/availablepacks"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton4"
+            android:id="@+id/textView1"
             android:layout_margin="8dp" />
-    </RadioGroup>
-    <Button
-        android:text="@string/next"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/submitbutt"
-        android:layout_margin="8dp"
-        android:layout_gravity="center" />
-</LinearLayout>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner1"
+            android:layout_margin="8dp" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup1"
+            android:layout_margin="8dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/fourservices"
+                android:id="@+id/radioButton1"
+                android:layout_margin="8dp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sixServices"
+                android:id="@+id/radioButton2"
+                android:layout_margin="8dp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eightServices"
+                android:id="@+id/radioButton3"
+                android:layout_margin="8dp" />
+            <RadioButton
+                android:text="@string/twelveServices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton4"
+                android:layout_margin="8dp" />
+        </RadioGroup>
+        <Button
+            android:text="@string/next"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitbutt"
+            android:layout_margin="8dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</ScrollView>

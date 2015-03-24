@@ -15,93 +15,111 @@
             p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/textView1" />
+            p1:id="@+id/textView1"
+            p1:layout_margin="8dp" />
         <Spinner
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/spinner1" />
+            p1:id="@+id/spinner1"
+            p1:layout_margin="8dp" />
         <TextView
-            p1:text="Medium Text"
+            p1:text="@string/licenseplate"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/textView2" />
+            p1:id="@+id/textView2"
+            p1:layout_margin="8dp" />
         <EditText
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/editText1" />
+            p1:id="@+id/editText1"
+            p1:layout_margin="8dp" />
         <TextView
-            p1:text="Medium Text"
+            p1:text="@string/carmake"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/textView3" />
+            p1:id="@+id/textView3"
+            p1:layout_margin="8dp" />
         <EditText
             p1:inputType="number"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/editText2" />
+            p1:id="@+id/editText2"
+            p1:layout_margin="8dp" />
         <TextView
-            p1:text="Medium Text"
+            p1:text="@string/carmodel"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/textView4" />
+            p1:id="@+id/textView4"
+            p1:layout_margin="8dp" />
         <EditText
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/editText3" />
+            p1:id="@+id/editText3"
+            p1:layout_margin="8dp" />
         <TextView
-            p1:text="Medium Text"
+            p1:text="@string/carcolor"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/textView5" />
+            p1:id="@+id/textView5"
+            p1:layout_margin="8dp" />
         <EditText
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/editText4" />
+            p1:id="@+id/editText4"
+            p1:layout_margin="8dp" />
         <TextView
-            p1:text="Large Text"
+            p1:text="@string/notifications"
             p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/textView6" />
+            p1:id="@+id/textView6"
+            p1:layout_margin="8dp" />
         <CheckBox
-            p1:text="CheckBox"
+            p1:text="@string/startnotf"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/checkBox1" />
+            p1:id="@+id/checkBox1"
+            p1:layout_margin="8dp" />
         <CheckBox
-            p1:text="CheckBox"
+            p1:text="@string/endnotif"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/checkBox2" />
+            p1:id="@+id/checkBox2"
+            p1:layout_margin="8dp" />
         <CheckBox
-            p1:text="CheckBox"
+            p1:text="@string/specialsnotif"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/checkBox3" />
+            p1:id="@+id/checkBox3"
+            p1:layout_margin="8dp" />
         <TextView
-            p1:text="Large Text"
+            p1:text="@string/comments"
             p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/textView7" />
+            p1:id="@+id/textView7"
+            p1:layout_margin="8dp" />
         <EditText
             p1:inputType="textMultiLine"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/editText5" />
+            p1:id="@+id/editText5"
+            p1:layout_margin="8dp" />
         <Button
             p1:text="Button"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/saveButt" />
+            p1:id="@+id/saveButt"
+            p1:layout_margin="8dp" />
         <Button
             p1:text="Button"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/editButt" />
+            p1:id="@+id/editButt"
+            p1:layout_margin="8dp" />
     </LinearLayout>
 </ScrollView>

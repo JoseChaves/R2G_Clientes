@@ -13,7 +13,7 @@
 	<string name="save">Guardar</string>
 	<string name="done">Hecho</string>
 	<string name="next">Siguiente</string>
-	<string name="fourservices">Cuatro Servicios</string>
+	<string name="fourservices">Cuatro Servicio</string>
 	<string name="sixServices">Seis Servicios</string>
 	<string name="eightServices">Ocho Servicios</string>
 	<string name="history">Historial de Servicios</string>
@@ -37,5 +37,25 @@
 	<string name="credit">Tarjeta de Crédito</string>
 	<string name="bankDep">Depósito Bancario</string>
 	<string name="bankACH">Transferencia Bancaria</string>
+	<string name="basics">Datos Personales</string>
+	<string name="name">Nombre</string>
+	<string name="email">Email</string>
+	<string name="address">Dirección</string>
+	<string name="phone">Número de Teléfono</string>
+   	<string name="workDetails">Datos del Trabajo</string>
+   	<string name="workAddress">Dirección del Trabajo</string>
+   	<string name="workEmail">Email de Trabajo</string>
+   	<string name="workPhone">Teléfono del Trabajo</string>
+   	<string name="licenseplate">Placa del Auto</string>
+   	<string name="carmake">Marca</string>
+   	<string name="carcolor">Color</string>
+   	<string name="carmodel">Modelo</string>
+   	<string name="packageselect">Selección de Paquetes</string>
+   	<string name="notifications">Notificaciones</string>
+   	<string name="startnotf">Notificación de Inicio</string>
+   	<string name="endnotif">Notificación de Terminación</string>
+   	<string name="specialsnotif">Notificaciones Especiales</string>
+   	<string name="comments">Comentarios</string>
+   	<string name="notavailable">Esta funcion no esta disponible por el momento.</string>
+   	<string name="notyet">No Disponible!</string>
 </resources>
-

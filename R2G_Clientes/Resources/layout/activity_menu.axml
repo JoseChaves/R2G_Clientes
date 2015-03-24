@@ -58,5 +58,10 @@
             p1:layout_margin="8dp"
             p1:layout_gravity="center_horizontal"
             p1:drawableLeft="@android:drawable/ic_menu_preferences" />
+        <Space
+            p1:layout_width="match_parent"
+            p1:layout_height="24dp"
+            p1:id="@+id/space2"
+            p1:layout_margin="8dp" />
     </LinearLayout>
 </ScrollView>

@@ -13,7 +13,8 @@ using Android.Widget;
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "Ready2Go", NoHistory=true, Theme="@android:style/Theme.Holo.Light.NoActionBar.TranslucentDecor")]			
+	[Activity (Label = "Ready2Go", NoHistory=true, Theme="@android:style/Theme.Holo.Light.NoActionBar.TranslucentDecor", Icon="@drawable/rapilogo" +
+		"")]			
 	public class Splash : Activity
 	{
 		public class SplashActivity : Activity

@@ -13,9 +13,10 @@ using Android.Widget;
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "PaymentOptions", ParentActivity=typeof(PurchaseDetails)) ]			
+	[Activity (Label = "@string/paymentoptions", ParentActivity=typeof(PurchaseDetails)) ]			
 	public class PaymentOptions : Activity
 	{
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -29,7 +30,15 @@ namespace R2G_Clientes
 
 			creditPaybutt.Click += (sender, e) => {
 				var cardsend=new Intent(this, typeof(CreditCardPayment));
-				StartActivity(cardsend);
+				//StartActivity(cardsend);
+				AlertDialog.Builder dialogo = new AlertDialog.Builder (this);
+				AlertDialog men = dialogo.Create();
+				men.SetTitle (Resource.String.notyet);
+				men.SetMessage ("Esta Funcion No está Disponible por el momento.");
+				men.SetButton ("Ok",delegate(object send, DialogClickEventArgs er) {
+					men.Dismiss();
+				});
+				men.Show ();
 			};
 
 			bankdeps.Click += (sender, e) => {

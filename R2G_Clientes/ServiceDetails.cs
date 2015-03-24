@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "ServiceDetails")]			
+	[Activity (Label = "ServiceDetails", ParentActivity=typeof(MainMenu))]			
 	public class ServiceDetails : Activity
 	{
 		protected override void OnCreate (Bundle bundle)
