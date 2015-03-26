@@ -51,19 +51,20 @@ namespace R2G_Clientes
 			tv5= FindViewById<TextView> (Resource.Id.textView5);
 			tv6= FindViewById<TextView> (Resource.Id.textView6);
 			tv7= FindViewById<TextView> (Resource.Id.textView7);
-			tv8 = FindViewById<TextView> (Resource.Id.editText8);
+			tv8 = FindViewById<TextView> (Resource.Id.textView8);
 			client = new RestClient ("http://190.219.161.141:8080/rapidtoREST/service");
 			adapter = new ArrayAdapter<OrderData>(this, Android.Resource.Layout.SimpleDropDownItem1Line);
 			//LvLIsta.Adapter = adapter;
 			string url = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/orders";
 
 			load.Click += async (sender, e) => {
-				string url2 = url;// + spin.SelectedItem.ToString();
+				string url2 = string.Format ("{0}/3", url);// + spin.SelectedItem.ToString();
 
 				JsonValue json = await FetchAsync(url2);
 				//listausuarios = new List<Datos_Usuarios>();
 				//MetodoGet();
 				ParseAndDisplay(json);
+				//Toast.MakeText (this, "Conexion Establecida" + json.ToString(), ToastLength.Long).Show ();
 
 			};
 			//declaramos el evento de click en listview para mostrar informacion extra en un toast
@@ -71,12 +72,16 @@ namespace R2G_Clientes
 			// Create your application here
 		}
 
-		public void fillspinner(JsonValue json){
+		public async void fillspinner(string url){
+			JsonValue json = await FetchAsync(url);
+
 			List<JsonValue> jsonString = new List<JsonValue>();
 			jerry = (System.Json.JsonArray)json; 
 			if (jerry != null) { 
 				jsonString = jerry.ToList ();
+
 				}
+
 		}
 
 		private async Task<JsonValue> FetchAsync(string url){
@@ -84,7 +89,6 @@ namespace R2G_Clientes
 			HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create (new Uri (url));
 			request.ContentType = "application/json";
 			request.Method = "GET";
-
 			using (WebResponse response = await request.GetResponseAsync ()) {
 				using (Stream stream = response.GetResponseStream ()) {
 					JsonValue jsondoc= await Task.Run(() => System.Json.JsonObject.Load(stream));
@@ -115,6 +119,7 @@ namespace R2G_Clientes
 			tv5.Text = ("Automóvil: " + order.carModel + " " + order.color + " Placa: " + order.licenseplate);
 			tv6.Text = ("Comentarios de la órden: " + order.CarComments);
 			tv7.Text = ("Dias para el Servicio: " + order.orderDays);
+			tv8.Text = ("Paquete Contratado: " + order.pack);
 
 		} }
 	
@@ -131,6 +136,7 @@ namespace R2G_Clientes
 		public string color { get; set; }
 		public string CarComments { get; set; }
 		public string orderDays{ get; set; }
+		public int pack{ get; set; }
 	}
 		
 		

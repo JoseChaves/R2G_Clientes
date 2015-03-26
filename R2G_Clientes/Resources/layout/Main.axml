@@ -43,13 +43,15 @@
             p1:layout_height="wrap_content"
             p1:id="@+id/signIn"
             p1:layout_gravity="center_horizontal"
-            p1:layout_margin="8dp" />
+            p1:layout_margin="8dp"
+            p1:drawableLeft="@android:drawable/ic_menu_myplaces" />
         <Button
             p1:text="@string/register"
             p1:layout_width="160dp"
             p1:layout_height="wrap_content"
             p1:id="@+id/register"
             p1:layout_margin="8dp"
-            p1:layout_gravity="center_horizontal" />
+            p1:layout_gravity="center_horizontal"
+            p1:drawableLeft="@android:drawable/ic_menu_edit" />
     </LinearLayout>
 </ScrollView>

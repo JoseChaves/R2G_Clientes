@@ -21,7 +21,7 @@ using Android.Accounts;
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "R2G_Clientes", MainLauncher=true,  Icon = "@drawable/rapilogo", Theme="@android:style/Theme.Holo.Light.NoActionBar.TranslucentDecor")]
+	[Activity (Label = "R2G_Clientes", MainLauncher=true,  Icon = "@drawable/rapilogo", Theme="@android:style/Theme.DeviceDefault.Light.NoActionBar")]
 	public class MainActivity : Activity
 	{
 		int count = 1;

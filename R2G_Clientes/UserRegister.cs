@@ -29,7 +29,9 @@ namespace R2G_Clientes
 
  			// Create your application here
 			regButt.Click += (sender, e) => {
-				registerUser();
+			//	registerUser();
+				var intent = new Intent(typeof(MainMenu));
+				StartActivity(intent);
 			};
 		}
 
@@ -60,13 +62,14 @@ namespace R2G_Clientes
 			usuarios.wphone = iwphone;
 			usuarios.wemail = wemail.ToString ();
 			//hacemos el request del metodo que POST para guardar los datos
-			var request = new RestRequest("users/add", Method.POST);
+			/*var request = new RestRequest("users/add", Method.POST);
 			//asignamos el valor de nuestros datos puede ser en XML O JSON en nuestro caso usaremos json
 			request.RequestFormat = DataFormat.Json;
 			//agregamos la entidad con los valores asignado anteriormente
 			request.AddBody(usuarios);
 			//ejecutamos el request
-			cliente.Execute (request);
+			cliente.Execute (request);*/
+
 
 			/*AlertDialog.Builder dialogo = new AlertDialog.Builder (this);
 			AlertDialog men = dialogo.Create();
