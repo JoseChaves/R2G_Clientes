@@ -360,6 +360,9 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f040038
 			public const int comments = 2130968632;
 			
+			// aapt resource value: 0x7f04003c
+			public const int contact = 2130968636;
+			
 			// aapt resource value: 0x7f040023
 			public const int credit = 2130968611;
 			
@@ -401,6 +404,9 @@ namespace R2G_Clientes
 			
 			// aapt resource value: 0x7f040015
 			public const int locations = 2130968597;
+			
+			// aapt resource value: 0x7f04003b
+			public const int logout = 2130968635;
 			
 			// aapt resource value: 0x7f04001a
 			public const int mon = 2130968602;

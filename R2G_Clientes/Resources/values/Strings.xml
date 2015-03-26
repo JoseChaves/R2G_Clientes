@@ -58,4 +58,6 @@
    	<string name="comments">Comments</string>
    	<string name="notavailable">This option is not yet Available</string>
    	<string name="notyet">Unavailable!</string>
+   	<string name="logout">Log Out</string>
+   	<string name="contact">Contact our Office</string>
 </resources>

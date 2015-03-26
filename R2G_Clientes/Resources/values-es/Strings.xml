@@ -58,4 +58,7 @@
    	<string name="comments">Comentarios</string>
    	<string name="notavailable">Esta funcion no esta disponible por el momento.</string>
    	<string name="notyet">No Disponible!</string>
+   	<string name="logout">Cerrar Sesion</string>
+   	<string name="contact">Contacta nuestras Oficinas</string>
+
 </resources>
