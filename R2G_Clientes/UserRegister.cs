@@ -3,6 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Net;
+using System.Json;
+using System.IO;
 
 using Android.App;
 
@@ -36,6 +39,11 @@ namespace R2G_Clientes
 		}
 
 		public void registerUser(){
+
+			HttpWebRequest wreq;
+			HttpWebResponse wresp;
+			string url = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/user/add";
+
 			EditText name = FindViewById<EditText> (Resource.Id.editText1);
 			EditText email = FindViewById<EditText> (Resource.Id.editText2);
 			EditText password = FindViewById<EditText> (Resource.Id.editText3);
@@ -44,32 +52,25 @@ namespace R2G_Clientes
 			EditText waddr = FindViewById<EditText> (Resource.Id.editText6);
 			EditText wemail = FindViewById<EditText> (Resource.Id.editText7);
 			EditText wphone = FindViewById<EditText> (Resource.Id.editText8);
-
 			int iphone = Convert.ToInt32(phone.Text.ToString());
 			int iwphone = Convert.ToInt32(wphone.Text.ToString());
-			//string names = name.ToString ();
 
-		//	R2G_Clientes.Shared.DBConnection.registerUser (name.Text, email.Text, iphone, iwphone, addr.Text, waddr.Text, password.Text, wemail.Text);
+			System.Json.JsonObject json = new System.Json.JsonObject ();
 
-			R2G_Clientes.Shared.UserRegister usuarios = new R2G_Clientes.Shared.UserRegister ();
+			json.Add ("usern", name.Text.ToString ());
+			json.Add ("email", email.Text);
+			json.Add ("password", password.Text);
+			json.Add ("uaddr", addr.Text);
+			json.Add ("wphone", iwphone);
+			json.Add ("phone", iphone);
+			json.Add ("waddr", waddr.Text);
+			json.Add ("wemail", wemail.Text);
 
-			usuarios.Nombre = name.ToString();
-			usuarios.password = password.ToString();
-			usuarios.waddrs = waddr.ToString();
-			usuarios.phone = iphone;
-			usuarios.Email = email.ToString();
-			usuarios.Direccion = addr.ToString();
-			usuarios.wphone = iwphone;
-			usuarios.wemail = wemail.ToString ();
-			//hacemos el request del metodo que POST para guardar los datos
-			/*var request = new RestRequest("users/add", Method.POST);
-			//asignamos el valor de nuestros datos puede ser en XML O JSON en nuestro caso usaremos json
-			request.RequestFormat = DataFormat.Json;
-			//agregamos la entidad con los valores asignado anteriormente
-			request.AddBody(usuarios);
-			//ejecutamos el request
-			cliente.Execute (request);*/
-
+			wreq = (HttpWebResponse)HttpWebRequest.Create (url);
+			wreq.ContentType = "application/json";
+			wreq.Method = "POST";
+			wreq.Accept = "application/json";
+		
 
 			/*AlertDialog.Builder dialogo = new AlertDialog.Builder (this);
 			AlertDialog men = dialogo.Create();
@@ -81,5 +82,16 @@ namespace R2G_Clientes
 		} 
 			
 		}
+
+	public class userData{
+		public string name { get; set; }
+		public string addrs{ get; set; }
+		public string pssword{ get; set; }
+		public int phone{ get; set; }
+		public string email{ get; set; }
+		public string waddrs{ get; set; }
+		public string wemail { get; set; }
+		public int wphone{ get; set; }
+	}
 	}
 
