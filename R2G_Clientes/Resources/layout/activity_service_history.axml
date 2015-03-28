@@ -34,42 +34,49 @@
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/textView2" />
+            p1:id="@+id/textView2"
+            p1:layout_margin="8dp" />
         <TextView
             p1:text="Medium Text"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/textView3" />
+            p1:id="@+id/textView3"
+            p1:layout_margin="8dp" />
         <TextView
             p1:text="Medium Text"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/textView4" />
+            p1:id="@+id/textView4"
+            p1:layout_margin="8dp" />
         <TextView
             p1:text="Medium Text"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/textView5" />
+            p1:id="@+id/textView5"
+            p1:layout_margin="8dp" />
         <TextView
             p1:text="Medium Text"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/textView6" />
+            p1:id="@+id/textView6"
+            p1:layout_margin="8dp" />
         <TextView
             p1:text="Medium Text"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/textView7" />
+            p1:id="@+id/textView7"
+            p1:layout_margin="8dp" />
         <TextView
             p1:text="Medium Text"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/textView8" />
+            p1:id="@+id/textView8"
+            p1:layout_margin="8dp" />
     </LinearLayout>
 </ScrollView>

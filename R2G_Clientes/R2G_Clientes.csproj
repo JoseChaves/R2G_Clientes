@@ -36,6 +36,11 @@
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <ConsolePause>false</ConsolePause>
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningKeyStore>/Users/josechaves/R2GClients</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>totisan1!</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>r2g</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>totisan1!</AndroidSigningKeyPass>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />

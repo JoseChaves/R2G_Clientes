@@ -32,8 +32,8 @@ namespace R2G_Clientes
 
  			// Create your application here
 			regButt.Click += (sender, e) => {
-			//	registerUser();
-				var intent = new Intent(typeof(MainMenu));
+				registerUser();
+				var intent = new Intent(this, typeof(MainMenu));
 				StartActivity(intent);
 			};
 		}
@@ -56,21 +56,42 @@ namespace R2G_Clientes
 			int iwphone = Convert.ToInt32(wphone.Text.ToString());
 
 			System.Json.JsonObject json = new System.Json.JsonObject ();
+			string pswd = password.Text;
+
 
 			json.Add ("usern", name.Text.ToString ());
 			json.Add ("email", email.Text);
-			json.Add ("password", password.Text);
+			json.Add ("password", pswd);
 			json.Add ("uaddr", addr.Text);
 			json.Add ("wphone", iwphone);
 			json.Add ("phone", iphone);
 			json.Add ("waddr", waddr.Text);
 			json.Add ("wemail", wemail.Text);
 
-			wreq = (HttpWebResponse)HttpWebRequest.Create (url);
-			wreq.ContentType = "application/json";
-			wreq.Method = "POST";
+
+			var url2 = new Uri(url + "?usern=" + name.Text + "&email=" + email.Text + "&password=" +
+				password.Text + "&uaddr=" + addr.Text + "&wphone" + iwphone + "&phone=" + iphone  + "&waddr=" + waddr.Text + "&wemail=" + wemail.Text);
+			Toast.MakeText (this, json.ToString(), ToastLength.Long).Show();
+
+			wreq = (HttpWebRequest)HttpWebRequest.Create (url2);
+			wreq.ContentType = "application/x-www-urlencoded";
+			wreq.Method = "GET";
 			wreq.Accept = "application/json";
-		
+
+			/*using (var streamWriter = new StreamWriter(wreq.GetRequestStream()))
+			{
+				string jsonX = json.ToString (); 
+
+				streamWriter.Write(jsonX);
+				streamWriter.Flush();
+				streamWriter.Close();
+			}
+
+			wresp  = (HttpWebResponse)wreq.GetResponse();
+			using (var streamReader = new StreamReader(wresp.GetResponseStream()))
+			{
+				var result = streamReader.ReadToEnd();
+			}*/
 
 			/*AlertDialog.Builder dialogo = new AlertDialog.Builder (this);
 			AlertDialog men = dialogo.Create();
