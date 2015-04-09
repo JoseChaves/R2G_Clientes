@@ -13,6 +13,7 @@
 	<string name="save">Guardar</string>
 	<string name="done">Hecho</string>
 	<string name="next">Siguiente</string>
+	<string name="edit">Editar</string>
 	<string name="fourservices">Cuatro Servicio</string>
 	<string name="sixServices">Seis Servicios</string>
 	<string name="eightServices">Ocho Servicios</string>
@@ -60,5 +61,11 @@
    	<string name="notyet">No Disponible!</string>
    	<string name="logout">Cerrar Sesion</string>
    	<string name="contact">Contacta nuestras Oficinas</string>
+   	<string name="mainmenu">Menu Principal</string>
+   	<string name="cash">Efectivo</string>
+   	<string name="foursmallsingle">$9.25</string>
+   	<string name="sixsmallsingle">$8.75</string>
+   	<string name="tensmallsinge">$8.25</string>
+   	<string name="twelvesmallsingle">$8.00</string>
 
 </resources>

@@ -33,7 +33,8 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/editText1"
-            p1:layout_margin="8dp" />
+            p1:layout_margin="8dp"
+            p1:inputType="textCapWords" />
         <TextView
             p1:text="@string/carmake"
             p1:textAppearance="?android:attr/textAppearanceMedium"
@@ -42,7 +43,7 @@
             p1:id="@+id/textView3"
             p1:layout_margin="8dp" />
         <EditText
-            p1:inputType="number"
+            p1:inputType="textCapWords"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/editText2"
@@ -58,7 +59,8 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/editText3"
-            p1:layout_margin="8dp" />
+            p1:layout_margin="8dp"
+            p1:inputType="textCapWords" />
         <TextView
             p1:text="@string/carcolor"
             p1:textAppearance="?android:attr/textAppearanceMedium"
@@ -70,7 +72,8 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/editText4"
-            p1:layout_margin="8dp" />
+            p1:layout_margin="8dp"
+            p1:inputType="textCapWords" />
         <TextView
             p1:text="@string/notifications"
             p1:textAppearance="?android:attr/textAppearanceLarge"
@@ -108,15 +111,16 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/editText5"
-            p1:layout_margin="8dp" />
+            p1:layout_margin="8dp"
+            p1:capitalize="sentences" />
         <Button
-            p1:text="Button"
+            p1:text="@string/save"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/saveButt"
             p1:layout_margin="8dp" />
         <Button
-            p1:text="Button"
+            p1:text="@string/edit"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/editButt"

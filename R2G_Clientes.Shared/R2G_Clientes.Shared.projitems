@@ -15,5 +15,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Payments.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CarRegister.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)UserRegister.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServiceHistoryProvider.cs" />
   </ItemGroup>
 </Project>

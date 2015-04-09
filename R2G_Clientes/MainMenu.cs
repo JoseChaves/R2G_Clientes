@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "MainMenu", Icon="@drawable/Untitled")]			
+	[Activity (Label = "Rapid2Go", MainLauncher=true, Icon="@drawable/Untitled")]			
 	public class MainMenu : Activity
 	{
 		protected override void OnCreate (Bundle bundle)

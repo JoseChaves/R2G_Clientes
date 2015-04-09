@@ -12,10 +12,11 @@
         p1:layout_width="match_parent"
         p1:layout_height="match_parent"
         p1:id="@+id/linearLayout1">
-        <Space
+        <ImageView
+            p1:src="@drawable/untitled"
             p1:layout_width="match_parent"
             p1:layout_height="72dp"
-            p1:id="@+id/space1"
+            p1:id="@+id/imageView1"
             p1:layout_margin="8dp" />
         <Button
             p1:text="@string/packs"

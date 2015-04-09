@@ -6,6 +6,7 @@ using System.Text;
 using System.Net;
 using System.Json;
 using System.IO;
+using System.Web;
 
 using Android.App;
 
@@ -16,12 +17,16 @@ using Android.Views;
 using Android.Widget;
 using RestSharp;
 //using R2G_Clientes.Shared.DBConnection;
+using System.Threading.Tasks;
 
 namespace R2G_Clientes
 {
 	[Activity (Label = "@string/register", ParentActivity=typeof(MainActivity))]			
 	public class UserRegister : Activity
 	{
+		HttpWebRequest wreq;
+		HttpWebResponse wresp;
+
 		public RestClient cliente;
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -31,17 +36,20 @@ namespace R2G_Clientes
 			cliente = new RestClient ("http://192.168.1.107:8080/rapidtoREST/service");
 
  			// Create your application here
-			regButt.Click += (sender, e) => {
-				registerUser();
+			regButt.Click += async (sender, e) => {
+				string uray= registerUser();
+				JsonValue jval= await requester (uray);
+				//string jval2=JsonValue.Parse(jval);
 				var intent = new Intent(this, typeof(MainMenu));
 				StartActivity(intent);
 			};
 		}
+	
 
-		public void registerUser(){
+		public string registerUser(){
 
-			HttpWebRequest wreq;
-			HttpWebResponse wresp;
+			Uri url3;
+
 			string url = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/user/add";
 
 			EditText name = FindViewById<EditText> (Resource.Id.editText1);
@@ -52,31 +60,44 @@ namespace R2G_Clientes
 			EditText waddr = FindViewById<EditText> (Resource.Id.editText6);
 			EditText wemail = FindViewById<EditText> (Resource.Id.editText7);
 			EditText wphone = FindViewById<EditText> (Resource.Id.editText8);
-			int iphone = Convert.ToInt32(phone.Text.ToString());
-			int iwphone = Convert.ToInt32(wphone.Text.ToString());
+			int iphone = Convert.ToInt32 (phone.Text.ToString ());
+			int iwphone = Convert.ToInt32 (wphone.Text.ToString ());
 
 			System.Json.JsonObject json = new System.Json.JsonObject ();
 			string pswd = password.Text;
 
 
-			json.Add ("usern", name.Text.ToString ());
+			/*json.Add ("usern", name.Text.ToString ());
 			json.Add ("email", email.Text);
 			json.Add ("password", pswd);
 			json.Add ("uaddr", addr.Text);
 			json.Add ("wphone", iwphone);
 			json.Add ("phone", iphone);
 			json.Add ("waddr", waddr.Text);
-			json.Add ("wemail", wemail.Text);
+			json.Add ("wemail", wemail.Text);*/
 
 
-			var url2 = new Uri(url + "?usern=" + name.Text + "&email=" + email.Text + "&password=" +
-				password.Text + "&uaddr=" + addr.Text + "&wphone" + iwphone + "&phone=" + iphone  + "&waddr=" + waddr.Text + "&wemail=" + wemail.Text);
-			Toast.MakeText (this, json.ToString(), ToastLength.Long).Show();
+			string url2 = url + "?usern=" + WebUtility.UrlEncode (name.Text) + "&email=" + WebUtility.UrlEncode (email.Text) + "&password=" +
+			              WebUtility.UrlEncode (password.Text) + "&uaddr=" + WebUtility.UrlEncode (addr.Text) + "&wphone=" + iwphone + "&phone=" + iphone + "&waddr=" + WebUtility.UrlEncode (waddr.Text) + "&wemail=" + WebUtility.UrlEncode (wemail.Text);
+	
+		//	Toast.MakeText (this, url2, ToastLength.Long).Show ();
+			return url2;
+		}
 
-			wreq = (HttpWebRequest)HttpWebRequest.Create (url2);
-			wreq.ContentType = "application/x-www-urlencoded";
+
+		private async Task<JsonValue> requester(string url2){
+			wreq = (HttpWebRequest)HttpWebRequest.Create (new Uri(url2));
+			wreq.ContentType = "application/json";
 			wreq.Method = "GET";
-			wreq.Accept = "application/json";
+
+			using (WebResponse response = await wreq.GetResponseAsync ()) {
+			using (Stream stream = response.GetResponseStream ()) {
+					JsonValue jsondoc= await Task.Run(() => System.Json.JsonObject.Load(stream));
+				Console.Out.Write("Response, {0} ", jsondoc.ToString());
+				//Toast.MakeText (this, "Conexion Establecida" + jsondoc.ToString(), ToastLength.Long).Show ();
+					return jsondoc;}
+			}
+
 
 			/*using (var streamWriter = new StreamWriter(wreq.GetRequestStream()))
 			{
@@ -101,8 +122,9 @@ namespace R2G_Clientes
 
 
 		} 
-			
 		}
+			
+		
 
 	public class userData{
 		public string name { get; set; }

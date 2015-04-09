@@ -13,8 +13,7 @@ using Android.Widget;
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "Ready2Go", NoHistory=true, Theme="@android:style/Theme.Holo.Light.NoActionBar.TranslucentDecor", Icon="@drawable/rapilogo" +
-		"")]			
+	[Activity (Label = "Ready2Go", NoHistory=true, Theme="@android:style/Theme.DeviceDefault.Light.NoActionBar", Icon="@drawable/rapilogo")]			
 	public class Splash : Activity
 	{
 		public class SplashActivity : Activity
@@ -23,8 +22,8 @@ namespace R2G_Clientes
 			{
 				base.OnCreate(bundle);
 				SetContentView (Resource.Layout.activity_splash);
-				Thread.Sleep(100); // Simulate a long loading process on app startup.
-				StartActivity(typeof(MainActivity));
+				Thread.Sleep(1000); // Simulate a long loading process on app startup.
+				StartActivity(typeof(MainMenu));
 			}
 		}
 	}

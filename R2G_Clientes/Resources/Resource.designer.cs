@@ -70,11 +70,11 @@ namespace R2G_Clientes
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060030
-			public const int achdeposit = 2131099696;
-			
 			// aapt resource value: 0x7f06002f
-			public const int bankDeposit = 2131099695;
+			public const int achdeposit = 2131099695;
+			
+			// aapt resource value: 0x7f06002e
+			public const int bankDeposit = 2131099694;
 			
 			// aapt resource value: 0x7f060002
 			public const int buttDone = 2131099650;
@@ -82,11 +82,14 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f06002b
 			public const int button1 = 2131099691;
 			
-			// aapt resource value: 0x7f060036
-			public const int callOfficeforChanges = 2131099702;
+			// aapt resource value: 0x7f060038
+			public const int callOfficeforChanges = 2131099704;
 			
 			// aapt resource value: 0x7f060021
 			public const int cars = 2131099681;
+			
+			// aapt resource value: 0x7f060030
+			public const int cash = 2131099696;
 			
 			// aapt resource value: 0x7f06000f
 			public const int checkBox1 = 2131099663;
@@ -112,8 +115,8 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f060023
 			public const int config = 2131099683;
 			
-			// aapt resource value: 0x7f06002e
-			public const int creditCard = 2131099694;
+			// aapt resource value: 0x7f06002d
+			public const int creditCard = 2131099693;
 			
 			// aapt resource value: 0x7f060020
 			public const int details = 2131099680;
@@ -139,23 +142,23 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f060013
 			public const int editText5 = 2131099667;
 			
-			// aapt resource value: 0x7f060037
-			public const int editText6 = 2131099703;
-			
-			// aapt resource value: 0x7f060038
-			public const int editText7 = 2131099704;
+			// aapt resource value: 0x7f060039
+			public const int editText6 = 2131099705;
 			
 			// aapt resource value: 0x7f06003a
-			public const int editText8 = 2131099706;
+			public const int editText7 = 2131099706;
 			
-			// aapt resource value: 0x7f06002d
-			public const int googlePayment = 2131099693;
+			// aapt resource value: 0x7f06003c
+			public const int editText8 = 2131099708;
+			
+			// aapt resource value: 0x7f06002c
+			public const int googlePayment = 2131099692;
 			
 			// aapt resource value: 0x7f060022
 			public const int history = 2131099682;
 			
-			// aapt resource value: 0x7f06002c
-			public const int imageView1 = 2131099692;
+			// aapt resource value: 0x7f06001e
+			public const int imageView1 = 2131099678;
 			
 			// aapt resource value: 0x7f060007
 			public const int linearLayout1 = 2131099655;
@@ -181,8 +184,8 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f060025
 			public const int radioGroup1 = 2131099685;
 			
-			// aapt resource value: 0x7f06003c
-			public const int register = 2131099708;
+			// aapt resource value: 0x7f06003e
+			public const int register = 2131099710;
 			
 			// aapt resource value: 0x7f060005
 			public const int save = 2131099653;
@@ -193,14 +196,17 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f060006
 			public const int scrollView1 = 2131099654;
 			
-			// aapt resource value: 0x7f06003b
-			public const int signIn = 2131099707;
+			// aapt resource value: 0x7f06003d
+			public const int signIn = 2131099709;
+			
+			// aapt resource value: 0x7f060037
+			public const int signin = 2131099703;
+			
+			// aapt resource value: 0x7f060036
+			public const int signout = 2131099702;
 			
 			// aapt resource value: 0x7f060035
-			public const int signout = 2131099701;
-			
-			// aapt resource value: 0x7f06001e
-			public const int space1 = 2131099678;
+			public const int space1 = 2131099701;
 			
 			// aapt resource value: 0x7f060024
 			public const int space2 = 2131099684;
@@ -226,8 +232,8 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f060000
 			public const int textView1 = 2131099648;
 			
-			// aapt resource value: 0x7f060039
-			public const int textView10 = 2131099705;
+			// aapt resource value: 0x7f06003b
+			public const int textView10 = 2131099707;
 			
 			// aapt resource value: 0x7f060001
 			public const int textView2 = 2131099649;
@@ -327,44 +333,47 @@ namespace R2G_Clientes
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040029
-			public const int address = 2130968617;
+			// aapt resource value: 0x7f04002a
+			public const int address = 2130968618;
 			
 			// aapt resource value: 0x7f040002
 			public const int app_name = 2130968578;
 			
-			// aapt resource value: 0x7f040014
-			public const int availablepacks = 2130968596;
-			
-			// aapt resource value: 0x7f040025
-			public const int bankACH = 2130968613;
-			
-			// aapt resource value: 0x7f040024
-			public const int bankDep = 2130968612;
+			// aapt resource value: 0x7f040015
+			public const int availablepacks = 2130968597;
 			
 			// aapt resource value: 0x7f040026
-			public const int basics = 2130968614;
+			public const int bankACH = 2130968614;
+			
+			// aapt resource value: 0x7f040025
+			public const int bankDep = 2130968613;
+			
+			// aapt resource value: 0x7f040027
+			public const int basics = 2130968615;
 			
 			// aapt resource value: 0x7f040009
 			public const int carRegister = 2130968585;
 			
-			// aapt resource value: 0x7f040031
-			public const int carcolor = 2130968625;
-			
-			// aapt resource value: 0x7f040030
-			public const int carmake = 2130968624;
-			
 			// aapt resource value: 0x7f040032
-			public const int carmodel = 2130968626;
+			public const int carcolor = 2130968626;
 			
-			// aapt resource value: 0x7f040038
-			public const int comments = 2130968632;
+			// aapt resource value: 0x7f040031
+			public const int carmake = 2130968625;
 			
-			// aapt resource value: 0x7f04003c
-			public const int contact = 2130968636;
+			// aapt resource value: 0x7f040033
+			public const int carmodel = 2130968627;
 			
-			// aapt resource value: 0x7f040023
-			public const int credit = 2130968611;
+			// aapt resource value: 0x7f04003e
+			public const int cash = 2130968638;
+			
+			// aapt resource value: 0x7f040039
+			public const int comments = 2130968633;
+			
+			// aapt resource value: 0x7f04003d
+			public const int contact = 2130968637;
+			
+			// aapt resource value: 0x7f040024
+			public const int credit = 2130968612;
 			
 			// aapt resource value: 0x7f040008
 			public const int details = 2130968584;
@@ -372,89 +381,98 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f04000c
 			public const int done = 2130968588;
 			
-			// aapt resource value: 0x7f040010
-			public const int eightServices = 2130968592;
-			
-			// aapt resource value: 0x7f040028
-			public const int email = 2130968616;
-			
-			// aapt resource value: 0x7f040036
-			public const int endnotif = 2130968630;
-			
-			// aapt resource value: 0x7f040019
-			public const int finishTime = 2130968601;
-			
 			// aapt resource value: 0x7f04000e
-			public const int fourservices = 2130968590;
+			public const int edit = 2130968590;
 			
-			// aapt resource value: 0x7f04001e
-			public const int fri = 2130968606;
+			// aapt resource value: 0x7f040011
+			public const int eightServices = 2130968593;
+			
+			// aapt resource value: 0x7f040029
+			public const int email = 2130968617;
+			
+			// aapt resource value: 0x7f040037
+			public const int endnotif = 2130968631;
+			
+			// aapt resource value: 0x7f04001a
+			public const int finishTime = 2130968602;
+			
+			// aapt resource value: 0x7f04000f
+			public const int fourservices = 2130968591;
+			
+			// aapt resource value: 0x7f040040
+			public const int foursmallsingle = 2130968640;
+			
+			// aapt resource value: 0x7f04001f
+			public const int fri = 2130968607;
 			
 			// aapt resource value: 0x7f040001
 			public const int hello = 2130968577;
 			
-			// aapt resource value: 0x7f040011
-			public const int history = 2130968593;
+			// aapt resource value: 0x7f040012
+			public const int history = 2130968594;
 			
 			// aapt resource value: 0x7f040000
 			public const int library_name = 2130968576;
 			
-			// aapt resource value: 0x7f04002f
-			public const int licenseplate = 2130968623;
+			// aapt resource value: 0x7f040030
+			public const int licenseplate = 2130968624;
 			
-			// aapt resource value: 0x7f040015
-			public const int locations = 2130968597;
+			// aapt resource value: 0x7f040016
+			public const int locations = 2130968598;
 			
-			// aapt resource value: 0x7f04003b
-			public const int logout = 2130968635;
+			// aapt resource value: 0x7f04003c
+			public const int logout = 2130968636;
 			
-			// aapt resource value: 0x7f04001a
-			public const int mon = 2130968602;
+			// aapt resource value: 0x7f04003f
+			public const int mainmenu = 2130968639;
 			
-			// aapt resource value: 0x7f040027
-			public const int name = 2130968615;
+			// aapt resource value: 0x7f04001b
+			public const int mon = 2130968603;
+			
+			// aapt resource value: 0x7f040028
+			public const int name = 2130968616;
 			
 			// aapt resource value: 0x7f04000d
 			public const int next = 2130968589;
 			
-			// aapt resource value: 0x7f040039
-			public const int notavailable = 2130968633;
+			// aapt resource value: 0x7f04003a
+			public const int notavailable = 2130968634;
+			
+			// aapt resource value: 0x7f040035
+			public const int notifications = 2130968629;
+			
+			// aapt resource value: 0x7f04003b
+			public const int notyet = 2130968635;
 			
 			// aapt resource value: 0x7f040034
-			public const int notifications = 2130968628;
-			
-			// aapt resource value: 0x7f04003a
-			public const int notyet = 2130968634;
-			
-			// aapt resource value: 0x7f040033
-			public const int packageselect = 2130968627;
+			public const int packageselect = 2130968628;
 			
 			// aapt resource value: 0x7f040007
 			public const int packs = 2130968583;
 			
-			// aapt resource value: 0x7f040012
-			public const int packsamounts = 2130968594;
+			// aapt resource value: 0x7f040013
+			public const int packsamounts = 2130968595;
 			
 			// aapt resource value: 0x7f040006
 			public const int password = 2130968582;
 			
-			// aapt resource value: 0x7f040021
-			public const int paymentoptions = 2130968609;
+			// aapt resource value: 0x7f040022
+			public const int paymentoptions = 2130968610;
 			
-			// aapt resource value: 0x7f04002a
-			public const int phone = 2130968618;
+			// aapt resource value: 0x7f04002b
+			public const int phone = 2130968619;
 			
 			// aapt resource value: 0x7f040004
 			public const int register = 2130968580;
 			
-			// aapt resource value: 0x7f04001f
-			public const int sat = 2130968607;
+			// aapt resource value: 0x7f040020
+			public const int sat = 2130968608;
 			
 			// aapt resource value: 0x7f04000b
 			public const int save = 2130968587;
 			
-			// aapt resource value: 0x7f040016
-			public const int servicedays = 2130968598;
+			// aapt resource value: 0x7f040017
+			public const int servicedays = 2130968599;
 			
 			// aapt resource value: 0x7f04000a
 			public const int settings = 2130968586;
@@ -462,53 +480,62 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f040003
 			public const int signin = 2130968579;
 			
-			// aapt resource value: 0x7f04000f
-			public const int sixServices = 2130968591;
+			// aapt resource value: 0x7f040010
+			public const int sixServices = 2130968592;
 			
-			// aapt resource value: 0x7f040037
-			public const int specialsnotif = 2130968631;
+			// aapt resource value: 0x7f040041
+			public const int sixsmallsingle = 2130968641;
+			
+			// aapt resource value: 0x7f040038
+			public const int specialsnotif = 2130968632;
+			
+			// aapt resource value: 0x7f040019
+			public const int startTime = 2130968601;
+			
+			// aapt resource value: 0x7f040036
+			public const int startnotf = 2130968630;
+			
+			// aapt resource value: 0x7f040021
+			public const int sun = 2130968609;
+			
+			// aapt resource value: 0x7f040042
+			public const int tensmallsinge = 2130968642;
+			
+			// aapt resource value: 0x7f04001e
+			public const int thu = 2130968606;
 			
 			// aapt resource value: 0x7f040018
-			public const int startTime = 2130968600;
+			public const int timewindow = 2130968600;
 			
-			// aapt resource value: 0x7f040035
-			public const int startnotf = 2130968629;
+			// aapt resource value: 0x7f04001c
+			public const int tue = 2130968604;
 			
-			// aapt resource value: 0x7f040020
-			public const int sun = 2130968608;
+			// aapt resource value: 0x7f040014
+			public const int twelveServices = 2130968596;
 			
-			// aapt resource value: 0x7f04001d
-			public const int thu = 2130968605;
-			
-			// aapt resource value: 0x7f040017
-			public const int timewindow = 2130968599;
-			
-			// aapt resource value: 0x7f04001b
-			public const int tue = 2130968603;
-			
-			// aapt resource value: 0x7f040013
-			public const int twelveServices = 2130968595;
+			// aapt resource value: 0x7f040043
+			public const int twelvesmallsingle = 2130968643;
 			
 			// aapt resource value: 0x7f040005
 			public const int username = 2130968581;
 			
-			// aapt resource value: 0x7f040022
-			public const int wallet = 2130968610;
+			// aapt resource value: 0x7f040023
+			public const int wallet = 2130968611;
 			
-			// aapt resource value: 0x7f04001c
-			public const int wed = 2130968604;
-			
-			// aapt resource value: 0x7f04002c
-			public const int workAddress = 2130968620;
-			
-			// aapt resource value: 0x7f04002b
-			public const int workDetails = 2130968619;
+			// aapt resource value: 0x7f04001d
+			public const int wed = 2130968605;
 			
 			// aapt resource value: 0x7f04002d
-			public const int workEmail = 2130968621;
+			public const int workAddress = 2130968621;
+			
+			// aapt resource value: 0x7f04002c
+			public const int workDetails = 2130968620;
 			
 			// aapt resource value: 0x7f04002e
-			public const int workPhone = 2130968622;
+			public const int workEmail = 2130968622;
+			
+			// aapt resource value: 0x7f04002f
+			public const int workPhone = 2130968623;
 			
 			static String()
 			{

@@ -13,6 +13,7 @@
 	<string name="save">Save</string>
 	<string name="done">Done</string>
 	<string name="next">Next</string>
+	<string name="edit">Edit</string>
 	<string name="fourservices">Four Services</string>
 	<string name="sixServices">Six Services</string>
 	<string name="eightServices">EightServices</string>
@@ -60,4 +61,11 @@
    	<string name="notyet">Unavailable!</string>
    	<string name="logout">Log Out</string>
    	<string name="contact">Contact our Office</string>
+   	<string name="cash">Cash</string>
+   	<string name="mainmenu">Main Menu</string>
+   	<string name="foursmallsingle">$9.25</string>
+   	<string name="sixsmallsingle">$8.75</string>
+   	<string name="tensmallsinge">$8.25</string>
+   	<string name="twelvesmallsingle">$8.00</string>
+
 </resources>
