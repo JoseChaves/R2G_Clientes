@@ -22,28 +22,33 @@
             android:layout_height="wrap_content"
             android:id="@+id/googlePayment"
             android:layout_margin="8dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:selectAllOnFocus="false"
+            android:enabled="false" />
         <Button
             android:text="@string/credit"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:id="@+id/creditCard"
             android:layout_margin="8dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:enabled="false" />
         <Button
             android:text="@string/bankDep"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:id="@+id/bankDeposit"
             android:layout_margin="8dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:enabled="false" />
         <Button
             android:text="@string/bankACH"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:id="@+id/achdeposit"
             android:layout_margin="8dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:enabled="false" />
         <Button
             android:text="@string/cash"
             android:layout_width="180dp"

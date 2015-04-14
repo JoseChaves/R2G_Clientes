@@ -25,6 +25,7 @@ namespace R2G_Clientes
 			Button creditPaybutt = FindViewById<Button> (Resource.Id.creditCard);
 			Button bankdeps = FindViewById<Button> (Resource.Id.bankDeposit);
 			Button achbutt = FindViewById<Button> (Resource.Id.achdeposit);
+			Button cash = FindViewById<Button> (Resource.Id.cash);
 
 			//googleWbutt.click este lanza api.. Pendiente
 
@@ -42,15 +43,36 @@ namespace R2G_Clientes
 			};
 
 			bankdeps.Click += (sender, e) => {
-				var banktent = new Intent(this, typeof(BankPayment));
-				banktent.PutExtra("dep", 1);
-				StartActivity(banktent);
+				//var banktent = new Intent(this, typeof(BankPayment));
+				//banktent.PutExtra("dep", 1);
+				//StartActivity(banktent);
+				AlertDialog.Builder dialogo = new AlertDialog.Builder (this);
+				AlertDialog men = dialogo.Create();
+				men.SetTitle (Resource.String.notyet);
+				men.SetMessage ("Esta Funcion No está Disponible por el momento.");
+				men.SetButton ("Ok",delegate(object send, DialogClickEventArgs er) {
+					men.Dismiss();
+				});
+				men.Show ();
 			};
 
 			achbutt.Click += (sender, e) => {
-				var achtent=new Intent(this, typeof(BankPayment));
-				achtent.PutExtra("dep", 2);
-				StartActivity(achtent);
+				//var achtent=new Intent(this, typeof(BankPayment));
+				//achtent.PutExtra("dep", 2);
+				//StartActivity(achtent);
+				AlertDialog.Builder dialogo = new AlertDialog.Builder (this);
+				AlertDialog men = dialogo.Create();
+				men.SetTitle (Resource.String.notyet);
+				men.SetMessage ("Esta Funcion No está Disponible por el momento.");
+				men.SetButton ("Ok",delegate(object send, DialogClickEventArgs er) {
+					men.Dismiss();
+				});
+				men.Show ();
+			};
+
+			cash.Click += (sender, e) => {
+				var intent2 = new Intent(this, typeof(Cash));
+				StartActivity(intent2);
 			};
 
 			// Create your application here

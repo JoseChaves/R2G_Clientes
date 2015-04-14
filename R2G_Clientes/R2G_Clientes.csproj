@@ -63,6 +63,9 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Services" />
+    <Reference Include="SQLite">
+      <HintPath>..\Components\sqlite-net-1.0.8.3\lib\android\SQLite.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -83,6 +86,7 @@
     <Compile Include="CarChanged.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Splash.cs" />
+    <Compile Include="Cash.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -119,6 +123,7 @@
     <AndroidResource Include="Resources\layout\activity_packages.axml" />
     <AndroidResource Include="Resources\drawable-hdpi\Untitled.png" />
     <AndroidResource Include="Resources\drawable-hdpi\rapilogo.png" />
+    <AndroidResource Include="Resources\layout\activity_cash.axml" />
   </ItemGroup>
   <Import Project="..\R2G_Clientes.Shared\R2G_Clientes.Shared.projitems" Label="Shared" Condition="Exists('..\R2G_Clientes.Shared\R2G_Clientes.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
@@ -137,6 +142,10 @@
     </XamarinComponentReference>
     <XamarinComponentReference Include="json.net">
       <Version>6.0.8.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="sqlite-net">
+      <Version>1.0.8.3</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>

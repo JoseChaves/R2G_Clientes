@@ -17,14 +17,20 @@ using Xamarin.Auth;
 using Newtonsoft.Json;
 using Android.Accounts;
 //using System.Data.Common;
+using System.Net;
+using System.Json;
+using System.IO;
 
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "Rapid2Go",  Icon = "@drawable/rapilogo", Theme="@android:style/Theme.DeviceDefault.Light.NoActionBar")]
+	[Activity (Label = "Rapid2Go",  Icon = "@drawable/rapilogo", Theme="@android:style/Theme.DeviceDefault.Light")]
 	public class MainActivity : Activity
 	{
-		int count = 1;
+		HttpWebRequest wreq;
+		HttpWebResponse wresp;
+		EditText user;
+		EditText pwd;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -37,7 +43,9 @@ namespace R2G_Clientes
 			Button registerButt = FindViewById<Button> (Resource.Id.register);
 
 
-			signInbutt.Click += (sender, e) => {
+			signInbutt.Click += async (sender, e) => {
+				string uray= requestValid();
+				JsonValue jval = await requester(uray);
 				var intent1=new Intent(this, typeof(MainMenu));
 				StartActivity(intent1);
 			};
@@ -50,6 +58,31 @@ namespace R2G_Clientes
 
 		}
 
+		private async Task<JsonValue> requester(string url2){
+			wreq = (HttpWebRequest)HttpWebRequest.Create (new Uri (url2));
+			wreq.ContentType = "application/json";
+			wreq.Method = "GET";
+
+			using (WebResponse response = await wreq.GetResponseAsync ()) {
+				using (Stream stream = response.GetResponseStream ()) {
+					JsonValue jsondoc = await Task.Run (() => System.Json.JsonObject.Load (stream));
+					Console.Out.Write ("Response, {0} ", jsondoc.ToString ());
+					Toast.MakeText (this, "Bienvenido", ToastLength.Long).Show ();
+					return jsondoc;
+				}
+			}
+		}
+
+		public string requestValid(){
+			string baseurl = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/user/login";
+
+			user = FindViewById<EditText> (Resource.Id.editText1);
+			pwd = FindViewById<EditText> (Resource.Id.editText2);
+
+			string url = baseurl + "?usern=" + WebUtility.UrlEncode (user.Text) + "&pwd=" + WebUtility.UrlEncode (pwd.Text);
+
+			return url;
+		}
 
 }
 }

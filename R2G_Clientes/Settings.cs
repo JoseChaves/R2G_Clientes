@@ -23,11 +23,19 @@ namespace R2G_Clientes
 
 			Button signout = FindViewById<Button> (Resource.Id.signout);
 			Button signin  = FindViewById<Button> (Resource.Id.signin);
+			Button callOffice = FindViewById<Button> (Resource.Id.callOfficeforChanges);
 			// Create your application here
 
 			signin.Click += (sender, e) => {
 				var inte=new Intent(this, typeof(MainActivity));
 				StartActivity(inte);
+			};
+
+			callOffice.Click += (sender, e) => {
+				var uri = Android.Net.Uri.Parse ("tel:+5072039278");
+				var inten=new Intent(Intent.ActionCall);
+				inten.SetData(uri);
+				StartActivity(inten);
 			};
 		}
 	}
