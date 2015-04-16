@@ -68,5 +68,6 @@
    	<string name="tensmallsinge">$8.25</string>
    	<string name="twelvesmallsingle">$8.00</string>
    	<string name="showme">Mostrar la Dirección</string>
+   	<string name="loginSuccess">Bienvenido</string>
 
 </resources>

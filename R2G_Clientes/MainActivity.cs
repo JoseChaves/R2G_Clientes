@@ -24,13 +24,15 @@ using System.IO;
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "Rapid2Go",  Icon = "@drawable/rapilogo", Theme="@android:style/Theme.DeviceDefault.Light")]
+	[Activity (Label = "Rapid2Go",  Icon = "@drawable/rapilogo", ParentActivity =typeof(Settings), NoHistory=true )]
 	public class MainActivity : Activity
 	{
 		HttpWebRequest wreq;
 		HttpWebResponse wresp;
 		EditText user;
 		EditText pwd;
+		LoginData lg;
+		R2G_Clientes.Shared.DataConnect dc;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -41,13 +43,23 @@ namespace R2G_Clientes
 
 			Button signInbutt = FindViewById<Button> (Resource.Id.signIn);
 			Button registerButt = FindViewById<Button> (Resource.Id.register);
-
+			lg  = new LoginData ();
+			string verif = "true";
 
 			signInbutt.Click += async (sender, e) => {
 				string uray= requestValid();
 				JsonValue jval = await requester(uray);
-				var intent1=new Intent(this, typeof(MainMenu));
-				StartActivity(intent1);
+				string parser = parse(jval);
+				if ( verif.Equals(parser)){
+					Toast.MakeText(this, Resource.String.loginSuccess, ToastLength.Short).Show();
+					DataConnect.dataAccess(lg.userID);
+					string printer= string.Format("{0}", DataConnect.getUserID());
+					Toast.MakeText(this, printer, ToastLength.Long).Show();
+					var intent1=new Intent(this, typeof(MainMenu));
+					StartActivity(intent1);}
+				else {
+					Toast.MakeText(this, "Informacion erronea", ToastLength.Short).Show();
+				}
 			};
 
 			registerButt.Click += (sender, e) => {
@@ -67,14 +79,14 @@ namespace R2G_Clientes
 				using (Stream stream = response.GetResponseStream ()) {
 					JsonValue jsondoc = await Task.Run (() => System.Json.JsonObject.Load (stream));
 					Console.Out.Write ("Response, {0} ", jsondoc.ToString ());
-					Toast.MakeText (this, "Bienvenido", ToastLength.Long).Show ();
+					//Toast.MakeText (this, "Bienvenido", ToastLength.Long).Show ();
 					return jsondoc;
 				}
 			}
 		}
 
 		public string requestValid(){
-			string baseurl = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/user/login";
+			string baseurl = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/users/login";
 
 			user = FindViewById<EditText> (Resource.Id.editText1);
 			pwd = FindViewById<EditText> (Resource.Id.editText2);
@@ -84,6 +96,20 @@ namespace R2G_Clientes
 			return url;
 		}
 
+		private string parse(JsonValue json){
+			lg = JsonConvert.DeserializeObject<LoginData> (json.ToString ());
+		//	Toast.MakeText (this, "Bienvenido", ToastLength.Long).Show ();
+			return lg.login;
+		}
+
 }
+
+	public class LoginData{
+
+		public int userID { get; set; }
+		public string login { get; set; }
+
+	}
+
 }
 

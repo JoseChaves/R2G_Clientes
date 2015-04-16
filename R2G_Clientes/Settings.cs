@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using R2G_Clientes.Shared;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -13,7 +14,7 @@ using Android.Widget;
 
 namespace R2G_Clientes
 {
-	[Activity (Label = "Settings", ParentActivity=typeof(MainMenu))]			
+	[Activity (Label = "Settings" , ParentActivity=typeof(MainMenu))]			
 	public class Settings : Activity
 	{
 		protected override void OnCreate (Bundle bundle)
@@ -36,6 +37,11 @@ namespace R2G_Clientes
 				var inten=new Intent(Intent.ActionCall);
 				inten.SetData(uri);
 				StartActivity(inten);
+			};
+
+			signout.Click += (sender, e) => {
+				string resp=DataConnect.deleteUser();
+				Toast.MakeText(this, resp,ToastLength.Short).Show();
 			};
 		}
 	}

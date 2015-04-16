@@ -15,7 +15,7 @@ namespace R2G_Clientes.Shared
 		}
 
 
-		public static void DoSomeDataAccess (int iD) {
+		public static void dataAccess (int iD) {
 			Console.WriteLine ("Creating database, if it doesn't already exist");
 			string dbPath = Path.Combine (
 				Environment.GetFolderPath (Environment.SpecialFolder.Personal),
@@ -35,7 +35,40 @@ namespace R2G_Clientes.Shared
 			}
 		}
 
+		public static int getUserID(){
+			int userid;
+			string dbPath = Path.Combine (
+				Environment.GetFolderPath (Environment.SpecialFolder.Personal),
+				"userdata.db3");
+			var db = new SQLiteConnection (dbPath);
+			var userid2 = db.Get<Stock> (1);
+			//userid = userid2.userID.ToString ();	
+			return userid2.userID;
+		}
 
+		public static string deleteUser(){
+			string dbPath = Path.Combine (
+				Environment.GetFolderPath (Environment.SpecialFolder.Personal),
+				"userdata.db3");
+			var db = new SQLiteConnection (dbPath);
+			db.DeleteAll<Stock>();
+			if (db.Table<Stock>().Count () == 0) {
+				return "Logout Exitoso";
+				Console.WriteLine("Reading data");
+				var table = db.Table<Stock> ();
+				foreach (var s in table) {
+					Console.WriteLine (s.Id + " " + s.userID);
+				}
+			} else {
+				return null;
+				Console.WriteLine("Reading data");
+				var table = db.Table<Stock> ();
+				foreach (var s in table) {
+					Console.WriteLine (s.Id + " " + s.userID);
+				}
+			}
+		}
+			
 
 	}
 }
