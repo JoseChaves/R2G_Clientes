@@ -113,13 +113,13 @@ namespace R2G_Clientes
 		{
 			OrderData order = JsonConvert.DeserializeObject<OrderData> (json.ToString ());
 
-			tv2.Text = ("ID De la Orden: " + order.orderID);
-			tv3.Text = ("Dirección de la órden: " + order.addrs);
-			tv4.Text = ("Ventana de Tiempo: de " + order.starth + " a " + order.endh );
-			tv5.Text = ("Automóvil: " + order.carModel + " " + order.color + " Placa: " + order.licenseplate);
-			tv6.Text = ("Comentarios de la órden: " + order.CarComments);
-			tv7.Text = ("Dias para el Servicio: " + order.orderDays);
-			tv8.Text = ("Paquete Contratado: " + order.pack);
+			tv2.Text = (GetString(Resource.String.ordrID) + " " + order.orderID);
+			tv3.Text = (tv3.Text + order.addrs);
+			tv4.Text = (tv4.Text + order.starth + " - " + order.endh );
+			tv5.Text = (GetString(Resource.String.car) + order.carModel + " " + order.color + GetString(Resource.String.licenseplate) + order.licenseplate);
+			tv6.Text = (GetString(Resource.String.orderComms) + order.CarComments);
+			tv7.Text = (GetString(Resource.String.orderdays) + order.orderDays);
+			tv8.Text = (GetString(Resource.String.orderPack) + order.pack);
 
 		} }
 	

@@ -8,6 +8,8 @@ using System.Json;
 using System.IO;
 using System.Web;
 
+using Newtonsoft.Json;
+
 using Android.App;
 
 using Android.Content;
@@ -16,7 +18,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using RestSharp;
-//using R2G_Clientes.Shared.DBConnection;
+using R2G_Clientes.Shared;
 using System.Threading.Tasks;
 
 namespace R2G_Clientes
@@ -26,6 +28,7 @@ namespace R2G_Clientes
 	{
 		HttpWebRequest wreq;
 		HttpWebResponse wresp;
+		UserLogin ul;
 
 		public RestClient cliente;
 		protected override void OnCreate (Bundle bundle)
@@ -37,11 +40,19 @@ namespace R2G_Clientes
 
  			// Create your application here
 			regButt.Click += async (sender, e) => {
-				string uray= registerUser();
-				JsonValue jval= await requester (uray);
-				//string jval2=JsonValue.Parse(jval);
-				var intent = new Intent(this, typeof(MainMenu));
-				StartActivity(intent);
+				string uray = registerUser ();
+				try{
+				JsonValue jval = await requester (uray);
+				parser (jval);
+				if (ul.success.Equals ("true")) {
+					//string jval2=JsonValue.Parse(jval);
+					DataConnect.dataAccess (ul.userID);
+					var intent = new Intent (this, typeof(MainMenu));
+					StartActivity (intent);
+				} else {
+					Toast.MakeText (this, GetString (Resource.String.fail), ToastLength.Long).Show ();
+					}}catch{}
+				
 			};
 		}
 	
@@ -56,8 +67,8 @@ namespace R2G_Clientes
 			EditText email = FindViewById<EditText> (Resource.Id.editText2);
 			EditText password = FindViewById<EditText> (Resource.Id.editText3);
 			EditText phone = FindViewById<EditText> (Resource.Id.editText4);
-			EditText addr = FindViewById<EditText> (Resource.Id.editText5);
-			EditText waddr = FindViewById<EditText> (Resource.Id.editText6);
+			EditText addr = FindViewById<EditText> (Resource.Id.editText6);
+			EditText waddr = FindViewById<EditText> (Resource.Id.editText5);
 			EditText wemail = FindViewById<EditText> (Resource.Id.editText7);
 			EditText wphone = FindViewById<EditText> (Resource.Id.editText8);
 			int iphone = Convert.ToInt32 (phone.Text.ToString ());
@@ -78,7 +89,8 @@ namespace R2G_Clientes
 
 
 			string url2 = url + "?usern=" + WebUtility.UrlEncode (name.Text) + "&email=" + WebUtility.UrlEncode (email.Text) + "&password=" +
-			              WebUtility.UrlEncode (password.Text) + "&uaddr=" + WebUtility.UrlEncode (addr.Text) + "&wphone=" + iwphone + "&phone=" + iphone + "&waddr=" + WebUtility.UrlEncode (waddr.Text) + "&wemail=" + WebUtility.UrlEncode (wemail.Text);
+			              WebUtility.UrlEncode (password.Text) + "&uaddr=" + WebUtility.UrlEncode (addr.Text) + "&wphone=" + iwphone + "&phone=" + 
+				iphone + "&waddr=" + WebUtility.UrlEncode (waddr.Text) + "&wemail=" + WebUtility.UrlEncode (wemail.Text);
 	
 		//	Toast.MakeText (this, url2, ToastLength.Long).Show ();
 			return url2;
@@ -97,6 +109,7 @@ namespace R2G_Clientes
 				//Toast.MakeText (this, "Conexion Establecida" + jsondoc.ToString(), ToastLength.Long).Show ();
 					return jsondoc;}
 			}
+
 
 
 			/*using (var streamWriter = new StreamWriter(wreq.GetRequestStream()))
@@ -122,6 +135,12 @@ namespace R2G_Clientes
 
 
 		} 
+
+		public void parser(JsonValue json){
+			ul = JsonConvert.DeserializeObject<UserLogin> (json.ToString ());
+
+		}
+
 		}
 			
 		
@@ -136,5 +155,11 @@ namespace R2G_Clientes
 		public string wemail { get; set; }
 		public int wphone{ get; set; }
 	}
+
+	public class UserLogin{
+		public string success { get; set; }
+		public int userID { get; set; }
+	}
+
 	}
 

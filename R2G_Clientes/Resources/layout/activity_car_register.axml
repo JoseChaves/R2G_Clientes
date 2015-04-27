@@ -11,16 +11,11 @@
         p1:layout_height="match_parent"
         p1:id="@+id/linearLayout1">
         <TextView
-            p1:text="Large Text"
+            p1:text="@string/carRegister"
             p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/textView1"
-            p1:layout_margin="8dp" />
-        <Spinner
-            p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/spinner1"
             p1:layout_margin="8dp" />
         <TextView
             p1:text="@string/licenseplate"
@@ -74,6 +69,18 @@
             p1:id="@+id/editText4"
             p1:layout_margin="8dp"
             p1:inputType="textCapWords" />
+        <TextView
+            p1:text="@string/cartype"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView8"
+            p1:layout_margin="8dp" />
+        <Spinner
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/spinner1"
+            p1:layout_margin="8dp" />
         <TextView
             p1:text="@string/notifications"
             p1:textAppearance="?android:attr/textAppearanceLarge"

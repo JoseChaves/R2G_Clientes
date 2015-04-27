@@ -22,7 +22,7 @@ namespace R2G_Clientes
 			base.OnCreate (bundle);
 			SetContentView (Resource.Layout.activity_settings);
 
-			Button signout = FindViewById<Button> (Resource.Id.signout);
+			Button signout = FindViewById<Button> (Resource.Id.save);
 			Button signin  = FindViewById<Button> (Resource.Id.signin);
 			Button callOffice = FindViewById<Button> (Resource.Id.callOfficeforChanges);
 			// Create your application here
@@ -41,6 +41,7 @@ namespace R2G_Clientes
 
 			signout.Click += (sender, e) => {
 				string resp=DataConnect.deleteUser();
+				string resp2= CarConnect.deleteCar();
 				Toast.MakeText(this, resp,ToastLength.Short).Show();
 			};
 		}

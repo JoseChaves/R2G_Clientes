@@ -53,8 +53,6 @@ namespace R2G_Clientes
 				if ( verif.Equals(parser)){
 					Toast.MakeText(this, Resource.String.loginSuccess, ToastLength.Short).Show();
 					DataConnect.dataAccess(lg.userID);
-					string printer= string.Format("{0}", DataConnect.getUserID());
-					Toast.MakeText(this, printer, ToastLength.Long).Show();
 					var intent1=new Intent(this, typeof(MainMenu));
 					StartActivity(intent1);}
 				else {

@@ -16,7 +16,7 @@
 	<string name="edit">Editar</string>
 	<string name="fourservices">Cuatro Servicio</string>
 	<string name="sixServices">Seis Servicios</string>
-	<string name="eightServices">Ocho Servicios</string>
+	<string name="tenServices">Diez Servicios</string>
 	<string name="history">Historial de Servicios</string>
 	<string name="packsamounts">Cantidad de Servicios</string>
 	<string name="twelveServices">Doce Servicios</string>
@@ -63,11 +63,66 @@
    	<string name="contact">Contacta nuestras Oficinas</string>
    	<string name="mainmenu">Menu Principal</string>
    	<string name="cash">Efectivo</string>
+   	<string name="showme">Mostrar la Dirección</string>
+   	<string name="loginSuccess">Bienvenido</string>
+   	<string name="ordrID">ID de la Orden</string>
+   	<string name="ordraddrs">Direccion para la Órden</string>
+   	<string name="tmewndow">Ventana de Tiempo: </string>
+   	<string name="car">Automóvil: </string>
+   	<string name="orderComms">Comentarios de la Órden: </string>
+   	<string name="orderdays">Dias para Servicio: </string>
+   	<string name="orderTotal">Total de la órden</string>
+   	<string name="ordersummary">Resumen de la orden</string>
+   	<string name="officeaddress">Edificio 10200 de Via España con Calle 43, Bella Vista, Panamá, Panamá</string>
+   	<string name="takeme">Llevame!</string>
+   	<string name="orderPack">Paquete Contratado: </string>
+
    	<string name="foursmallsingle">$9.25</string>
    	<string name="sixsmallsingle">$8.75</string>
    	<string name="tensmallsinge">$8.25</string>
    	<string name="twelvesmallsingle">$8.00</string>
-   	<string name="showme">Mostrar la Dirección</string>
-   	<string name="loginSuccess">Bienvenido</string>
 
+   	<string name="fourmedsingle">$9.75</string>
+   	<string name="sixmedsingle">$9.25</string>
+   	<string name="tenmedsinge">$8.75</string>
+   	<string name="twelvemedsingle">$8.50</string>
+
+   	<string name="fourlargesingle">$10.75</string>
+   	<string name="sixlargesingle">$10.25</string>
+   	<string name="tenlargesinge">$9.75</string>
+   	<string name="twelvelargesingle">$9.50</string>
+
+   	<string name="fourxtralargesingle">$11.25</string>
+   	<string name="sixxtralargsingle">$10.75</string>
+   	<string name="tenxtralargsinge">$10.25</string>
+   	<string name="twelvextralargsingle">$10.00</string>
+
+   	<string name="foursmallpack">$37.00</string>
+   	<string name="sixsmallpack">$52.50</string>
+   	<string name="tensmallpack">$82.50</string>
+   	<string name="twelvesmallpack">$96.00</string>
+
+   	<string name="fourmedpack">$39.00</string>
+   	<string name="sixmedpack">$55.50</string>
+   	<string name="tenmedpack">$87.50</string>
+   	<string name="twelvemedpack">$102.00</string>
+
+   	<string name="fourslargepack">$43.00</string>
+   	<string name="sixlargepack">$61.50</string>
+   	<string name="tenlargepack">$97.50</string>
+   	<string name="twelvelargepack">$114.00</string>
+
+   	<string name="fourxtralaregpack">$45.00</string>
+   	<string name="sixxtralargepack">$64.50</string>
+   	<string name="tenxtralargepack">$102.50</string>
+   	<string name="twelvextralargepack">$120.00</string>
+
+   	<string name="fail">Ha habido un error. Revisa tus Datos e Intenta de Nuevo</string>
+   	<string name="cartype">Tamaño del Carro</string>
+   	<string-array name="cartypes">
+   		<item>Carro Pequeño</item>
+   		<item>Carro Mediano</item>
+   		<item>Carro Grande</item>
+   		<item>Carro Extra Grande</item>
+   	</string-array>
 </resources>

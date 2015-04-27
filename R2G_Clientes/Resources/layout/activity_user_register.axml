@@ -32,7 +32,7 @@
             p1:layout_margin="8dp"
             p1:hint="@string/name" />
         <TextView
-            p1:text="@string/address"
+            p1:text="@string/email"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
@@ -44,7 +44,8 @@
             p1:layout_height="wrap_content"
             p1:id="@+id/editText2"
             p1:layout_margin="8dp"
-            p1:hint="@string/address" />
+            p1:hint="@string/email"
+            p1:textAllCaps="false" />
         <TextView
             p1:text="@string/password"
             p1:textAppearance="?android:attr/textAppearanceMedium"
@@ -74,7 +75,7 @@
             p1:layout_margin="8dp"
             p1:hint="@string/phone" />
         <TextView
-            p1:text="@string/email"
+            p1:text="@string/address"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
@@ -86,7 +87,7 @@
             p1:layout_height="wrap_content"
             p1:id="@+id/editText6"
             p1:layout_margin="8dp"
-            p1:hint="@string/email" />
+            p1:hint="@string/address" />
         <TextView
             p1:text="@string/workDetails"
             p1:textAppearance="?android:attr/textAppearanceLarge"

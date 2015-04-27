@@ -42,7 +42,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/eightServices"
+                android:text="@string/tenServices"
                 android:id="@+id/radioButton3"
                 android:layout_margin="8dp" />
             <RadioButton

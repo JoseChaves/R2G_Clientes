@@ -122,8 +122,8 @@
     <AndroidResource Include="Resources\values-es\Strings.xml" />
     <AndroidResource Include="Resources\layout\activity_packages.axml" />
     <AndroidResource Include="Resources\drawable-hdpi\Untitled.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\rapilogo.png" />
     <AndroidResource Include="Resources\layout\activity_cash.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\rapilogo.png" />
   </ItemGroup>
   <Import Project="..\R2G_Clientes.Shared\R2G_Clientes.Shared.projitems" Label="Shared" Condition="Exists('..\R2G_Clientes.Shared\R2G_Clientes.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />

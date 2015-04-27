@@ -49,7 +49,7 @@ namespace R2G_Clientes
 				AlertDialog.Builder dialogo = new AlertDialog.Builder (this);
 				AlertDialog men = dialogo.Create();
 				men.SetTitle (Resource.String.notyet);
-				men.SetMessage ("Esta Funcion No está Disponible por el momento.");
+				men.SetMessage (GetString(Resource.String.notavailable));
 				men.SetButton ("Ok",delegate(object send, DialogClickEventArgs er) {
 					men.Dismiss();
 				});

@@ -16,7 +16,7 @@
 	<string name="edit">Edit</string>
 	<string name="fourservices">Four Services</string>
 	<string name="sixServices">Six Services</string>
-	<string name="eightServices">EightServices</string>
+	<string name="tenServices">Ten Services</string>
 	<string name="history">Service History</string>
 	<string name="packsamounts">Amount of Services</string>
 	<string name="twelveServices">Twelve Services</string>
@@ -69,4 +69,60 @@
    	<string name="twelvesmallsingle">$8.00</string>
    	<string name="showme">Show me the Address</string>
    	<string name="loginSuccess">Welcome</string>
+   	<string name="ordrID">Order ID: </string>
+   	<string name="ordraddrs">Order Address</string>
+   	<string name="tmewndow">Time Window: </string>
+   	<string name="car">Car: </string>
+   	<string name="orderComms">Order Comments: </string>
+   	<string name="orderdays">Service Days: </string>
+   	<string name="orderPack">Ordered Package: </string>
+
+   	<string name="foursmallsingle">$9.25</string>
+   	<string name="sixsmallsingle">$8.75</string>
+   	<string name="tensmallsinge">$8.25</string>
+   	<string name="twelvesmallsingle">$8.00</string>
+
+   	<string name="fourmedsingle">$9.75</string>
+   	<string name="sixmedsingle">$9.25</string>
+   	<string name="tenmedsinge">$8.75</string>
+   	<string name="twelvemedsingle">$8.50</string>
+
+   	<string name="fourlargesingle">$10.75</string>
+   	<string name="sixlargesingle">$10.25</string>
+   	<string name="tenlargesinge">$9.75</string>
+   	<string name="twelvelargesingle">$9.50</string>
+
+   	<string name="fourxtralargesingle">$11.25</string>
+   	<string name="sixxtralargsingle">$10.75</string>
+   	<string name="tenxtralargsinge">$10.25</string>
+   	<string name="twelvextralargsingle">$10.00</string>
+
+   	<string name="foursmallpack">$37.00</string>
+   	<string name="sixsmallpack">$52.50</string>
+   	<string name="tensmallpack">$82.50</string>
+   	<string name="twelvesmallpack">$96.00</string>
+
+   	<string name="fourmedpack">$39.00</string>
+   	<string name="sixmedpack">$55.50</string>
+   	<string name="tenmedpack">$87.50</string>
+   	<string name="twelvemedpack">$102.00</string>
+
+   	<string name="fourslargepack">$43.00</string>
+   	<string name="sixlargepack">$61.50</string>
+   	<string name="tenlargepack">$97.50</string>
+   	<string name="twelvelargepack">$114.00</string>
+
+   	<string name="fourxtralaregpack">$45.00</string>
+   	<string name="sixxtralargepack">$64.50</string>
+   	<string name="tenxtralargepack">$102.50</string>
+   	<string name="twelvextralargepack">$120.00</string>
+
+   	<string name="fail">There has been an error. Check your details and try Again.</string>
+   	<string name="cartype">Car Type</string>
+   	<string-array name="cartypes">
+   		<item>Small Car</item>
+   		<item>Medium Car</item>
+   		<item>Large Car</item>
+   		<item>Extra Large Car</item>
+   	</string-array>
 </resources>
