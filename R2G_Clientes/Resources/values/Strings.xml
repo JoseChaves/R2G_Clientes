@@ -78,6 +78,8 @@
    	<string name="allDone">All Done</string>
    	<string name="confirmation">Confirmation</string>
    	<string name="payplz">Thanks for your Order. You have two work days to pay for your Order.</string>
+   	<string name="takeme">Take me!</string>
+   	<string name="takemepolite">Office Directions</string>
 
    	<string name="foursmallsingle">$9.25</string>
    	<string name="sixsmallsingle">$8.75</string>

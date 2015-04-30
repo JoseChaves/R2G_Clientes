@@ -79,6 +79,7 @@
    	<string name="allDone">Listo</string>
    	<string name="confirmation">Confirmación</string>
    	<string name="payplz">Gracias por contratar nuestro servicio. Tienes dos días hábiles para cancelar tu órden.</string>
+   	<string name="takemepolite">Direccion de la Oficina.</string>
 
    	<string name="foursmallsingle">$9.25</string>
    	<string name="sixsmallsingle">$8.75</string>

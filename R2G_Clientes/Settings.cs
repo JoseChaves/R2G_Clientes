@@ -25,7 +25,15 @@ namespace R2G_Clientes
 			Button signout = FindViewById<Button> (Resource.Id.save);
 			Button signin  = FindViewById<Button> (Resource.Id.signin);
 			Button callOffice = FindViewById<Button> (Resource.Id.callOfficeforChanges);
+			Button officeaddrs = FindViewById<Button> (Resource.Id.signout);
 			// Create your application here
+
+			officeaddrs.Click += (sender, e) => {
+
+				var geoUri=Android.Net.Uri.Parse("geo:8.975606,-79.534192?q=8.975606,-79.534192(Rapid2Go)");
+				var intent2=new Intent(Intent.ActionView, geoUri);
+				StartActivity(intent2);
+			};
 
 			signin.Click += (sender, e) => {
 				var inte=new Intent(this, typeof(MainActivity));

@@ -100,8 +100,8 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f07002d
 			public const int button1 = 2131165229;
 			
-			// aapt resource value: 0x7f07003a
-			public const int callOfficeforChanges = 2131165242;
+			// aapt resource value: 0x7f070037
+			public const int callOfficeforChanges = 2131165239;
 			
 			// aapt resource value: 0x7f070023
 			public const int cars = 2131165219;
@@ -160,14 +160,14 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f070014
 			public const int editText5 = 2131165204;
 			
+			// aapt resource value: 0x7f070038
+			public const int editText6 = 2131165240;
+			
+			// aapt resource value: 0x7f070039
+			public const int editText7 = 2131165241;
+			
 			// aapt resource value: 0x7f07003b
-			public const int editText6 = 2131165243;
-			
-			// aapt resource value: 0x7f07003c
-			public const int editText7 = 2131165244;
-			
-			// aapt resource value: 0x7f07003e
-			public const int editText8 = 2131165246;
+			public const int editText8 = 2131165243;
 			
 			// aapt resource value: 0x7f070018
 			public const int getmehome = 2131165208;
@@ -205,8 +205,8 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f070027
 			public const int radioGroup1 = 2131165223;
 			
-			// aapt resource value: 0x7f070040
-			public const int register = 2131165248;
+			// aapt resource value: 0x7f07003d
+			public const int register = 2131165245;
 			
 			// aapt resource value: 0x7f070005
 			public const int save = 2131165189;
@@ -220,17 +220,17 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f070017
 			public const int showme = 2131165207;
 			
-			// aapt resource value: 0x7f07003f
-			public const int signIn = 2131165247;
+			// aapt resource value: 0x7f07003c
+			public const int signIn = 2131165244;
 			
-			// aapt resource value: 0x7f070039
-			public const int signin = 2131165241;
+			// aapt resource value: 0x7f070036
+			public const int signin = 2131165238;
 			
-			// aapt resource value: 0x7f070038
-			public const int signout = 2131165240;
+			// aapt resource value: 0x7f070035
+			public const int signout = 2131165237;
 			
-			// aapt resource value: 0x7f070037
-			public const int space1 = 2131165239;
+			// aapt resource value: 0x7f070034
+			public const int space1 = 2131165236;
 			
 			// aapt resource value: 0x7f070026
 			public const int space2 = 2131165222;
@@ -244,20 +244,11 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f07002c
 			public const int submitbutt = 2131165228;
 			
-			// aapt resource value: 0x7f070034
-			public const int switch1 = 2131165236;
-			
-			// aapt resource value: 0x7f070035
-			public const int switch3 = 2131165237;
-			
-			// aapt resource value: 0x7f070036
-			public const int switch4 = 2131165238;
-			
 			// aapt resource value: 0x7f070000
 			public const int textView1 = 2131165184;
 			
-			// aapt resource value: 0x7f07003d
-			public const int textView10 = 2131165245;
+			// aapt resource value: 0x7f07003a
+			public const int textView10 = 2131165242;
 			
 			// aapt resource value: 0x7f070001
 			public const int textView2 = 2131165185;
@@ -360,11 +351,11 @@ namespace R2G_Clientes
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040072
-			public const int ApplicationName = 2130968690;
+			// aapt resource value: 0x7f040073
+			public const int ApplicationName = 2130968691;
 			
-			// aapt resource value: 0x7f040071
-			public const int Hello = 2130968689;
+			// aapt resource value: 0x7f040072
+			public const int Hello = 2130968690;
 			
 			// aapt resource value: 0x7f040029
 			public const int address = 2130968617;
@@ -402,8 +393,8 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f040032
 			public const int carmodel = 2130968626;
 			
-			// aapt resource value: 0x7f04006f
-			public const int cartype = 2130968687;
+			// aapt resource value: 0x7f040071
+			public const int cartype = 2130968689;
 			
 			// aapt resource value: 0x7f04003d
 			public const int cash = 2130968637;
@@ -435,38 +426,38 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f040036
 			public const int endnotif = 2130968630;
 			
-			// aapt resource value: 0x7f04006e
-			public const int fail = 2130968686;
+			// aapt resource value: 0x7f040070
+			public const int fail = 2130968688;
 			
 			// aapt resource value: 0x7f040019
 			public const int finishTime = 2130968601;
 			
-			// aapt resource value: 0x7f040056
-			public const int fourlargesingle = 2130968662;
+			// aapt resource value: 0x7f040058
+			public const int fourlargesingle = 2130968664;
 			
-			// aapt resource value: 0x7f040062
-			public const int fourmedpack = 2130968674;
+			// aapt resource value: 0x7f040064
+			public const int fourmedpack = 2130968676;
 			
-			// aapt resource value: 0x7f040052
-			public const int fourmedsingle = 2130968658;
+			// aapt resource value: 0x7f040054
+			public const int fourmedsingle = 2130968660;
 			
 			// aapt resource value: 0x7f04000e
 			public const int fourservices = 2130968590;
 			
-			// aapt resource value: 0x7f040066
-			public const int fourslargepack = 2130968678;
+			// aapt resource value: 0x7f040068
+			public const int fourslargepack = 2130968680;
 			
-			// aapt resource value: 0x7f04005e
-			public const int foursmallpack = 2130968670;
+			// aapt resource value: 0x7f040060
+			public const int foursmallpack = 2130968672;
 			
-			// aapt resource value: 0x7f04004e
-			public const int foursmallsingle = 2130968654;
+			// aapt resource value: 0x7f040050
+			public const int foursmallsingle = 2130968656;
 			
-			// aapt resource value: 0x7f04006a
-			public const int fourxtralaregpack = 2130968682;
+			// aapt resource value: 0x7f04006c
+			public const int fourxtralaregpack = 2130968684;
 			
-			// aapt resource value: 0x7f04005a
-			public const int fourxtralargesingle = 2130968666;
+			// aapt resource value: 0x7f04005c
+			public const int fourxtralargesingle = 2130968668;
 			
 			// aapt resource value: 0x7f04001e
 			public const int fri = 2130968606;
@@ -477,8 +468,8 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f040012
 			public const int history = 2130968594;
 			
-			// aapt resource value: 0x7f040073
-			public const int library_name = 2130968691;
+			// aapt resource value: 0x7f040074
+			public const int library_name = 2130968692;
 			
 			// aapt resource value: 0x7f04002f
 			public const int licenseplate = 2130968623;
@@ -582,29 +573,29 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f04000f
 			public const int sixServices = 2130968591;
 			
-			// aapt resource value: 0x7f040067
-			public const int sixlargepack = 2130968679;
+			// aapt resource value: 0x7f040069
+			public const int sixlargepack = 2130968681;
 			
-			// aapt resource value: 0x7f040057
-			public const int sixlargesingle = 2130968663;
+			// aapt resource value: 0x7f040059
+			public const int sixlargesingle = 2130968665;
 			
-			// aapt resource value: 0x7f040063
-			public const int sixmedpack = 2130968675;
+			// aapt resource value: 0x7f040065
+			public const int sixmedpack = 2130968677;
 			
-			// aapt resource value: 0x7f040053
-			public const int sixmedsingle = 2130968659;
+			// aapt resource value: 0x7f040055
+			public const int sixmedsingle = 2130968661;
 			
-			// aapt resource value: 0x7f04005f
-			public const int sixsmallpack = 2130968671;
+			// aapt resource value: 0x7f040061
+			public const int sixsmallpack = 2130968673;
 			
-			// aapt resource value: 0x7f04004f
-			public const int sixsmallsingle = 2130968655;
+			// aapt resource value: 0x7f040051
+			public const int sixsmallsingle = 2130968657;
 			
-			// aapt resource value: 0x7f04006b
-			public const int sixxtralargepack = 2130968683;
+			// aapt resource value: 0x7f04006d
+			public const int sixxtralargepack = 2130968685;
 			
-			// aapt resource value: 0x7f04005b
-			public const int sixxtralargsingle = 2130968667;
+			// aapt resource value: 0x7f04005d
+			public const int sixxtralargsingle = 2130968669;
 			
 			// aapt resource value: 0x7f040037
 			public const int specialsnotif = 2130968631;
@@ -618,35 +609,38 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f040020
 			public const int sun = 2130968608;
 			
-			// aapt resource value: 0x7f040070
-			public const int takeme = 2130968688;
+			// aapt resource value: 0x7f04004e
+			public const int takeme = 2130968654;
+			
+			// aapt resource value: 0x7f04004f
+			public const int takemepolite = 2130968655;
 			
 			// aapt resource value: 0x7f040010
 			public const int tenServices = 2130968592;
 			
-			// aapt resource value: 0x7f040068
-			public const int tenlargepack = 2130968680;
+			// aapt resource value: 0x7f04006a
+			public const int tenlargepack = 2130968682;
 			
-			// aapt resource value: 0x7f040058
-			public const int tenlargesinge = 2130968664;
+			// aapt resource value: 0x7f04005a
+			public const int tenlargesinge = 2130968666;
 			
-			// aapt resource value: 0x7f040064
-			public const int tenmedpack = 2130968676;
+			// aapt resource value: 0x7f040066
+			public const int tenmedpack = 2130968678;
 			
-			// aapt resource value: 0x7f040054
-			public const int tenmedsinge = 2130968660;
+			// aapt resource value: 0x7f040056
+			public const int tenmedsinge = 2130968662;
 			
-			// aapt resource value: 0x7f040060
-			public const int tensmallpack = 2130968672;
+			// aapt resource value: 0x7f040062
+			public const int tensmallpack = 2130968674;
 			
-			// aapt resource value: 0x7f040050
-			public const int tensmallsinge = 2130968656;
+			// aapt resource value: 0x7f040052
+			public const int tensmallsinge = 2130968658;
 			
-			// aapt resource value: 0x7f04006c
-			public const int tenxtralargepack = 2130968684;
+			// aapt resource value: 0x7f04006e
+			public const int tenxtralargepack = 2130968686;
 			
-			// aapt resource value: 0x7f04005c
-			public const int tenxtralargsinge = 2130968668;
+			// aapt resource value: 0x7f04005e
+			public const int tenxtralargsinge = 2130968670;
 			
 			// aapt resource value: 0x7f04001d
 			public const int thu = 2130968605;
@@ -663,29 +657,29 @@ namespace R2G_Clientes
 			// aapt resource value: 0x7f040011
 			public const int twelveServices = 2130968593;
 			
-			// aapt resource value: 0x7f040069
-			public const int twelvelargepack = 2130968681;
+			// aapt resource value: 0x7f04006b
+			public const int twelvelargepack = 2130968683;
 			
-			// aapt resource value: 0x7f040059
-			public const int twelvelargesingle = 2130968665;
+			// aapt resource value: 0x7f04005b
+			public const int twelvelargesingle = 2130968667;
 			
-			// aapt resource value: 0x7f040065
-			public const int twelvemedpack = 2130968677;
+			// aapt resource value: 0x7f040067
+			public const int twelvemedpack = 2130968679;
 			
-			// aapt resource value: 0x7f040055
-			public const int twelvemedsingle = 2130968661;
+			// aapt resource value: 0x7f040057
+			public const int twelvemedsingle = 2130968663;
 			
-			// aapt resource value: 0x7f040061
-			public const int twelvesmallpack = 2130968673;
+			// aapt resource value: 0x7f040063
+			public const int twelvesmallpack = 2130968675;
 			
-			// aapt resource value: 0x7f040051
-			public const int twelvesmallsingle = 2130968657;
+			// aapt resource value: 0x7f040053
+			public const int twelvesmallsingle = 2130968659;
 			
-			// aapt resource value: 0x7f04006d
-			public const int twelvextralargepack = 2130968685;
+			// aapt resource value: 0x7f04006f
+			public const int twelvextralargepack = 2130968687;
 			
-			// aapt resource value: 0x7f04005d
-			public const int twelvextralargsingle = 2130968669;
+			// aapt resource value: 0x7f04005f
+			public const int twelvextralargsingle = 2130968671;
 			
 			// aapt resource value: 0x7f040004
 			public const int username = 2130968580;

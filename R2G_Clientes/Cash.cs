@@ -53,35 +53,49 @@ namespace R2G_Clientes
 			comments = Intent.GetStringExtra ("comments");
 			ordersumm.Text = string.Format ("Paquete de {0} dias - ${1} \n Direccion {2} \n Días {3} \n Hora de Inicio {4} \n Hora de Finalizado {5} \n Comentarios extra \n {6}", days, price, addrs, seldays, shours, ehours, comments);
 
+			var geoUri=Android.Net.Uri.Parse("geo:8.975606,-79.534192?q=8.975606,-79.534192(Rapid2Go)");
+
 			mapplz.Click += delegate {
-				var geoUri=Android.Net.Uri.Parse("geo:8.975606,-79.534192?q=8.975606,-79.534192(Rapid2Go)");
+				
 				var intent=new Intent(Intent.ActionView, geoUri);
 				StartActivity(intent);
 			};
 
 			goHome.Click += async (sender, e) =>{
 				url = getURL();
-				jval = await requester(jval);
+				jval = await requester(url);
 
 				AlertDialog.Builder dialogo = new AlertDialog.Builder (this);
 				AlertDialog men = dialogo.Create();
 				men.SetTitle (Resource.String.confirmation );
 				men.SetMessage (GetString(Resource.String.payplz));
-				men.SetButton ("Ok", delegate(object send, DialogClickEventArgs er) {
-
+				men.SetButton (GetString(Resource.String.takeme), delegate(object send, DialogClickEventArgs er) {
+					//var geoUri=Android.Net.Uri.Parse("geo:8.975606,-79.534192?q=8.975606,-79.534192(Rapid2Go)");
+					var intent2=new Intent(Intent.ActionView, geoUri);
+					StartActivity(intent2);
+					men.Dismiss();
+				});
+				men.SetButton2("Ok", delegate(object send, DialogClickEventArgs er){
 					var intent2=new Intent(this, typeof(MainMenu));
 					intent2.SetFlags(ActivityFlags.NewTask | ActivityFlags.ClearTask);
 					StartActivity(intent2);
 					men.Dismiss();
 				});
-				men.SetButton2(GetString(Resource.String.takeme), delegate(object send, DialogClickEventArgs er){
-					var geoUri=Android.Net.Uri.Parse("geo:8.975606,-79.534192?q=8.975606,-79.534192(Rapid2Go)");
-					var intent=new Intent(Intent.ActionView, geoUri);
-					StartActivity(intent);
-					
-				});
 				men.Show ();
 			};
+		}
+
+		public void button1(){
+			var geoUri=Android.Net.Uri.Parse("geo:8.975606,-79.534192?q=8.975606,-79.534192(Rapid2Go)");
+			var intent2=new Intent(Intent.ActionView, geoUri);
+			StartActivity(intent2);
+		}
+
+		public void button2(){
+			//
+			var intent2=new Intent(this, typeof(MainMenu));
+			intent2.SetFlags(ActivityFlags.NewTask | ActivityFlags.ClearTask);
+			StartActivity(intent2);
 		}
 
 		public string getURL(){
@@ -89,7 +103,7 @@ namespace R2G_Clientes
 			string requrl;
 			int userid = DataConnect.getUserID ();
 			int carid = CarConnect.getCarID ();
-			requrl = baseurl + "?orderAddr=" + WebUtility.UrlEncode(addrs) + "&startH=" + WebUtility.UrlEncode(shours) +  "&ndH=" + WebUtility.UrlEncode(ehours) +
+			requrl = baseurl + "?orderAddr=" + WebUtility.UrlEncode(addrs) + "&startH=" + WebUtility.UrlEncode(shours) +  "&endH=" + WebUtility.UrlEncode(ehours) +
 				"&orderComm=" + WebUtility.UrlEncode( comments) + "&userID=" + userid + "&carID=" + carid + "&days=" + WebUtility.UrlEncode(seldays) + 
 				"&orderedPack=" + days;
 			return requrl;

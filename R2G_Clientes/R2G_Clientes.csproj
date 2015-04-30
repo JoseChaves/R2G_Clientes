@@ -53,22 +53,14 @@
     <Reference Include="RestSharp.MonoDroid">
       <HintPath>..\Components\restsharp-105.0.1.0\lib\android\RestSharp.MonoDroid.dll</HintPath>
     </Reference>
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Json">
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Services" />
     <Reference Include="SQLite">
       <HintPath>..\Components\sqlite-net-1.0.8.3\lib\android\SQLite.dll</HintPath>
-    </Reference>
-    <Reference Include="Devart.Data">
-      <HintPath>..\packages\dotConnect.Express.for.MySQL.8.3.397\lib\Devart.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Devart.Data.MySql">
-      <HintPath>..\packages\dotConnect.Express.for.MySQL.8.3.397\lib\Devart.Data.MySql.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="Mono.Android.Export" />
@@ -78,6 +70,8 @@
     <Reference Include="Xamarin.Android.Support.v13">
       <HintPath>..\packages\Xamarin.Android.Support.v13.21.0.3.0\lib\MonoAndroid32\Xamarin.Android.Support.v13.dll</HintPath>
     </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web.Services" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
