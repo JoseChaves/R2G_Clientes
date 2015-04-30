@@ -17,9 +17,9 @@
 	<string name="fourservices">Cuatro Servicio</string>
 	<string name="sixServices">Seis Servicios</string>
 	<string name="tenServices">Diez Servicios</string>
+	<string name="twelveServices">Doce Servicios</string>
 	<string name="history">Historial de Servicios</string>
 	<string name="packsamounts">Cantidad de Servicios</string>
-	<string name="twelveServices">Doce Servicios</string>
 	<string name="availablepacks">Paquetes Disponibles</string>
 	<string name="locations">Ubicaciones para los Servicios</string>
 	<string name="servicedays">Dias en que desea los Servicios</string>
@@ -63,7 +63,7 @@
    	<string name="contact">Contacta nuestras Oficinas</string>
    	<string name="mainmenu">Menu Principal</string>
    	<string name="cash">Efectivo</string>
-   	<string name="showme">Mostrar la Dirección</string>
+   	<string name="showme">Muestrame la Dirección</string>
    	<string name="loginSuccess">Bienvenido</string>
    	<string name="ordrID">ID de la Orden</string>
    	<string name="ordraddrs">Direccion para la Órden</string>
@@ -71,11 +71,14 @@
    	<string name="car">Automóvil: </string>
    	<string name="orderComms">Comentarios de la Órden: </string>
    	<string name="orderdays">Dias para Servicio: </string>
-   	<string name="orderTotal">Total de la órden</string>
+   	<string name="ordertotal">Total de la órden</string>
    	<string name="ordersummary">Resumen de la orden</string>
-   	<string name="officeaddress">Edificio 10200 de Via España con Calle 43, Bella Vista, Panamá, Panamá</string>
+   	<string name="officeaddress">Edificio 10200 (A un costado del Hotel California) de Via España con Calle 43, Bella Vista, Panamá, Panamá</string>
    	<string name="takeme">Llevame!</string>
    	<string name="orderPack">Paquete Contratado: </string>
+   	<string name="allDone">Listo</string>
+   	<string name="confirmation">Confirmación</string>
+   	<string name="payplz">Gracias por contratar nuestro servicio. Tienes dos días hábiles para cancelar tu órden.</string>
 
    	<string name="foursmallsingle">$9.25</string>
    	<string name="sixsmallsingle">$8.75</string>

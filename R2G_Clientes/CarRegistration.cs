@@ -5,7 +5,9 @@ using System.IO;
 using System.Json;
 using System.Linq;
 using System.Net;
+
 using R2G_Clientes.Shared;
+
 using System.Text;
 using System.Threading.Tasks;
 using Android.App;
@@ -36,6 +38,7 @@ namespace R2G_Clientes
 		ArrayAdapter adapter;
 		int size;
 		cars2 carData;
+		cars car;
 
 
 		protected async override void OnCreate (Bundle bundle)
@@ -68,6 +71,7 @@ namespace R2G_Clientes
 			string urlload = getCarsURL ();
 			JsonValue jval1 = await requester (urlload);
 				carsParse (jval1);
+				CarConnect.dataAccess(car.carID, car.carsize);
 			}catch(Exception e ){
 				
 			}
@@ -192,7 +196,7 @@ namespace R2G_Clientes
 		}
 
 		public void carsParse(JsonValue json){
-			cars car = JsonConvert.DeserializeObject<cars> (json.ToString());
+			car = JsonConvert.DeserializeObject<cars> (json.ToString());
 
 			make.Text = car.make;
 			model.Text = car.model;

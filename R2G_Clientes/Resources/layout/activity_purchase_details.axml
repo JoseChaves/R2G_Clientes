@@ -105,6 +105,19 @@
             p1:layout_height="wrap_content"
             p1:id="@+id/editText3"
             p1:layout_margin="8dp" />
+        <TextView
+            p1:text="@string/comments"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView6"
+            p1:layout_margin="8dp" />
+        <EditText
+            p1:inputType="textMultiLine"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/editText4"
+            p1:layout_margin="8dp" />
         <Button
             p1:text="@string/next"
             p1:layout_width="match_parent"

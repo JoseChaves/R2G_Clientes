@@ -60,11 +60,15 @@ namespace R2G_Clientes
 			adapter.SetDropDownViewResource (Android.Resource.Layout.SimpleSpinnerDropDownItem);
 			spinner.Adapter = adapter;
 			spinner.Enabled = false;
+			try{
 			carsize = CarConnect.getCarSize ();
-
+				price = pricer();
+			}catch{
+			}
 
 			submitbutt.Click += (sender, e) => {
 				amountofDays = days();
+
 				var subtent = new Intent (this, typeof(PurchaseDetails));
 				subtent.PutExtra("days", amountofDays);
 				subtent.PutExtra("price", price);
@@ -103,14 +107,20 @@ namespace R2G_Clientes
 
 			if (carsize.Equals ("Small")) {
 				price = smalls [priceChoice];
-				rdio4.Text = 
+				rdio4.Text = "Small";
+				itemselected = 0;
 			} else if (carsize.Equals ("Medium")) {
 				price = mediums [priceChoice];
+				itemselected = 1;
 			} else if (carsize.Equals ("Large")) {
 				price = larges [priceChoice];
+				itemselected = 2;
 			} else if (carsize.Equals ("Extra")) {
 				price = extras [priceChoice];
+				itemselected = 3;
 			}
+
+			spinner.SetSelection (itemselected);
 
 			return price;
 
@@ -125,29 +135,29 @@ namespace R2G_Clientes
 			switch(selection){
 
 			case 0:
-				//rdio4.SetText (Resource.String.fourwashesSmall);
-				//rdio6.SetText (Resource.String.eightwashesSmall);
-				//rdio10.SetText (Resource.String.eightwashesSmall);
-				//rdio12.SetText (Resource.String.twelvewashesSmall);
+				rdio4.Text = (GetString(Resource.String.fourservices) + " - " + GetString (Resource.String.foursmallpack));
+				rdio6.Text= (GetString( Resource.String.sixServices) + " - " + GetString( Resource.String.sixsmallpack));
+				rdio10.Text= (GetString (Resource.String.tenServices) + " - " + GetString( Resource.String.tensmallpack));
+				rdio12.Text= (GetString( Resource.String.twelveServices) + " - " + GetString( Resource.String.twelvesmallpack));
 				break;
 			case 1:
-				//rdio4.SetText (Resource.String.fourwashesSmall);
-				//rdio6.SetText (Resource.String.eightwashesSmall);
-				//rdio10.SetText (Resource.String.eightwashesSmall);
-				//rdio12.SetText (Resource.String.twelvewashesSmall);
+				rdio4.Text = (GetString( Resource.String.fourservices) + " - " + GetString( Resource.String.fourmedpack));
+				rdio6.Text = (GetString(Resource.String.sixServices) + " - " + GetString( Resource.String.sixmedpack));
+				rdio10.Text = (GetString(Resource.String.tenServices) + " - " + GetString( Resource.String.tenmedpack));
+				rdio12.Text = (GetString(Resource.String.twelveServices) + " - " + GetString( Resource.String.twelvesmallpack));
 				break;
 			case 2:
-				//rdio4.SetText (Resource.String.fourwashesSmall);
-				//rdio6.SetText (Resource.String.eightwashesSmall);
-				//rdio10.SetText (Resource.String.eightwashesSmall);
-				//rdio12.SetText (Resource.String.twelvewashesSmall);
+				rdio4.Text = (GetString(Resource.String.fourservices) + " - " +GetString( Resource.String.fourslargepack));
+				rdio6.Text = (GetString(Resource.String.sixServices) + " - " + GetString(Resource.String.sixlargepack));
+				rdio10.Text = (GetString(Resource.String.tenServices) + " - " + GetString(Resource.String.tenlargepack));
+				rdio12.Text = (GetString(Resource.String.twelveServices) + " - " +GetString( Resource.String.twelvelargepack));
 				break; 
 
 			case 3:
-				//rdio4.SetText (Resource.String.fourwashesSmall);
-				//rdio6.SetText (Resource.String.eightwashesSmall);
-				//rdio10.SetText (Resource.String.eightwashesSmall);
-				//rdio12.SetText (Resource.String.twelvewashesSmall);
+				rdio4.Text = (GetString(Resource.String.fourservices) + " - " + GetString(Resource.String.fourxtralaregpack));
+				rdio6.Text = (GetString(Resource.String.sixServices) + " - " + GetString(Resource.String.sixxtralargepack));
+				rdio10.Text = (GetString(Resource.String.tenServices) + " - " +GetString( Resource.String.tenxtralargepack));
+				rdio12.Text = (GetString(Resource.String.twelveServices) + " - " + GetString(Resource.String.twelvextralargepack));
 				break;
 			}
 

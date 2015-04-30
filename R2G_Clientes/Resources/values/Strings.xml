@@ -17,9 +17,9 @@
 	<string name="fourservices">Four Services</string>
 	<string name="sixServices">Six Services</string>
 	<string name="tenServices">Ten Services</string>
+	<string name="twelveServices">Twelve Services</string>
 	<string name="history">Service History</string>
 	<string name="packsamounts">Amount of Services</string>
-	<string name="twelveServices">Twelve Services</string>
 	<string name="availablepacks">Available Packs</string>
 	<string name="locations">Service Locations</string>
 	<string name="servicedays">Service Days</string>
@@ -63,10 +63,6 @@
    	<string name="contact">Call our Office</string>
    	<string name="cash">Cash</string>
    	<string name="mainmenu">Main Menu</string>
-   	<string name="foursmallsingle">$9.25</string>
-   	<string name="sixsmallsingle">$8.75</string>
-   	<string name="tensmallsinge">$8.25</string>
-   	<string name="twelvesmallsingle">$8.00</string>
    	<string name="showme">Show me the Address</string>
    	<string name="loginSuccess">Welcome</string>
    	<string name="ordrID">Order ID: </string>
@@ -76,6 +72,12 @@
    	<string name="orderComms">Order Comments: </string>
    	<string name="orderdays">Service Days: </string>
    	<string name="orderPack">Ordered Package: </string>
+   	<string name="ordertotal">Total de la órden</string>
+   	<string name="ordersummary">Resumen de la orden</string>
+   	<string name="officeaddress">Edificio 10200 (A un costado del Hotel California) de Via España con Calle 43, Bella Vista, Panamá, Panamá</string>
+   	<string name="allDone">All Done</string>
+   	<string name="confirmation">Confirmation</string>
+   	<string name="payplz">Thanks for your Order. You have two work days to pay for your Order.</string>
 
    	<string name="foursmallsingle">$9.25</string>
    	<string name="sixsmallsingle">$8.75</string>

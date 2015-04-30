@@ -33,6 +33,7 @@ namespace R2G_Clientes
 		EditText pwd;
 		LoginData lg;
 		R2G_Clientes.Shared.DataConnect dc;
+		CarData cd;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -45,6 +46,7 @@ namespace R2G_Clientes
 			Button registerButt = FindViewById<Button> (Resource.Id.register);
 			lg  = new LoginData ();
 			string verif = "true";
+			cd = new CarData ();
 
 			signInbutt.Click += async (sender, e) => {
 				string uray= requestValid();
@@ -53,7 +55,12 @@ namespace R2G_Clientes
 				if ( verif.Equals(parser)){
 					Toast.MakeText(this, Resource.String.loginSuccess, ToastLength.Short).Show();
 					DataConnect.dataAccess(lg.userID);
+					string caruray = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/cars/onLogin/" + lg.userID;
+					jval = await requester(caruray);
+					parsemycar(jval);
+					CarConnect.dataAccess(cd.carid, cd.carsize);
 					var intent1=new Intent(this, typeof(MainMenu));
+					intent1.SetFlags(ActivityFlags.NewTask | ActivityFlags.ClearTask);
 					StartActivity(intent1);}
 				else {
 					Toast.MakeText(this, "Informacion erronea", ToastLength.Short).Show();
@@ -100,6 +107,10 @@ namespace R2G_Clientes
 			return lg.login;
 		}
 
+		private void parsemycar(JsonValue jval){
+			cd = JsonConvert.DeserializeObject<CarData> (jval.ToString ());
+		}
+
 }
 
 	public class LoginData{
@@ -107,6 +118,12 @@ namespace R2G_Clientes
 		public int userID { get; set; }
 		public string login { get; set; }
 
+	}
+
+	public class CarData{
+		public int carid{ get; set; }
+		public string success{ get; set; }
+		public string carsize{ get; set; }
 	}
 
 }

@@ -360,332 +360,353 @@ namespace R2G_Clientes
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
+			// aapt resource value: 0x7f040072
+			public const int ApplicationName = 2130968690;
 			
-			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
-			
-			// aapt resource value: 0x7f04002c
-			public const int address = 2130968620;
-			
-			// aapt resource value: 0x7f040004
-			public const int app_name = 2130968580;
-			
-			// aapt resource value: 0x7f040017
-			public const int availablepacks = 2130968599;
-			
-			// aapt resource value: 0x7f040028
-			public const int bankACH = 2130968616;
-			
-			// aapt resource value: 0x7f040027
-			public const int bankDep = 2130968615;
+			// aapt resource value: 0x7f040071
+			public const int Hello = 2130968689;
 			
 			// aapt resource value: 0x7f040029
-			public const int basics = 2130968617;
+			public const int address = 2130968617;
 			
 			// aapt resource value: 0x7f04004b
-			public const int car = 2130968651;
+			public const int allDone = 2130968651;
 			
-			// aapt resource value: 0x7f04000b
-			public const int carRegister = 2130968587;
-			
-			// aapt resource value: 0x7f040034
-			public const int carcolor = 2130968628;
-			
-			// aapt resource value: 0x7f040033
-			public const int carmake = 2130968627;
-			
-			// aapt resource value: 0x7f040035
-			public const int carmodel = 2130968629;
-			
-			// aapt resource value: 0x7f04006c
-			public const int cartype = 2130968684;
-			
-			// aapt resource value: 0x7f040040
-			public const int cash = 2130968640;
-			
-			// aapt resource value: 0x7f04003b
-			public const int comments = 2130968635;
-			
-			// aapt resource value: 0x7f04003f
-			public const int contact = 2130968639;
-			
-			// aapt resource value: 0x7f040026
-			public const int credit = 2130968614;
-			
-			// aapt resource value: 0x7f04000a
-			public const int details = 2130968586;
-			
-			// aapt resource value: 0x7f04000e
-			public const int done = 2130968590;
-			
-			// aapt resource value: 0x7f040010
-			public const int edit = 2130968592;
-			
-			// aapt resource value: 0x7f04002b
-			public const int email = 2130968619;
-			
-			// aapt resource value: 0x7f040039
-			public const int endnotif = 2130968633;
-			
-			// aapt resource value: 0x7f04006b
-			public const int fail = 2130968683;
-			
-			// aapt resource value: 0x7f04001c
-			public const int finishTime = 2130968604;
-			
-			// aapt resource value: 0x7f040053
-			public const int fourlargesingle = 2130968659;
-			
-			// aapt resource value: 0x7f04005f
-			public const int fourmedpack = 2130968671;
-			
-			// aapt resource value: 0x7f04004f
-			public const int fourmedsingle = 2130968655;
-			
-			// aapt resource value: 0x7f040011
-			public const int fourservices = 2130968593;
-			
-			// aapt resource value: 0x7f040063
-			public const int fourslargepack = 2130968675;
-			
-			// aapt resource value: 0x7f04005b
-			public const int foursmallpack = 2130968667;
-			
-			// aapt resource value: 0x7f040042
-			public const int foursmallsingle = 2130968642;
-			
-			// aapt resource value: 0x7f040067
-			public const int fourxtralaregpack = 2130968679;
-			
-			// aapt resource value: 0x7f040057
-			public const int fourxtralargesingle = 2130968663;
-			
-			// aapt resource value: 0x7f040021
-			public const int fri = 2130968609;
-			
-			// aapt resource value: 0x7f040003
-			public const int hello = 2130968579;
+			// aapt resource value: 0x7f040001
+			public const int app_name = 2130968577;
 			
 			// aapt resource value: 0x7f040014
-			public const int history = 2130968596;
-			
-			// aapt resource value: 0x7f040002
-			public const int library_name = 2130968578;
-			
-			// aapt resource value: 0x7f040032
-			public const int licenseplate = 2130968626;
-			
-			// aapt resource value: 0x7f040018
-			public const int locations = 2130968600;
-			
-			// aapt resource value: 0x7f040047
-			public const int loginSuccess = 2130968647;
-			
-			// aapt resource value: 0x7f04003e
-			public const int logout = 2130968638;
-			
-			// aapt resource value: 0x7f040041
-			public const int mainmenu = 2130968641;
-			
-			// aapt resource value: 0x7f04001d
-			public const int mon = 2130968605;
-			
-			// aapt resource value: 0x7f04002a
-			public const int name = 2130968618;
-			
-			// aapt resource value: 0x7f04000f
-			public const int next = 2130968591;
-			
-			// aapt resource value: 0x7f04003c
-			public const int notavailable = 2130968636;
-			
-			// aapt resource value: 0x7f040037
-			public const int notifications = 2130968631;
-			
-			// aapt resource value: 0x7f04003d
-			public const int notyet = 2130968637;
-			
-			// aapt resource value: 0x7f04004c
-			public const int orderComms = 2130968652;
-			
-			// aapt resource value: 0x7f04004e
-			public const int orderPack = 2130968654;
-			
-			// aapt resource value: 0x7f04004d
-			public const int orderdays = 2130968653;
-			
-			// aapt resource value: 0x7f040048
-			public const int ordrID = 2130968648;
-			
-			// aapt resource value: 0x7f040049
-			public const int ordraddrs = 2130968649;
-			
-			// aapt resource value: 0x7f040036
-			public const int packageselect = 2130968630;
-			
-			// aapt resource value: 0x7f040009
-			public const int packs = 2130968585;
-			
-			// aapt resource value: 0x7f040015
-			public const int packsamounts = 2130968597;
-			
-			// aapt resource value: 0x7f040008
-			public const int password = 2130968584;
-			
-			// aapt resource value: 0x7f040024
-			public const int paymentoptions = 2130968612;
-			
-			// aapt resource value: 0x7f04002d
-			public const int phone = 2130968621;
-			
-			// aapt resource value: 0x7f040006
-			public const int register = 2130968582;
-			
-			// aapt resource value: 0x7f040022
-			public const int sat = 2130968610;
-			
-			// aapt resource value: 0x7f04000d
-			public const int save = 2130968589;
-			
-			// aapt resource value: 0x7f040019
-			public const int servicedays = 2130968601;
-			
-			// aapt resource value: 0x7f04000c
-			public const int settings = 2130968588;
-			
-			// aapt resource value: 0x7f040046
-			public const int showme = 2130968646;
-			
-			// aapt resource value: 0x7f040005
-			public const int signin = 2130968581;
-			
-			// aapt resource value: 0x7f040012
-			public const int sixServices = 2130968594;
-			
-			// aapt resource value: 0x7f040064
-			public const int sixlargepack = 2130968676;
-			
-			// aapt resource value: 0x7f040054
-			public const int sixlargesingle = 2130968660;
-			
-			// aapt resource value: 0x7f040060
-			public const int sixmedpack = 2130968672;
-			
-			// aapt resource value: 0x7f040050
-			public const int sixmedsingle = 2130968656;
-			
-			// aapt resource value: 0x7f04005c
-			public const int sixsmallpack = 2130968668;
-			
-			// aapt resource value: 0x7f040043
-			public const int sixsmallsingle = 2130968643;
-			
-			// aapt resource value: 0x7f040068
-			public const int sixxtralargepack = 2130968680;
-			
-			// aapt resource value: 0x7f040058
-			public const int sixxtralargsingle = 2130968664;
-			
-			// aapt resource value: 0x7f04003a
-			public const int specialsnotif = 2130968634;
-			
-			// aapt resource value: 0x7f04001b
-			public const int startTime = 2130968603;
-			
-			// aapt resource value: 0x7f040038
-			public const int startnotf = 2130968632;
-			
-			// aapt resource value: 0x7f040023
-			public const int sun = 2130968611;
-			
-			// aapt resource value: 0x7f040013
-			public const int tenServices = 2130968595;
-			
-			// aapt resource value: 0x7f040065
-			public const int tenlargepack = 2130968677;
-			
-			// aapt resource value: 0x7f040055
-			public const int tenlargesinge = 2130968661;
-			
-			// aapt resource value: 0x7f040061
-			public const int tenmedpack = 2130968673;
-			
-			// aapt resource value: 0x7f040051
-			public const int tenmedsinge = 2130968657;
-			
-			// aapt resource value: 0x7f04005d
-			public const int tensmallpack = 2130968669;
-			
-			// aapt resource value: 0x7f040044
-			public const int tensmallsinge = 2130968644;
-			
-			// aapt resource value: 0x7f040069
-			public const int tenxtralargepack = 2130968681;
-			
-			// aapt resource value: 0x7f040059
-			public const int tenxtralargsinge = 2130968665;
-			
-			// aapt resource value: 0x7f040020
-			public const int thu = 2130968608;
-			
-			// aapt resource value: 0x7f04001a
-			public const int timewindow = 2130968602;
-			
-			// aapt resource value: 0x7f04004a
-			public const int tmewndow = 2130968650;
-			
-			// aapt resource value: 0x7f04001e
-			public const int tue = 2130968606;
-			
-			// aapt resource value: 0x7f040016
-			public const int twelveServices = 2130968598;
-			
-			// aapt resource value: 0x7f040066
-			public const int twelvelargepack = 2130968678;
-			
-			// aapt resource value: 0x7f040056
-			public const int twelvelargesingle = 2130968662;
-			
-			// aapt resource value: 0x7f040062
-			public const int twelvemedpack = 2130968674;
-			
-			// aapt resource value: 0x7f040052
-			public const int twelvemedsingle = 2130968658;
-			
-			// aapt resource value: 0x7f04005e
-			public const int twelvesmallpack = 2130968670;
-			
-			// aapt resource value: 0x7f040045
-			public const int twelvesmallsingle = 2130968645;
-			
-			// aapt resource value: 0x7f04006a
-			public const int twelvextralargepack = 2130968682;
-			
-			// aapt resource value: 0x7f04005a
-			public const int twelvextralargsingle = 2130968666;
-			
-			// aapt resource value: 0x7f040007
-			public const int username = 2130968583;
+			public const int availablepacks = 2130968596;
 			
 			// aapt resource value: 0x7f040025
-			public const int wallet = 2130968613;
+			public const int bankACH = 2130968613;
 			
-			// aapt resource value: 0x7f04001f
-			public const int wed = 2130968607;
+			// aapt resource value: 0x7f040024
+			public const int bankDep = 2130968612;
 			
-			// aapt resource value: 0x7f04002f
-			public const int workAddress = 2130968623;
+			// aapt resource value: 0x7f040026
+			public const int basics = 2130968614;
 			
-			// aapt resource value: 0x7f04002e
-			public const int workDetails = 2130968622;
+			// aapt resource value: 0x7f040044
+			public const int car = 2130968644;
 			
-			// aapt resource value: 0x7f040030
-			public const int workEmail = 2130968624;
+			// aapt resource value: 0x7f040008
+			public const int carRegister = 2130968584;
 			
 			// aapt resource value: 0x7f040031
-			public const int workPhone = 2130968625;
+			public const int carcolor = 2130968625;
+			
+			// aapt resource value: 0x7f040030
+			public const int carmake = 2130968624;
+			
+			// aapt resource value: 0x7f040032
+			public const int carmodel = 2130968626;
+			
+			// aapt resource value: 0x7f04006f
+			public const int cartype = 2130968687;
+			
+			// aapt resource value: 0x7f04003d
+			public const int cash = 2130968637;
+			
+			// aapt resource value: 0x7f040038
+			public const int comments = 2130968632;
+			
+			// aapt resource value: 0x7f04004c
+			public const int confirmation = 2130968652;
+			
+			// aapt resource value: 0x7f04003c
+			public const int contact = 2130968636;
+			
+			// aapt resource value: 0x7f040023
+			public const int credit = 2130968611;
+			
+			// aapt resource value: 0x7f040007
+			public const int details = 2130968583;
+			
+			// aapt resource value: 0x7f04000b
+			public const int done = 2130968587;
+			
+			// aapt resource value: 0x7f04000d
+			public const int edit = 2130968589;
+			
+			// aapt resource value: 0x7f040028
+			public const int email = 2130968616;
+			
+			// aapt resource value: 0x7f040036
+			public const int endnotif = 2130968630;
+			
+			// aapt resource value: 0x7f04006e
+			public const int fail = 2130968686;
+			
+			// aapt resource value: 0x7f040019
+			public const int finishTime = 2130968601;
+			
+			// aapt resource value: 0x7f040056
+			public const int fourlargesingle = 2130968662;
+			
+			// aapt resource value: 0x7f040062
+			public const int fourmedpack = 2130968674;
+			
+			// aapt resource value: 0x7f040052
+			public const int fourmedsingle = 2130968658;
+			
+			// aapt resource value: 0x7f04000e
+			public const int fourservices = 2130968590;
+			
+			// aapt resource value: 0x7f040066
+			public const int fourslargepack = 2130968678;
+			
+			// aapt resource value: 0x7f04005e
+			public const int foursmallpack = 2130968670;
+			
+			// aapt resource value: 0x7f04004e
+			public const int foursmallsingle = 2130968654;
+			
+			// aapt resource value: 0x7f04006a
+			public const int fourxtralaregpack = 2130968682;
+			
+			// aapt resource value: 0x7f04005a
+			public const int fourxtralargesingle = 2130968666;
+			
+			// aapt resource value: 0x7f04001e
+			public const int fri = 2130968606;
+			
+			// aapt resource value: 0x7f040000
+			public const int hello = 2130968576;
+			
+			// aapt resource value: 0x7f040012
+			public const int history = 2130968594;
+			
+			// aapt resource value: 0x7f040073
+			public const int library_name = 2130968691;
+			
+			// aapt resource value: 0x7f04002f
+			public const int licenseplate = 2130968623;
+			
+			// aapt resource value: 0x7f040015
+			public const int locations = 2130968597;
+			
+			// aapt resource value: 0x7f040040
+			public const int loginSuccess = 2130968640;
+			
+			// aapt resource value: 0x7f04003b
+			public const int logout = 2130968635;
+			
+			// aapt resource value: 0x7f04003e
+			public const int mainmenu = 2130968638;
+			
+			// aapt resource value: 0x7f04001a
+			public const int mon = 2130968602;
+			
+			// aapt resource value: 0x7f040027
+			public const int name = 2130968615;
+			
+			// aapt resource value: 0x7f04000c
+			public const int next = 2130968588;
+			
+			// aapt resource value: 0x7f040039
+			public const int notavailable = 2130968633;
+			
+			// aapt resource value: 0x7f040034
+			public const int notifications = 2130968628;
+			
+			// aapt resource value: 0x7f04003a
+			public const int notyet = 2130968634;
+			
+			// aapt resource value: 0x7f04004a
+			public const int officeaddress = 2130968650;
+			
+			// aapt resource value: 0x7f040045
+			public const int orderComms = 2130968645;
+			
+			// aapt resource value: 0x7f040047
+			public const int orderPack = 2130968647;
+			
+			// aapt resource value: 0x7f040046
+			public const int orderdays = 2130968646;
+			
+			// aapt resource value: 0x7f040049
+			public const int ordersummary = 2130968649;
+			
+			// aapt resource value: 0x7f040048
+			public const int ordertotal = 2130968648;
+			
+			// aapt resource value: 0x7f040041
+			public const int ordrID = 2130968641;
+			
+			// aapt resource value: 0x7f040042
+			public const int ordraddrs = 2130968642;
+			
+			// aapt resource value: 0x7f040033
+			public const int packageselect = 2130968627;
+			
+			// aapt resource value: 0x7f040006
+			public const int packs = 2130968582;
+			
+			// aapt resource value: 0x7f040013
+			public const int packsamounts = 2130968595;
+			
+			// aapt resource value: 0x7f040005
+			public const int password = 2130968581;
+			
+			// aapt resource value: 0x7f040021
+			public const int paymentoptions = 2130968609;
+			
+			// aapt resource value: 0x7f04004d
+			public const int payplz = 2130968653;
+			
+			// aapt resource value: 0x7f04002a
+			public const int phone = 2130968618;
+			
+			// aapt resource value: 0x7f040003
+			public const int register = 2130968579;
+			
+			// aapt resource value: 0x7f04001f
+			public const int sat = 2130968607;
+			
+			// aapt resource value: 0x7f04000a
+			public const int save = 2130968586;
+			
+			// aapt resource value: 0x7f040016
+			public const int servicedays = 2130968598;
+			
+			// aapt resource value: 0x7f040009
+			public const int settings = 2130968585;
+			
+			// aapt resource value: 0x7f04003f
+			public const int showme = 2130968639;
+			
+			// aapt resource value: 0x7f040002
+			public const int signin = 2130968578;
+			
+			// aapt resource value: 0x7f04000f
+			public const int sixServices = 2130968591;
+			
+			// aapt resource value: 0x7f040067
+			public const int sixlargepack = 2130968679;
+			
+			// aapt resource value: 0x7f040057
+			public const int sixlargesingle = 2130968663;
+			
+			// aapt resource value: 0x7f040063
+			public const int sixmedpack = 2130968675;
+			
+			// aapt resource value: 0x7f040053
+			public const int sixmedsingle = 2130968659;
+			
+			// aapt resource value: 0x7f04005f
+			public const int sixsmallpack = 2130968671;
+			
+			// aapt resource value: 0x7f04004f
+			public const int sixsmallsingle = 2130968655;
+			
+			// aapt resource value: 0x7f04006b
+			public const int sixxtralargepack = 2130968683;
+			
+			// aapt resource value: 0x7f04005b
+			public const int sixxtralargsingle = 2130968667;
+			
+			// aapt resource value: 0x7f040037
+			public const int specialsnotif = 2130968631;
+			
+			// aapt resource value: 0x7f040018
+			public const int startTime = 2130968600;
+			
+			// aapt resource value: 0x7f040035
+			public const int startnotf = 2130968629;
+			
+			// aapt resource value: 0x7f040020
+			public const int sun = 2130968608;
+			
+			// aapt resource value: 0x7f040070
+			public const int takeme = 2130968688;
+			
+			// aapt resource value: 0x7f040010
+			public const int tenServices = 2130968592;
+			
+			// aapt resource value: 0x7f040068
+			public const int tenlargepack = 2130968680;
+			
+			// aapt resource value: 0x7f040058
+			public const int tenlargesinge = 2130968664;
+			
+			// aapt resource value: 0x7f040064
+			public const int tenmedpack = 2130968676;
+			
+			// aapt resource value: 0x7f040054
+			public const int tenmedsinge = 2130968660;
+			
+			// aapt resource value: 0x7f040060
+			public const int tensmallpack = 2130968672;
+			
+			// aapt resource value: 0x7f040050
+			public const int tensmallsinge = 2130968656;
+			
+			// aapt resource value: 0x7f04006c
+			public const int tenxtralargepack = 2130968684;
+			
+			// aapt resource value: 0x7f04005c
+			public const int tenxtralargsinge = 2130968668;
+			
+			// aapt resource value: 0x7f04001d
+			public const int thu = 2130968605;
+			
+			// aapt resource value: 0x7f040017
+			public const int timewindow = 2130968599;
+			
+			// aapt resource value: 0x7f040043
+			public const int tmewndow = 2130968643;
+			
+			// aapt resource value: 0x7f04001b
+			public const int tue = 2130968603;
+			
+			// aapt resource value: 0x7f040011
+			public const int twelveServices = 2130968593;
+			
+			// aapt resource value: 0x7f040069
+			public const int twelvelargepack = 2130968681;
+			
+			// aapt resource value: 0x7f040059
+			public const int twelvelargesingle = 2130968665;
+			
+			// aapt resource value: 0x7f040065
+			public const int twelvemedpack = 2130968677;
+			
+			// aapt resource value: 0x7f040055
+			public const int twelvemedsingle = 2130968661;
+			
+			// aapt resource value: 0x7f040061
+			public const int twelvesmallpack = 2130968673;
+			
+			// aapt resource value: 0x7f040051
+			public const int twelvesmallsingle = 2130968657;
+			
+			// aapt resource value: 0x7f04006d
+			public const int twelvextralargepack = 2130968685;
+			
+			// aapt resource value: 0x7f04005d
+			public const int twelvextralargsingle = 2130968669;
+			
+			// aapt resource value: 0x7f040004
+			public const int username = 2130968580;
+			
+			// aapt resource value: 0x7f040022
+			public const int wallet = 2130968610;
+			
+			// aapt resource value: 0x7f04001c
+			public const int wed = 2130968604;
+			
+			// aapt resource value: 0x7f04002c
+			public const int workAddress = 2130968620;
+			
+			// aapt resource value: 0x7f04002b
+			public const int workDetails = 2130968619;
+			
+			// aapt resource value: 0x7f04002d
+			public const int workEmail = 2130968621;
+			
+			// aapt resource value: 0x7f04002e
+			public const int workPhone = 2130968622;
 			
 			static String()
 			{

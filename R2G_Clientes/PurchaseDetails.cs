@@ -19,10 +19,9 @@ namespace R2G_Clientes
 		string size;
 		double price;
 		int days;
-		Intent tent;
 		EditText locs;
 		CheckBox mon, tue, wed, thur, fri, sat, sun;
-		EditText startT, endT;
+		EditText startT, endT, comments;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -40,10 +39,10 @@ namespace R2G_Clientes
 			sun = FindViewById<CheckBox> (Resource.Id.checkBox7);
 			startT = FindViewById<EditText> (Resource.Id.editText2);
 			endT = FindViewById<EditText> (Resource.Id.editText3);
+			comments = FindViewById<EditText> (Resource.Id.editText4);
 
-
-			price = tent.GetDoubleExtra ("price");
-			days = tent.GetIntExtra ("days");
+			price = Intent.GetDoubleExtra ("price", 0);
+			days = Intent.GetIntExtra ("days", 0);
 
 			submitButt.Click+= (sender, e) => {
 				var subtent = new Intent (this, typeof(PaymentOptions));
@@ -53,6 +52,7 @@ namespace R2G_Clientes
 				subtent.PutExtra("selDays", daysFS());
 				subtent.PutExtra("startT", startT.Text);
 				subtent.PutExtra("endT", endT.Text);
+				subtent.PutExtra("comments", comments.Text);
 				StartActivity(subtent);
 			};
 		}

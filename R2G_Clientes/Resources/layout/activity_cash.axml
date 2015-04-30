@@ -11,7 +11,7 @@
         p1:layout_height="match_parent"
         p1:id="@+id/linearLayout1">
         <TextView
-            p1:text="Large Text"
+            p1:text="@string/ordertotal"
             p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
@@ -25,14 +25,14 @@
             p1:id="@+id/textView2"
             p1:layout_margin="8dp" />
         <Button
-            p1:text="Button"
+            p1:text="@string/showme"
             p1:layout_width="180dp"
             p1:layout_height="wrap_content"
             p1:id="@+id/showme"
             p1:layout_margin="8dp"
             p1:layout_gravity="center" />
         <Button
-            p1:text="Button"
+            p1:text="@string/allDone"
             p1:layout_width="180dp"
             p1:layout_height="wrap_content"
             p1:id="@+id/getmehome"

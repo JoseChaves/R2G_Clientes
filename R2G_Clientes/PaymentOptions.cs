@@ -16,6 +16,9 @@ namespace R2G_Clientes
 	[Activity (Label = "@string/paymentoptions", ParentActivity=typeof(PurchaseDetails)) ]			
 	public class PaymentOptions : Activity
 	{
+		string startT, endT, address, seldays, comments;
+		int days;
+		double price;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -28,6 +31,14 @@ namespace R2G_Clientes
 			Button cash = FindViewById<Button> (Resource.Id.cash);
 
 			//googleWbutt.click este lanza api.. Pendiente
+
+			startT = Intent.GetStringExtra ("startT");
+			price = Intent.GetDoubleExtra ("price", 0);
+			days = Intent.GetIntExtra ("days", 0);
+			address = Intent.GetStringExtra ("address");
+			endT = Intent.GetStringExtra ("endT");
+			seldays = Intent.GetStringExtra ("selDays");
+			comments = Intent.GetStringExtra ("comments");
 
 			creditPaybutt.Click += (sender, e) => {
 				var cardsend=new Intent(this, typeof(CreditCardPayment));
@@ -72,6 +83,13 @@ namespace R2G_Clientes
 
 			cash.Click += (sender, e) => {
 				var intent2 = new Intent(this, typeof(Cash));
+				intent2.PutExtra("price", price);
+				intent2.PutExtra("days", days);
+				intent2.PutExtra("address", address);
+				intent2.PutExtra("selDays", seldays);
+				intent2.PutExtra("startT", startT);
+				intent2.PutExtra("endT", endT);
+				intent2.PutExtra("comments", comments);
 				StartActivity(intent2);
 			};
 

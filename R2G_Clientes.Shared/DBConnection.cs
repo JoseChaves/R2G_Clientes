@@ -114,6 +114,17 @@ namespace R2G_Clientes.Shared
 
 		}
 
+		public static int getCarID(){
+			string dbPath = Path.Combine (
+				Environment.GetFolderPath (Environment.SpecialFolder.Personal),
+				"cardata.db3");
+			var db = new SQLiteConnection (dbPath);
+			var userid2 = db.Get<CarStock> (1);
+			//userid = userid2.userID.ToString ();	
+			return userid2.carID;
+
+		}
+
 	}
 }
 
