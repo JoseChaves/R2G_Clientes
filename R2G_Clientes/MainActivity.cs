@@ -34,6 +34,7 @@ namespace R2G_Clientes
 		LoginData lg;
 		R2G_Clientes.Shared.DataConnect dc;
 		CarData cd;
+		List<orderData> od;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -47,6 +48,7 @@ namespace R2G_Clientes
 			lg  = new LoginData ();
 			string verif = "true";
 			cd = new CarData ();
+			od = new List<orderData> ();
 
 			signInbutt.Click += async (sender, e) => {
 				string uray= requestValid();
@@ -59,6 +61,13 @@ namespace R2G_Clientes
 					jval = await requester(caruray);
 					parsemycar(jval);
 					CarConnect.dataAccess(cd.carid, cd.carsize);
+					string orderurl = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/orders/onLogin/" + lg.userID;
+					jval= await requester(orderurl);
+					orderparse(jval);
+					foreach(var s in od){
+						Console.WriteLine(s.id);
+						OrderConnect.dataAccess(s.id);
+					}
 					var intent1=new Intent(this, typeof(MainMenu));
 					intent1.SetFlags(ActivityFlags.NewTask | ActivityFlags.ClearTask);
 					StartActivity(intent1);}
@@ -111,6 +120,9 @@ namespace R2G_Clientes
 			cd = JsonConvert.DeserializeObject<CarData> (jval.ToString ());
 		}
 
+		public void orderparse(JsonValue jval){
+			od= JsonConvert.DeserializeObject<List<orderData>>(jval.ToString());
+		}
 }
 
 	public class LoginData{
@@ -124,6 +136,11 @@ namespace R2G_Clientes
 		public int carid{ get; set; }
 		public string success{ get; set; }
 		public string carsize{ get; set; }
+	}
+
+	public class orderData{
+		public int id{ get; set; }
+		public string success{ get; set; }
 	}
 
 }

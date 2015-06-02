@@ -22,6 +22,10 @@
     <MtouchArch>i386</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -88,7 +92,6 @@
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
-    <Reference Include="Xamarin.iOS" />
     <Reference Include="Xamarin.Auth.iOS">
       <HintPath>..\Components\xamarin.auth-1.2.3.1\lib\ios-unified\Xamarin.Auth.iOS.dll</HintPath>
     </Reference>
@@ -103,6 +106,8 @@
     </Reference>
     <Reference Include="System.Json" />
     <Reference Include="System.Net" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
@@ -122,11 +127,28 @@
     <Compile Include="R2G_Clients.iOSViewController.designer.cs">
       <DependentUpon>R2G_Clients.iOSViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="UsrLoginViewController.cs" />
+    <Compile Include="UsrLoginViewController.designer.cs">
+      <DependentUpon>UsrLoginViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuViewController.cs" />
+    <Compile Include="MainMenuViewController.designer.cs">
+      <DependentUpon>MainMenuViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SttingsViewController.cs" />
+    <Compile Include="SttingsViewController.designer.cs">
+      <DependentUpon>SttingsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterViewController.cs" />
+    <Compile Include="RegisterViewController.designer.cs">
+      <DependentUpon>RegisterViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="..\R2G_Clientes.Shared\R2G_Clientes.Shared.projitems" Label="Shared" Condition="Exists('..\R2G_Clientes.Shared\R2G_Clientes.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <BundleResource Include="Resources\rapid_logo.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="Auth0Client">

@@ -1,23 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="479"/>
+            <rect key="frame" x="0.0" y="0.0" width="515" height="566"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rapid_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wyv-NW-abt">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="479"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="407" id="Zbi-Lx-Y9p"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Zbi-Lx-Y9p"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                        <rect key="frame" x="0.0" y="0.0" width="278" height="479"/>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="0.0" y="0.0" width="417" height="479"/>
+                        <mask key="constraints">
+                            <include reference="Zbi-Lx-Y9p"/>
+                        </mask>
+                    </variation>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Wyv-NW-abt" secondAttribute="bottom" constant="87" id="OVn-Cv-Lqh"/>
+                <constraint firstItem="Wyv-NW-abt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="S86-Tw-yXe"/>
+                <constraint firstItem="Wyv-NW-abt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="p9l-o3-CNt"/>
+                <constraint firstItem="Wyv-NW-abt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="s1L-e6-5jH"/>
+                <constraint firstItem="Wyv-NW-abt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="x2B-in-frD"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="548" y="454.5"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="OVn-Cv-Lqh"/>
+                    <exclude reference="S86-Tw-yXe"/>
+                    <exclude reference="p9l-o3-CNt"/>
+                    <exclude reference="s1L-e6-5jH"/>
+                    <exclude reference="x2B-in-frD"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="S86-Tw-yXe"/>
+                    <include reference="s1L-e6-5jH"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="OVn-Cv-Lqh"/>
+                    <include reference="p9l-o3-CNt"/>
+                    <include reference="x2B-in-frD"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="453.5" y="206.5"/>
         </view>
     </objects>
     <resources>

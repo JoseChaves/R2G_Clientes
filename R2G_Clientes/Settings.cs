@@ -50,6 +50,7 @@ namespace R2G_Clientes
 			signout.Click += (sender, e) => {
 				string resp=DataConnect.deleteUser();
 				string resp2= CarConnect.deleteCar();
+				OrderConnect.deleteOrders();
 				Toast.MakeText(this, resp,ToastLength.Short).Show();
 			};
 		}

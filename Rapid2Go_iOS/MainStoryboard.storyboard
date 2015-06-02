@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4443" systemVersion="13A451" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="12">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="11">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="12" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="15">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="49" destination="26" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="16" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="126"/>
+        </scene>
+        <scene sceneID="25">
+            <objects>
+                <viewController id="26" sceneMemberID="viewController" title="Rapid2Go">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="23"/>
+                        <viewControllerLayoutGuide type="bottom" id="24"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="27">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="51" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="80" y="83" width="160" height="127"/>
+                                <constraints>
+                                    <constraint id="55" firstAttribute="width" constant="160"/>
+                                    <constraint id="56" firstAttribute="height" constant="127"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="52" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="80" y="218" width="160" height="30"/>
+                                <state key="normal" title="Compra de Paquetes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="62" firstAttribute="width" constant="160"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="63" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="132" y="335" width="56" height="30"/>
+                                <state key="normal" title="Ajustes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="66" firstAttribute="width" constant="56"/>
+                                </constraints>
+                                <connections>
+                                    <segue id="122" destination="70" kind="push"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="53" constant="80" firstItem="27" firstAttribute="trailing" secondItem="51" secondAttribute="trailing"/>
+                            <constraint id="54" constant="83" firstItem="51" firstAttribute="top" secondItem="27" secondAttribute="top"/>
+                            <constraint id="60" firstItem="27" firstAttribute="trailing" secondItem="52" secondAttribute="trailing" constant="80"/>
+                            <constraint id="61" constant="218" firstItem="52" firstAttribute="top" secondItem="27" secondAttribute="top"/>
+                            <constraint id="64" firstItem="27" firstAttribute="trailing" secondItem="63" secondAttribute="trailing" constant="132"/>
+                            <constraint id="65" constant="203" firstItem="27" firstAttribute="bottom" secondItem="63" secondAttribute="bottom"/>
+                        </constraints>
+                    </view>
+                    <navigationItem title="Rapid2Go" id="48" key="navigationItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="28" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="500" y="118"/>
+        </scene>
+        <scene sceneID="69">
+            <objects>
+                <viewController id="70" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="67"/>
+                        <viewControllerLayoutGuide type="bottom" id="68"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="71">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="124" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137" y="114" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="125" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="110" y="152" width="101" height="30"/>
+                                <state key="normal" title="Iniciar Sesion">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="128" firstAttribute="width" constant="101"/>
+                                </constraints>
+                                <connections>
+                                    <segue id="169" destination="132" kind="push"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="126" firstItem="125" firstAttribute="top" secondItem="71" secondAttribute="top" constant="152"/>
+                            <constraint id="127" firstItem="71" firstAttribute="trailing" secondItem="125" secondAttribute="trailing" constant="109"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="72" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1059" y="118"/>
+        </scene>
+        <scene sceneID="131">
+            <objects>
+                <viewController id="132" sceneMemberID="viewController" customClass="LoginViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="129"/>
+                        <viewControllerLayoutGuide type="bottom" id="130"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="133" customClass="LoginViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="E-Mail" lineBreakMode="tailTruncation" minimumFontSize="10" id="171" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="240" width="49" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="178" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="172" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Email">
+                                <rect key="frame" x="20" y="269" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="175" firstAttribute="width" constant="280"/>
+                                </constraints>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Contraseña" lineBreakMode="tailTruncation" minimumFontSize="10" id="179" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="307" width="96" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="183" firstAttribute="width" constant="96"/>
+                                    <constraint id="184" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="180" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Contraseña">
+                                <rect key="frame" x="20" y="336" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="187" firstAttribute="width" constant="280"/>
+                                </constraints>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="188" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="114" y="374" width="92" height="30"/>
+                                <state key="normal" title="Iniciar Sesion">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="189" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="120.5" y="412" width="79" height="30"/>
+                                <state key="normal" title="Regisgtrate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="253" destination="201" kind="push"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="173" firstItem="133" firstAttribute="trailing" secondItem="172" secondAttribute="trailing" constant="20"/>
+                            <constraint id="174" constant="269" firstItem="133" firstAttribute="bottom" secondItem="172" secondAttribute="bottom"/>
+                            <constraint id="176" firstItem="171" firstAttribute="leading" secondItem="133" secondAttribute="leading" constant="20"/>
+                            <constraint id="177" constant="240" firstItem="171" firstAttribute="top" secondItem="133" secondAttribute="top"/>
+                            <constraint id="181" constant="20" firstItem="179" firstAttribute="leading" secondItem="133" secondAttribute="leading"/>
+                            <constraint id="182" constant="240" firstItem="133" firstAttribute="bottom" secondItem="179" secondAttribute="bottom"/>
+                            <constraint id="185" constant="20" firstItem="133" firstAttribute="trailing" secondItem="180" secondAttribute="trailing"/>
+                            <constraint id="186" constant="202" firstItem="133" firstAttribute="bottom" secondItem="180" secondAttribute="bottom"/>
+                            <constraint id="194" firstItem="188" firstAttribute="top" secondItem="180" secondAttribute="bottom" constant="8"/>
+                            <constraint id="195" firstItem="188" firstAttribute="centerX" secondItem="180" secondAttribute="centerX" constant="0.0"/>
+                            <constraint id="196" firstItem="189" firstAttribute="top" secondItem="188" secondAttribute="bottom" constant="8"/>
+                            <constraint id="197" firstItem="188" firstAttribute="centerX" secondItem="189" secondAttribute="centerX" constant="0.0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnLogin" destination="188" id="name-outlet-188"/>
+                        <outlet property="txtEmail" destination="172" id="name-outlet-172"/>
+                        <outlet property="txtPwd" destination="180" id="name-outlet-180"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="134" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039" y="808"/>
+        </scene>
+        <scene sceneID="200">
+            <objects>
+                <viewController id="201" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="198"/>
+                        <viewControllerLayoutGuide type="bottom" id="199"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="202">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="203" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040" y="1440"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

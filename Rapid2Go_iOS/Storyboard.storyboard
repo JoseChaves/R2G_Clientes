@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4443" systemVersion="13A451" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="14">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="13">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="14" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="17">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="16" kind="relationship" relationship="rootViewController" id="15"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="18" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19" y="126"/>
+        </scene>
+        <scene sceneID="19">
+            <objects>
+                <viewController id="16" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="11"/>
+                        <viewControllerLayoutGuide type="bottom" id="12"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="21">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="25" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137" y="250" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="80" destination="31" kind="push"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="26" firstItem="21" firstAttribute="trailing" secondItem="25" secondAttribute="trailing" constant="137"/>
+                            <constraint id="27" constant="250" firstItem="25" firstAttribute="top" secondItem="21" secondAttribute="top"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="20"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="22" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="120"/>
+        </scene>
+        <scene sceneID="30">
+            <objects>
+                <viewController id="31" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="28"/>
+                        <viewControllerLayoutGuide type="bottom" id="29"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="32">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="89" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="144" destination="85" kind="push"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="146" firstItem="32" firstAttribute="bottom" secondItem="89" secondAttribute="bottom" constant="269"/>
+                            <constraint id="147" firstItem="32" firstAttribute="trailing" secondItem="89" secondAttribute="trailing" constant="137"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="33" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="565"/>
+        </scene>
+        <scene sceneID="84">
+            <objects>
+                <viewController id="85" sceneMemberID="viewController" customClass="LoginViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="82"/>
+                        <viewControllerLayoutGuide type="bottom" id="83"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="86">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="148" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137" y="367" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="149" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Email">
+                                <rect key="frame" x="20" y="231" width="280" height="30"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <constraints>
+                                    <constraint id="153" firstAttribute="width" constant="280"/>
+                                </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="150" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Password">
+                                <rect key="frame" x="20" y="282" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="156" firstAttribute="width" constant="280"/>
+                                </constraints>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint id="151" constant="20" firstItem="86" firstAttribute="trailing" secondItem="149" secondAttribute="trailing"/>
+                            <constraint id="152" constant="231" firstItem="149" firstAttribute="top" secondItem="86" secondAttribute="top"/>
+                            <constraint id="154" firstItem="86" firstAttribute="trailing" secondItem="150" secondAttribute="trailing" constant="20"/>
+                            <constraint id="155" constant="256" firstItem="86" firstAttribute="bottom" secondItem="150" secondAttribute="bottom"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="149" id="name-outlet-149"/>
+                        <outlet property="txtPwd" destination="150" id="name-outlet-150"/>
+                        <outlet property="btnLogin" destination="148" id="name-outlet-148"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="87" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1487" y="531"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

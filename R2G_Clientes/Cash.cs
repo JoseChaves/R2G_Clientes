@@ -33,6 +33,7 @@ namespace R2G_Clientes
 		String comments;
 		double price;
 		int days;
+		Order order;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -64,7 +65,8 @@ namespace R2G_Clientes
 			goHome.Click += async (sender, e) =>{
 				url = getURL();
 				jval = await requester(url);
-
+				parser(jval);
+				OrderConnect.dataAccess(order.orderID);
 				AlertDialog.Builder dialogo = new AlertDialog.Builder (this);
 				AlertDialog men = dialogo.Create();
 				men.SetTitle (Resource.String.confirmation );
@@ -83,6 +85,11 @@ namespace R2G_Clientes
 				});
 				men.Show ();
 			};
+		}
+
+		public void parser(JsonValue jval){
+			order = JsonConvert.DeserializeObject<Order> (jval.ToString ());
+				
 		}
 
 		public void button1(){
@@ -124,6 +131,12 @@ namespace R2G_Clientes
 			}
 		}
 
+	}
+
+	public class Order{
+
+		public string success{ get; set; }
+		public int orderID{ get; set; }
 	}
 }
 

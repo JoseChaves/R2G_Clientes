@@ -4,7 +4,7 @@
 	<string name="app_name">Ready2Go</string>
 	<string name="signin">Sign In</string>
 	<string name="register">Register</string>
-	<string name="username">Username</string>
+	<string name="username">E-mail</string>
 	<string name="password">Password</string>
 	<string name="packs">Buy Packages</string>
 	<string name="details">Service Details</string>
@@ -80,6 +80,7 @@
    	<string name="payplz">Thanks for your Order. You have two work days to pay for your Order.</string>
    	<string name="takeme">Take me!</string>
    	<string name="takemepolite">Office Directions</string>
+   	<string name="load">Load</string>
 
    	<string name="foursmallsingle">$9.25</string>
    	<string name="sixsmallsingle">$8.75</string>

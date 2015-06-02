@@ -7,10 +7,14 @@ using System.Linq;
 using System.Net;
 using System.Text;
 
+using R2G_Clientes.Shared;
+
 using Newtonsoft.Json;
 
 using System.Threading.Tasks;
-
+using Android.Content;
+using Android.Runtime;
+using Android.Views;
 using Android.App;
 using Android.OS;
 using Android.Widget;
@@ -23,13 +27,13 @@ namespace R2G_Clientes
 	{
 		public RestClient client;
 		//Declaroamos nuestras variables que utilizaremos
-		public ArrayAdapter<OrderData> adapter;
+		public ArrayAdapter adapter;
 		//List<Datos_Usuarios> listausuarios = new List<Datos_Usuarios> ();
 		//ListView LvLIsta;
 
-		Spinner spin;
+		Spinner spinner;
 		System.Json.JsonArray jerry;
-
+		int item;
 		TextView tv2;
 		TextView tv3;
 		TextView tv4;
@@ -44,7 +48,7 @@ namespace R2G_Clientes
 			SetContentView(Resource.Layout.activity_service_history);
 
 			Button load = FindViewById<Button> (Resource.Id.load);
-			spin = FindViewById<Spinner> (Resource.Id.spinner1);
+			spinner = FindViewById<Spinner> (Resource.Id.spinner1);
 			tv2= FindViewById<TextView> (Resource.Id.textView2);
 			tv3= FindViewById<TextView> (Resource.Id.textView3);
 			tv4= FindViewById<TextView> (Resource.Id.textView4);
@@ -52,18 +56,44 @@ namespace R2G_Clientes
 			tv6= FindViewById<TextView> (Resource.Id.textView6);
 			tv7= FindViewById<TextView> (Resource.Id.textView7);
 			tv8 = FindViewById<TextView> (Resource.Id.textView8);
-			client = new RestClient ("http://190.219.161.141:8080/rapidtoREST/service");
-			adapter = new ArrayAdapter<OrderData>(this, Android.Resource.Layout.SimpleDropDownItem1Line);
-			//LvLIsta.Adapter = adapter;
-			string url = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/orders";
+
+			try{
+			List<int> orders =new List<int>( OrderConnect.getAllOrders ());
+
+			spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs> (spinner_ItemSelected);
+			adapter = new ArrayAdapter<int>( this, Android.Resource.Layout.SimpleSpinnerItem, orders);
+
+			orders.ForEach (delegate(int orderID){
+				//adapter.Remove(orderID);
+				//adapter.Add (orderID);
+				Console.WriteLine(orderID);
+			});
+
+			adapter.SetDropDownViewResource (Android.Resource.Layout.SimpleSpinnerDropDownItem);
+			spinner.Adapter = adapter;
+			}catch{
+			}
+			//ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, lables);
+
+			string url = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/orders/";
 
 			load.Click += async (sender, e) => {
-				string url2 = string.Format ("{0}/3", url);// + spin.SelectedItem.ToString();
-
+				string url2 = urlbuilder(url);
+				try{
 				JsonValue json = await FetchAsync(url2);
 				//listausuarios = new List<Datos_Usuarios>();
 				//MetodoGet();
 				ParseAndDisplay(json);
+				}catch{
+					AlertDialog.Builder dialogo = new AlertDialog.Builder (this);
+					AlertDialog men = dialogo.Create();
+					men.SetTitle (Resource.String.notyet);
+					men.SetMessage ("Please Log In To Continue");
+					men.SetButton ("Ok",delegate(object send, DialogClickEventArgs er) {
+						men.Dismiss();
+					});
+					men.Show ();
+				}
 				//Toast.MakeText (this, "Conexion Establecida" + json.ToString(), ToastLength.Long).Show ();
 
 			};
@@ -71,6 +101,17 @@ namespace R2G_Clientes
 			/////LvLIsta.ItemClick += lvlista_ItemClick;
 			// Create your application here
 		}
+
+		public string urlbuilder(string url){
+			string finalurl = url + item;
+			return finalurl;
+		}
+
+		private void spinner_ItemSelected (object sender, AdapterView.ItemSelectedEventArgs e)
+		{
+			Spinner spinner = (Spinner)sender;
+			item = Convert.ToInt32(spinner.GetItemAtPosition (e.Position).ToString());
+			}
 
 		public async void fillspinner(string url){
 			JsonValue json = await FetchAsync(url);
@@ -111,21 +152,21 @@ namespace R2G_Clientes
 
 		private void ParseAndDisplay (JsonValue json)
 		{
-			OrderData order = JsonConvert.DeserializeObject<OrderData> (json.ToString ());
+			OrderData1 order = JsonConvert.DeserializeObject<OrderData1> (json.ToString ());
 
 			tv2.Text = (GetString(Resource.String.ordrID) + " " + order.orderID);
-			tv3.Text = (tv3.Text + order.addrs);
-			tv4.Text = (tv4.Text + order.starth + " - " + order.endh );
+			tv3.Text = (GetString(Resource.String.address) + " " + order.addrs);
+			tv4.Text = (GetString(Resource.String.timewindow) + " " + order.starth + " - " + order.endh );
 			tv5.Text = (GetString(Resource.String.car) + order.carModel + " " + order.color + GetString(Resource.String.licenseplate) + order.licenseplate);
-			tv6.Text = (GetString(Resource.String.orderComms) + order.CarComments);
+			tv6.Text = (GetString(Resource.String.orderComms)+ string.Format("\n") + order.CarComments);
 			tv7.Text = (GetString(Resource.String.orderdays) + order.orderDays);
 			tv8.Text = (GetString(Resource.String.orderPack) + order.pack);
 
 		} }
 	
 	//Entidad de los datos que vamos a usar.
-	public class OrderData
-	{
+	public class OrderData1{
+		
 		public int orderID { get; set; }
 		public string name { get; set; }
 		public string addrs { get; set; }
@@ -137,6 +178,10 @@ namespace R2G_Clientes
 		public string CarComments { get; set; }
 		public string orderDays{ get; set; }
 		public int pack{ get; set; }
+	}
+
+	public class oData{
+		public int orderID{ get; set; }
 	}
 		
 		

@@ -1,96 +1,37 @@
 ﻿using System;
-//using System.Threading.Tasks;
-
-//using Android.OS;
-//using Auth0.SDK;
-//using Xamarin.Auth;
-//using Android.App;
-//using Android.Widget;
-//using Android.Content;
+using System.Threading.Tasks;
+using System.Net;
+using System.Web;
 using Newtonsoft.Json;
+using System.IO;
+using System.Json;
 
 namespace R2G_Clientes.Shared
 {
-	public class LoginAuth
+	public class RequestHandler
 	{
-		string access_token;
+		HttpWebRequest wreq;
 
-		/*public void LoginByGoogle ()
-		{
-			var auth = new OAuth2Authenticator (
-				clientId: "1011842775122-kmjq0ap02qhrsv7jc54uec2p6gupomja.apps.googleusercontent.com",
-				scope: "https://www.googleapis.com/auth/userinfo.email", 
-				authorizeUrl: new Uri ("https://accounts.google.com/o/oauth2/auth"),
-				//redirectUrl: new Uri ("https://www.googleapis.com/plus/v1/people/me"), 
-				redirectUrl: new Uri ("http://localhost"),  
-				getUsernameAsync: null);  
+		public static async Task<JsonValue> FetchAsync(string url){
 
-			string access_token;
-			auth.Completed += (sender , e ) =>
-			{  
-				Console.WriteLine ( e.IsAuthenticated );
-				e.Account.Properties.TryGetValue ( "access_token" , out access_token ); 
-				//get user full information
-				getInfo();
+			HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create (new Uri (url));
 
-			} ; 
-			//var intent = auth.GetUI(this);
-			//StartActivity (intent);
-		}
+			request.ContentType = "application/json";
+			request.Method = "GET";
 
+			using (WebResponse response = await request.GetResponseAsync ()) {
 
+				using (Stream stream = response.GetResponseStream ()) {
 
-		async void getInfo()
-		{   
-			//do RESP request,by appending token
-			string userInfo = await GetDataFromGoogle (access_token ); 
-			Console.WriteLine (  userInfo);
-			if ( userInfo != "Exception" )
-			{
-				//Deserialize  to objet
-				GoogleUserInfo googleIngo = JsonConvert.DeserializeObject<GoogleUserInfo> ( userInfo );  
-			}
-			else
-			{  
+					JsonValue jsondoc = await Task.Run (() => System.Json.JsonArray.Load (stream));
+					Console.Out.Write ("Response, {0} ", jsondoc.ToString ());
+					//Toast.MakeText (this, "Conexion Establecida" + jsondoc.ToString(), ToastLength.Long).Show ();
 
-				Console.WriteLine("exception");
+					return jsondoc;
+				}
 			}
 		}
 
-		async   Task<string> GetDataFromGoogle(string accessTokenValue)
-		{    
-			string strResult;
-			string  strURL =   /* "https://www.googleapis.com/oauth2/v1/userinfo?access_token=" + accessTokenValue + "" "https://accounts.google.com/o/oauth2/token";   
-			//WebClient client = new WebClient (); 
-			try
-			{
-				//strResult=await client.DownloadStringTaskAsync (new Uri(strURL));
-				Console.WriteLine("downloaded");
-			}
-			catch
-			{
-				strResult="Exception";
-			}
-			finally
-			{
-			//	client.Dispose ();
-			//	client = null; 
-			}
-			return "";//strResult;
-		}
-
-		public class GoogleUserInfo
-		{
-			public string id { get; set; }
-			public string email { get; set; }
-			public bool verified_email { get; set; }
-			public string name { get; set; }
-			public string given_name { get; set; }
-			public string family_name { get; set; }
-			public string link { get; set; }
-			public string picture { get; set; }
-			public string gender { get; set; }
-		}*/
 	}
 }
 

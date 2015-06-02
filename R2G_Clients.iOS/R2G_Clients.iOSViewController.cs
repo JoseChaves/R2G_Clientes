@@ -1,14 +1,16 @@
 ﻿using System;
-using System.Drawing;
-
-using Foundation;
 using UIKit;
+
+
+
+
 
 namespace R2G_Clients.iOS
 {
 	public partial class R2G_Clients_iOSViewController : UIViewController
 	{
-		public R2G_Clients_iOSViewController (IntPtr handle) : base (handle)
+
+		public  R2G_Clients_iOSViewController (IntPtr handle) : base (handle)
 		{
 		}
 
@@ -20,20 +22,13 @@ namespace R2G_Clients.iOS
 			// Release any cached data, images, etc that aren't in use.
 		}
 
-		#region View lifecycle
-
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
 
-			this.txtUserName.ShouldReturn += (textField) => { 
-				textField.ResignFirstResponder();
-				return true; 
-			};
-			this.txtPassword.ShouldReturn += (textField) => { 
-				textField.ResignFirstResponder();
-				return true; 
-			};
+			//BuyPackbtn.TouchUpInside += (object sender, EventArgs e) => {
+				
+			//};
 
 			// Perform any additional setup after loading the view, typically from a nib.
 		}
@@ -58,7 +53,6 @@ namespace R2G_Clients.iOS
 			base.ViewDidDisappear (animated);
 		}
 
-		#endregion
 	}
 }
 

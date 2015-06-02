@@ -13,7 +13,7 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
- 
+using R2G_Clientes.Shared;
 
 
 namespace R2G_Lavadores
@@ -38,38 +38,18 @@ namespace R2G_Lavadores
 
 
 			butt.Click += async (sender, e) => {
-				JsonValue json = await FetchAsync(url);
+				JsonValue json = await RequestHandler.FetchAsync(url);
 				ParseAndDisplay(json);
 			};	
-		}
-
-		public async Task<JsonValue> FetchAsync(string url){
-
-			HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create (new Uri (url));
-
-			request.ContentType = "application/json";
-			request.Method = "GET";
-
-			using (WebResponse response = await request.GetResponseAsync ()) {
-
-				using (Stream stream = response.GetResponseStream ()) {
-
-					JsonValue jsondoc = await Task.Run (() => System.Json.JsonArray.Load (stream));
-					Console.Out.Write ("Response, {0} ", jsondoc.ToString ());
-					//Toast.MakeText (this, "Conexion Establecida" + jsondoc.ToString(), ToastLength.Long).Show ();
-				
-					return jsondoc;
-				}
-			}
 		}
 
 		private void ParseAndDisplay (JsonValue json)
 		{
 			OrderData order = JsonConvert.DeserializeObject<OrderData> (json.ToString ());
-			var tempList=new [] {new {PhoneNumber=order["PhoneNumber"]}}.ToList();
+			//var tempList=new [] {new {PhoneNumber=order["PhoneNumber"]}}.ToList();
 			ArrayAdapter arry;
 
-			arry.Add;
+			///arry.Add;
 
 			/* ("ID De la Orden: " + order.orderID) +
 			 ("Dirección de la órden: " + order.addrs) +

@@ -23,7 +23,7 @@
             p1:id="@+id/spinner1"
             p1:layout_margin="8dp" />
         <Button
-            p1:text="Button"
+            p1:text="@string/load"
             p1:layout_width="180dp"
             p1:layout_height="wrap_content"
             p1:id="@+id/load"
