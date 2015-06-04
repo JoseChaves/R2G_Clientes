@@ -30,12 +30,12 @@ namespace R2G_Clients.iOS
 			};
 		}
 
-		public string urlbuilder(){
-			string baseurl = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/users/login";
+		//public string urlbuilder(){
+		//	string baseurl = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/users/login";
 
 
 
-		}
+	//	}
 
 	}
 }

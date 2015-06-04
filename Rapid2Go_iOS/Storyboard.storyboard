@@ -16,7 +16,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="18" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-19" y="126"/>
+            <point key="canvasLocation" x="-275" y="36"/>
         </scene>
         <scene sceneID="19">
             <objects>
@@ -31,29 +31,75 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="25" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="137" y="250" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="120" y="345" width="80" height="30"/>
+                                <state key="normal" title="Ajustes">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue id="80" destination="31" kind="push"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="446" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="79" y="190" width="161" height="30"/>
+                                <state key="normal" title="Compra Paquetes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="447" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="102" y="89" width="115" height="93"/>
+                                <constraints>
+                                    <constraint id="454" firstAttribute="width" constant="115"/>
+                                    <constraint id="455" firstAttribute="height" constant="93"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="461" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="85" y="228" width="149" height="30"/>
+                                <state key="normal" title="Detalles del Servicio">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="468" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="136" y="269" width="46" height="30"/>
+                                <state key="normal" title="Autos">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="472" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="124" y="307" width="69" height="30"/>
+                                <state key="normal" title="Historial">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint id="26" firstItem="21" firstAttribute="trailing" secondItem="25" secondAttribute="trailing" constant="137"/>
-                            <constraint id="27" constant="250" firstItem="25" firstAttribute="top" secondItem="21" secondAttribute="top"/>
+                            <constraint id="456" firstItem="447" firstAttribute="leading" secondItem="21" secondAttribute="leading" constant="102"/>
+                            <constraint id="457" constant="89" firstItem="447" firstAttribute="top" secondItem="21" secondAttribute="top"/>
+                            <constraint firstItem="21" firstAttribute="trailing" secondItem="446" secondAttribute="trailing" constant="80" id="458"/>
+                            <constraint firstItem="446" firstAttribute="top" secondItem="11" secondAttribute="bottom" constant="126" id="459"/>
+                            <constraint firstItem="446" firstAttribute="leading" secondItem="21" secondAttribute="leading" constant="79" id="460"/>
+                            <constraint firstItem="461" firstAttribute="top" secondItem="446" secondAttribute="bottom" constant="8" id="465"/>
+                            <constraint firstItem="461" firstAttribute="leading" secondItem="21" secondAttribute="leading" constant="85" id="466"/>
+                            <constraint firstItem="21" firstAttribute="trailing" secondItem="461" secondAttribute="trailing" constant="86" id="467"/>
+                            <constraint firstItem="468" firstAttribute="top" secondItem="461" secondAttribute="bottom" constant="11" id="469"/>
+                            <constraint firstItem="21" firstAttribute="trailing" secondItem="468" secondAttribute="trailing" constant="138" id="470"/>
+                            <constraint firstItem="468" firstAttribute="leading" secondItem="21" secondAttribute="leading" constant="136" id="471"/>
+                            <constraint firstItem="21" firstAttribute="trailing" secondItem="472" secondAttribute="trailing" constant="127" id="473"/>
+                            <constraint firstItem="472" firstAttribute="top" secondItem="468" secondAttribute="bottom" constant="8" id="474"/>
+                            <constraint firstItem="472" firstAttribute="leading" secondItem="21" secondAttribute="leading" constant="124" id="475"/>
+                            <constraint firstItem="25" firstAttribute="top" secondItem="472" secondAttribute="bottom" constant="8" id="477"/>
+                            <constraint firstItem="21" firstAttribute="trailing" secondItem="25" secondAttribute="trailing" constant="120" id="478"/>
+                            <constraint firstItem="25" firstAttribute="leading" secondItem="21" secondAttribute="leading" constant="120" id="479"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="20"/>
+                    <navigationItem key="navigationItem" title="Rapid2Go" id="20"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="420" y="120"/>
+            <point key="canvasLocation" x="161" y="20"/>
         </scene>
         <scene sceneID="30">
             <objects>
-                <viewController id="31" sceneMemberID="viewController">
+                <viewController id="31" sceneMemberID="viewController" title="Ajustes" customClass="SettingsViewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="28"/>
                         <viewControllerLayoutGuide type="bottom" id="29"/>
@@ -64,28 +110,55 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="89" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="92" y="134" width="137" height="30"/>
+                                <state key="normal" title="Inicio de Sesion">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue id="144" destination="85" kind="push"/>
                                 </connections>
+                                <constraints>
+                                    <constraint id="512" firstAttribute="width" constant="137"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="487" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137" y="96" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="488" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137" y="172" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="489" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137" y="210" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint id="146" firstItem="32" firstAttribute="bottom" secondItem="89" secondAttribute="bottom" constant="269"/>
-                            <constraint id="147" firstItem="32" firstAttribute="trailing" secondItem="89" secondAttribute="trailing" constant="137"/>
+                            <constraint id="507" firstItem="487" firstAttribute="top" secondItem="32" secondAttribute="top" constant="96"/>
+                            <constraint id="508" constant="137" firstItem="32" firstAttribute="trailing" secondItem="487" secondAttribute="trailing"/>
+                            <constraint id="509" firstItem="89" firstAttribute="top" secondItem="487" secondAttribute="bottom" constant="8"/>
+                            <constraint id="510" firstItem="32" firstAttribute="trailing" secondItem="89" secondAttribute="trailing" constant="91"/>
+                            <constraint id="513" firstItem="488" firstAttribute="top" secondItem="32" secondAttribute="top" constant="172"/>
+                            <constraint id="514" firstItem="32" firstAttribute="trailing" secondItem="488" secondAttribute="trailing" constant="137"/>
+                            <constraint firstItem="489" firstAttribute="top" secondItem="28" secondAttribute="bottom" constant="146" id="521"/>
+                            <constraint firstItem="32" firstAttribute="trailing" secondItem="489" secondAttribute="trailing" constant="137" id="522"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="33" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="906" y="565"/>
+            <point key="canvasLocation" x="215" y="715"/>
         </scene>
         <scene sceneID="84">
             <objects>
-                <viewController id="85" sceneMemberID="viewController" customClass="LoginViewController">
+                <viewController id="85" sceneMemberID="viewController" customClass="LoginViewController" title="Inicia Sesion">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="82"/>
                         <viewControllerLayoutGuide type="bottom" id="83"/>
@@ -95,35 +168,47 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="148" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="137" y="367" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="148" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="110" y="334" width="106" height="30"/>
+                                <state key="normal" title="Iniciar Sesion">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="149" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Email">
-                                <rect key="frame" x="20" y="231" width="280" height="30"/>
+                                <rect key="frame" x="20" y="227" width="280" height="30"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
-                                <constraints>
-                                    <constraint id="153" firstAttribute="width" constant="280"/>
-                                </constraints>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="150" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Password">
-                                <rect key="frame" x="20" y="282" width="280" height="30"/>
+                                <rect key="frame" x="20" y="279" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <constraints>
-                                    <constraint id="156" firstAttribute="width" constant="280"/>
-                                </constraints>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="192" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="110" y="372" width="99" height="30"/>
+                                <state key="normal" title="Registrate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="248" destination="211" kind="push"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint id="151" constant="20" firstItem="86" firstAttribute="trailing" secondItem="149" secondAttribute="trailing"/>
-                            <constraint id="152" constant="231" firstItem="149" firstAttribute="top" secondItem="86" secondAttribute="top"/>
-                            <constraint id="154" firstItem="86" firstAttribute="trailing" secondItem="150" secondAttribute="trailing" constant="20"/>
-                            <constraint id="155" constant="256" firstItem="86" firstAttribute="bottom" secondItem="150" secondAttribute="bottom"/>
+                            <constraint firstItem="149" firstAttribute="leading" secondItem="86" secondAttribute="leading" constant="20" id="427"/>
+                            <constraint firstItem="86" firstAttribute="trailing" secondItem="149" secondAttribute="trailing" constant="20" id="428"/>
+                            <constraint firstItem="149" firstAttribute="top" secondItem="82" secondAttribute="bottom" constant="163" id="429"/>
+                            <constraint firstItem="149" firstAttribute="width" secondItem="150" secondAttribute="width" id="430"/>
+                            <constraint firstItem="150" firstAttribute="leading" secondItem="86" secondAttribute="leading" constant="20" id="431"/>
+                            <constraint firstItem="86" firstAttribute="trailing" secondItem="150" secondAttribute="trailing" constant="20" id="432"/>
+                            <constraint firstItem="150" firstAttribute="top" secondItem="149" secondAttribute="bottom" constant="22" id="433"/>
+                            <constraint firstItem="148" firstAttribute="top" secondItem="150" secondAttribute="bottom" constant="25" id="434"/>
+                            <constraint firstItem="148" firstAttribute="leading" secondItem="86" secondAttribute="leading" constant="110" id="435"/>
+                            <constraint firstItem="86" firstAttribute="trailing" secondItem="148" secondAttribute="trailing" constant="104" id="436"/>
+                            <constraint firstItem="192" firstAttribute="top" secondItem="148" secondAttribute="bottom" constant="8" id="437"/>
+                            <constraint firstItem="192" firstAttribute="leading" secondItem="86" secondAttribute="leading" constant="110" id="438"/>
+                            <constraint firstItem="86" firstAttribute="trailing" secondItem="192" secondAttribute="trailing" constant="111" id="439"/>
                         </constraints>
                     </view>
                     <connections>
@@ -134,7 +219,155 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1487" y="531"/>
+            <point key="canvasLocation" x="875" y="871"/>
+        </scene>
+        <scene sceneID="210">
+            <objects>
+                <viewController id="211" sceneMemberID="viewController" customClass="RegisterViewController" title="Registrate">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="208"/>
+                        <viewControllerLayoutGuide type="bottom" id="209"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="212">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="250" translatesAutoresizingMaskIntoConstraints="NO" text="Datos Personales">
+                                <rect key="frame" x="20" y="82" width="135" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="253" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="254" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Nombre">
+                                <rect key="frame" x="20" y="111" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="257" firstAttribute="width" constant="280"/>
+                                </constraints>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="258" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Email">
+                                <rect key="frame" x="20" y="149" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="261" firstAttribute="width" constant="280"/>
+                                </constraints>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="262" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Password" misplaced="YES">
+                                <rect key="frame" x="13" y="1653" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <constraints>
+                                    <constraint id="302" firstAttribute="width" constant="280"/>
+                                </constraints>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="263" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Teléfono">
+                                <rect key="frame" x="20" y="187" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="318" firstAttribute="width" constant="280"/>
+                                </constraints>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="267" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Dirección">
+                                <rect key="frame" x="20" y="225" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="315" firstAttribute="width" constant="280"/>
+                                </constraints>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Datos Laborales" lineBreakMode="tailTruncation" minimumFontSize="10" id="268" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="263" width="135" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="321" firstAttribute="width" constant="135"/>
+                                    <constraint id="322" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="269" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Email">
+                                <rect key="frame" x="20" y="292" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="326" firstAttribute="width" constant="280"/>
+                                </constraints>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="270" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Telefono">
+                                <rect key="frame" x="20" y="330" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="330" firstAttribute="width" constant="280"/>
+                                </constraints>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="271" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Direccion">
+                                <rect key="frame" x="20" y="368" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="272" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="125" y="406" width="70" height="30"/>
+                                <state key="normal" title="Registrate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="251" constant="20" firstItem="250" firstAttribute="leading" secondItem="212" secondAttribute="leading"/>
+                            <constraint id="252" constant="82" firstItem="250" firstAttribute="top" secondItem="212" secondAttribute="top"/>
+                            <constraint id="300" firstItem="262" firstAttribute="top" secondItem="212" secondAttribute="top" constant="187"/>
+                            <constraint id="301" firstItem="212" firstAttribute="trailing" secondItem="262" secondAttribute="trailing" constant="20"/>
+                            <constraint id="366" firstItem="270" firstAttribute="leading" secondItem="212" secondAttribute="leading" constant="20"/>
+                            <constraint id="367" constant="330" firstItem="270" firstAttribute="top" secondItem="212" secondAttribute="top"/>
+                            <constraint id="369" firstItem="269" firstAttribute="top" secondItem="212" secondAttribute="top" constant="292"/>
+                            <constraint id="370" firstItem="269" firstAttribute="centerX" secondItem="270" secondAttribute="centerX" constant="0.0"/>
+                            <constraint id="371" firstItem="268" firstAttribute="top" secondItem="212" secondAttribute="top" constant="263"/>
+                            <constraint id="372" firstItem="268" firstAttribute="leading" secondItem="212" secondAttribute="leading" constant="20"/>
+                            <constraint id="373" firstItem="267" firstAttribute="leading" secondItem="268" secondAttribute="leading" constant="0.0"/>
+                            <constraint id="374" firstItem="267" firstAttribute="top" secondItem="212" secondAttribute="top" constant="225"/>
+                            <constraint id="375" firstItem="267" firstAttribute="centerX" secondItem="270" secondAttribute="centerX" constant="0.0"/>
+                            <constraint id="376" firstItem="263" firstAttribute="leading" secondItem="268" secondAttribute="leading" constant="0.0"/>
+                            <constraint id="377" firstItem="263" firstAttribute="top" secondItem="212" secondAttribute="top" constant="187"/>
+                            <constraint id="378" firstItem="263" firstAttribute="centerX" secondItem="270" secondAttribute="centerX" constant="0.0"/>
+                            <constraint id="379" firstItem="258" firstAttribute="leading" secondItem="268" secondAttribute="leading" constant="0.0"/>
+                            <constraint id="380" firstItem="258" firstAttribute="top" secondItem="212" secondAttribute="top" constant="149"/>
+                            <constraint id="381" firstItem="258" firstAttribute="centerX" secondItem="270" secondAttribute="centerX" constant="0.0"/>
+                            <constraint id="382" firstItem="254" firstAttribute="leading" secondItem="268" secondAttribute="leading" constant="0.0"/>
+                            <constraint id="383" firstItem="254" firstAttribute="top" secondItem="212" secondAttribute="top" constant="111"/>
+                            <constraint id="384" firstItem="254" firstAttribute="centerX" secondItem="270" secondAttribute="centerX" constant="0.0"/>
+                            <constraint firstItem="271" firstAttribute="top" secondItem="270" secondAttribute="bottom" constant="8" id="396"/>
+                            <constraint firstItem="271" firstAttribute="leading" secondItem="212" secondAttribute="leading" constant="20" id="397"/>
+                            <constraint firstItem="271" firstAttribute="width" secondItem="270" secondAttribute="width" id="398"/>
+                            <constraint firstItem="272" firstAttribute="leading" secondItem="212" secondAttribute="leading" constant="125" id="405"/>
+                            <constraint firstItem="212" firstAttribute="trailing" secondItem="272" secondAttribute="trailing" constant="125" id="406"/>
+                            <constraint firstItem="272" firstAttribute="top" secondItem="271" secondAttribute="bottom" constant="8" id="407"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtName" destination="254" id="name-outlet-254"/>
+                        <outlet property="btnRegister" destination="272" id="name-outlet-272"/>
+                        <outlet property="txtWAddress" destination="271" id="name-outlet-271"/>
+                        <outlet property="txtwPhone" destination="270" id="name-outlet-270"/>
+                        <outlet property="txtWEmail" destination="269" id="name-outlet-269"/>
+                        <outlet property="txtAddress" destination="267" id="name-outlet-267"/>
+                        <outlet property="txtPhone" destination="263" id="name-outlet-263"/>
+                        <outlet property="txtPwd" destination="262" id="name-outlet-262"/>
+                        <outlet property="txtEmail" destination="258" id="name-outlet-258"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="213" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="1811"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

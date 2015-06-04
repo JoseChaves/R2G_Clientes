@@ -1,7 +1,7 @@
-﻿using SQLite;
-using System;
+﻿using System;
 using System.IO;
 using System.Collections.Generic;
+using SQLite;
 
 namespace R2G_Clientes.Shared
 {
