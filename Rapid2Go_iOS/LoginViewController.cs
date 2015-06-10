@@ -1,7 +1,6 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
-using UIKit;
 using System.Net;
 using System.Web;
 using Newtonsoft.Json;
@@ -11,6 +10,7 @@ using R2G_Clientes.Shared;
 using System.Security.Cryptography;
 using System.Text;
 using System.Collections.Generic;
+using UIKit;
 
 namespace Rapid2Go_iOS
 {

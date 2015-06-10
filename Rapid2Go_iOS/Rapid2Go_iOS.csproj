@@ -81,6 +81,8 @@
     <Reference Include="SQLite">
       <HintPath>..\Components\sqlite-net-1.0.8.3\lib\ios-unified\SQLite.dll</HintPath>
     </Reference>
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="MonoTouch.NUnitLite" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
@@ -109,7 +111,26 @@
     <Compile Include="SettingsViewController.designer.cs">
       <DependentUpon>SettingsViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="PackSelectViewController.cs" />
+    <Compile Include="PackSelectViewController.designer.cs">
+      <DependentUpon>PackSelectViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsViewController.cs" />
+    <Compile Include="DetailsViewController.designer.cs">
+      <DependentUpon>DetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentViewController.cs" />
+    <Compile Include="PaymentViewController.designer.cs">
+      <DependentUpon>PaymentViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashViewController.cs" />
+    <Compile Include="CashViewController.designer.cs">
+      <DependentUpon>CashViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="..\R2G_Clientes.Shared\R2G_Clientes.Shared.projitems" Label="Shared" Condition="Exists('..\R2G_Clientes.Shared\R2G_Clientes.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\Untitled.png" />
+  </ItemGroup>
 </Project>

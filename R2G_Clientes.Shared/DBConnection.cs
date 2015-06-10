@@ -125,13 +125,13 @@ namespace R2G_Clientes.Shared
 			#endif
 			var db = new SQLiteConnection (dbPath);
 			db.CreateTable<CarStock> ();
-			if (db.Table<CarStock> ().Count() == 0) {
+			//if (db.Table<CarStock> ().Count() == 0) {
 				// only insert the data if it doesn't already exist
 				var newCar = new CarStock ();
 				newCar.carID = iD;
 				newCar.size = size;
 				db.Insert (newCar);
-			}
+			//}
 			Console.WriteLine("Reading data");
 			var table = db.Table<CarStock> ();
 			foreach (var s in table) {
@@ -139,11 +139,47 @@ namespace R2G_Clientes.Shared
 			}
 		}
 
+		public static List<int> getAllCars(){
+			List<int> ids= new List<int>();
+			string filename = "cardata.db3";
+			#if __IOS__
+			string documentsPath = Environment.GetFolderPath (Environment.SpecialFolder.Personal);
+			string libraryPath = Path.Combine (documentsPath, "..", "Library"); // Library folder
+			var dbPath = Path.Combine(libraryPath, filename);
+			#else
+
+			#if __ANDROID__
+			Console.WriteLine ("Creating database, if it doesn't already exist");
+			string dbPath = Path.Combine (
+				Environment.GetFolderPath (Environment.SpecialFolder.Personal),
+				filename);
+			#endif
+			#endif
+			var db = new SQLiteConnection (dbPath);
+
+			foreach (var s in db.Table<CarStock>()) {
+				ids.Add (s.carID);
+			}
+
+			return ids;
+		}
+
 		public static string getCarSize(){
 			int userid;
+			string filename = "cardata.db3";
+			#if __IOS__
+			string documentsPath = Environment.GetFolderPath (Environment.SpecialFolder.Personal);
+			string libraryPath = Path.Combine (documentsPath, "..", "Library"); // Library folder
+			var dbPath = Path.Combine(libraryPath, filename);
+			#else
+
+			#if __ANDROID__
+			Console.WriteLine ("Creating database, if it doesn't already exist");
 			string dbPath = Path.Combine (
-				                Environment.GetFolderPath (Environment.SpecialFolder.Personal),
-				                "cardata.db3");
+			Environment.GetFolderPath (Environment.SpecialFolder.Personal),
+			filename);
+			#endif
+			#endif
 			var db = new SQLiteConnection (dbPath);
 			var userid2 = db.Get<CarStock> (1);
 			//userid = userid2.userID.ToString ();	
@@ -151,9 +187,20 @@ namespace R2G_Clientes.Shared
 		}
 
 		public static string deleteCar(){
+			string filename = "cardata.db3";
+			#if __IOS__
+			string documentsPath = Environment.GetFolderPath (Environment.SpecialFolder.Personal);
+			string libraryPath = Path.Combine (documentsPath, "..", "Library"); // Library folder
+			var dbPath = Path.Combine(libraryPath, filename);
+			#else
+
+			#if __ANDROID__
+			Console.WriteLine ("Creating database, if it doesn't already exist");
 			string dbPath = Path.Combine (
-				Environment.GetFolderPath (Environment.SpecialFolder.Personal),
-				"cardata.db3");
+			Environment.GetFolderPath (Environment.SpecialFolder.Personal),
+			filename);
+			#endif
+			#endif
 			var db = new SQLiteConnection (dbPath);
 			db.DropTable<CarStock>();
 			return "Logout Exitoso";
@@ -161,9 +208,20 @@ namespace R2G_Clientes.Shared
 		}
 
 		public static int getCarID(){
+			string filename = "cardata.db3";
+			#if __IOS__
+			string documentsPath = Environment.GetFolderPath (Environment.SpecialFolder.Personal);
+			string libraryPath = Path.Combine (documentsPath, "..", "Library"); // Library folder
+			var dbPath = Path.Combine(libraryPath, filename);
+			#else
+
+			#if __ANDROID__
+			Console.WriteLine ("Creating database, if it doesn't already exist");
 			string dbPath = Path.Combine (
-				Environment.GetFolderPath (Environment.SpecialFolder.Personal),
-				"cardata.db3");
+			Environment.GetFolderPath (Environment.SpecialFolder.Personal),
+			filename);
+			#endif
+			#endif
 			var db = new SQLiteConnection (dbPath);
 			var userid2 = db.Get<CarStock> (1);
 			//userid = userid2.userID.ToString ();	
