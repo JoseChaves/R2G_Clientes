@@ -10,19 +10,43 @@
         p1:layout_width="match_parent"
         p1:layout_height="match_parent"
         p1:id="@+id/linearLayout1">
-        <Button
-            p1:text="Button"
-            p1:layout_width="180dp"
+        <Space
+            p1:layout_width="match_parent"
+            p1:layout_height="72dp"
+            p1:id="@+id/space1"
+            p1:layout_margin="8dp" />
+        <TextView
+            p1:text="Medium Text"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/button1"
+            p1:id="@+id/textView1"
+            p1:layout_margin="8dp" />
+        <EditText
+            p1:inputType="textEmailAddress"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/editText1"
+            p1:layout_margin="8dp" />
+        <TextView
+            p1:text="Medium Text"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView2"
+            p1:layout_margin="8dp" />
+        <EditText
+            p1:inputType="textPassword"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/editText2"
+            p1:layout_margin="8dp" />
+        <Button
+            p1:text="Iniciar"
+            p1:layout_width="96dp"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/btnLogIn"
             p1:layout_margin="8dp"
             p1:layout_gravity="center" />
-        <ListView
-            p1:minWidth="25dp"
-            p1:minHeight="25dp"
-            p1:layout_width="match_parent"
-            p1:layout_height="match_parent"
-            p1:id="@+id/listView1"
-            p1:layout_margin="8dp" />
     </LinearLayout>
 </ScrollView>

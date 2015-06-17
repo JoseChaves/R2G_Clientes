@@ -4,9 +4,7 @@ using Android.App;
 using Android.Content;
 using Android.Runtime;
 using Android.Views;
-using Android.Widget;
 using Android.OS;
-using R2G_Clientes.Shared;
 using System.Json;
 using System.Net;
 using Newtonsoft.Json;
@@ -14,6 +12,8 @@ using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using R2G_Clientes.Shared;
+using Android.Widget;
+using SQLite;
 
 
 namespace R2G_Lavadores
@@ -24,57 +24,72 @@ namespace R2G_Lavadores
 		string url;
 		ListView et;
 		IListAdapter ila;
+		EditText pwd;
+		EditText usr;
+		int id = 0;
+		OrderData od= new OrderData();
 
 		protected override void OnCreate (Bundle bundle)
-		{
+		{	
 
-			base.OnCreate (bundle);
+			try{
+				id = DataConnect.getUserID ();
+			}catch{
+			//	id = null;
+			}
+
+				base.OnCreate (bundle);
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
-			Button butt = FindViewById<Button> (Resource.Id.button1);
-			//et = FindViewById<EditText> (Resource.Id.editText1);
-			url = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/orders/lav/1";
+			Button butt = FindViewById<Button> (Resource.Id.btnLogIn);
+			usr = FindViewById<EditText> (Resource.Id.editText1);
+			pwd = FindViewById<EditText> (Resource.Id.editText2);
+			Intent intent = new Intent (this, typeof(Menu));
+			if (id != 0) {
+				
+				StartActivity (intent);
+			}
 
 
 			butt.Click += async (sender, e) => {
+				url = urlbuilder();
+				try{
 				JsonValue json = await RequestHandler.FetchAsync(url);
 				ParseAndDisplay(json);
+				}catch{}
+				if (od.login.Equals("true")){
+					DataConnect.dataAccess(od.userID);
+					StartActivity(intent);
+
+				}else{
+					
+				}
+				
 			};	
+		}
+
+		public string urlbuilder(){
+			string baseurl=	"http://ps413027.dreamhost.com:8080/rapidtoREST/users/login";
+			string finalurl;
+
+			finalurl = baseurl + "?usern=" + WebUtility.UrlEncode (usr.Text) + "&pwd=" + WebUtility.UrlEncode (HashBrown.hasher (pwd.Text));
+			return finalurl;
 		}
 
 		private void ParseAndDisplay (JsonValue json)
 		{
-			OrderData order = JsonConvert.DeserializeObject<OrderData> (json.ToString ());
-			//var tempList=new [] {new {PhoneNumber=order["PhoneNumber"]}}.ToList();
-			ArrayAdapter arry;
+			od = JsonConvert.DeserializeObject<OrderData> (json.ToString ());
 
-			///arry.Add;
 
-			/* ("ID De la Orden: " + order.orderID) +
-			 ("Dirección de la órden: " + order.addrs) +
-				("Ventana de Tiempo: de " + order.starth + " a " + order.endh )+
-				("Automóvil: " + order.carModel + " " + order.color + " Placa: " + order.licenseplate)+
-			("Comentarios de la órden: " + order.CarComments)+
-			("Dias para el Servicio: " + order.orderDays)+
-			("Paquete Contratado: " + order.pack);*/
-
-		} }
+		} 
+	}
 			
 
 public class OrderData
 {
-	public IList<int> orderID { get; set; }
-	public IList<string> name { get; set; }
-	public IList<string> addrs { get; set; }
-	public IList<int> starth { get; set; }
-	public IList<int> endh { get; set; }
-	public IList<string> carModel { get; set; }
-	public IList<string> licenseplate{ get; set; }
-	public IList<string> color { get; set; }
-	public IList<string> CarComments { get; set; }
-	public IList<string> orderDays{ get; set; }
-	public IList<int> pack{ get; set; }
+		public int userID { get; set; }
+		public string login { get; set; }
 }
 
 }

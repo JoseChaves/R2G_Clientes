@@ -16,10 +16,26 @@ namespace Rapid2Go_iOS
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnAddress { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnListo { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UILabel lblOrderDetails { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
+			if (btnAddress != null) {
+				btnAddress.Dispose ();
+				btnAddress = null;
+			}
+			if (btnListo != null) {
+				btnListo.Dispose ();
+				btnListo = null;
+			}
 			if (lblOrderDetails != null) {
 				lblOrderDetails.Dispose ();
 				lblOrderDetails = null;

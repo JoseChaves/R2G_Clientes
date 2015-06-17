@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4443" systemVersion="13A451" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="14">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13A451" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="14" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
     </dependencies>
     <scenes>
         <scene sceneID="13">
@@ -26,27 +26,33 @@
                         <viewControllerLayoutGuide type="bottom" id="12"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="21">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="25" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="120" y="345" width="80" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="25" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="120" y="345" width="360" height="30"/>
                                 <state key="normal" title="Ajustes">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="80" destination="31" kind="push"/>
+                                    <segue id="80" destination="31" kind="show"/>
                                 </connections>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="120" y="345" width="80" height="30"/>
+                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="446" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="79" y="190" width="161" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="446" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="79" y="190" width="441" height="30"/>
                                 <state key="normal" title="Compra Paquetes">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="614" destination="571" kind="push"/>
+                                    <segue id="614" destination="571" kind="show"/>
                                 </connections>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="79" y="190" width="161" height="30"/>
+                                </variation>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="447" translatesAutoresizingMaskIntoConstraints="NO" image="Untitled.png">
                                 <rect key="frame" x="102" y="89" width="115" height="93"/>
@@ -55,23 +61,32 @@
                                     <constraint id="455" firstAttribute="height" constant="93"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="461" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="85" y="228" width="149" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="461" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="85" y="228" width="429" height="30"/>
                                 <state key="normal" title="Detalles del Servicio">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="85" y="228" width="149" height="30"/>
+                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="468" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="136" y="269" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="468" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="136" y="269" width="326" height="30"/>
                                 <state key="normal" title="Autos">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="136" y="269" width="46" height="30"/>
+                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="472" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="124" y="307" width="69" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="472" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="124" y="307" width="349" height="30"/>
                                 <state key="normal" title="Historial">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="124" y="307" width="69" height="30"/>
+                                </variation>
                             </button>
                         </subviews>
                         <constraints>
@@ -108,7 +123,7 @@
                         <viewControllerLayoutGuide type="bottom" id="29"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="32">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
@@ -118,7 +133,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="144" destination="85" kind="push"/>
+                                    <segue id="144" destination="85" kind="show"/>
                                 </connections>
                                 <constraints>
                                     <constraint id="558" firstAttribute="width" constant="137"/>
@@ -180,35 +195,47 @@
                         <viewControllerLayoutGuide type="bottom" id="83"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="86">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="148" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="110" y="334" width="106" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="148" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="110" y="290" width="386" height="30"/>
                                 <state key="normal" title="Iniciar Sesion">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="110" y="290" width="106" height="30"/>
+                                </variation>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="149" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Email">
-                                <rect key="frame" x="20" y="227" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="149" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Email" misplaced="YES">
+                                <rect key="frame" x="20" y="183" width="560" height="30"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="183" width="280" height="30"/>
+                                </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="150" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Password">
-                                <rect key="frame" x="20" y="279" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="150" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Password" misplaced="YES">
+                                <rect key="frame" x="20" y="235" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" enablesReturnKeyAutomatically="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="235" width="280" height="30"/>
+                                </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="192" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="110" y="372" width="99" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="192" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="110" y="328" width="379" height="30"/>
                                 <state key="normal" title="Registrate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="248" destination="211" kind="push"/>
+                                    <segue id="248" destination="211" kind="show"/>
                                 </connections>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="110" y="328" width="99" height="30"/>
+                                </variation>
                             </button>
                         </subviews>
                         <constraints>
@@ -245,7 +272,7 @@
                         <viewControllerLayoutGuide type="bottom" id="209"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="212">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
@@ -258,6 +285,9 @@
                                 <constraints>
                                     <constraint id="253" firstAttribute="height" constant="21"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="82" width="135" height="21"/>
+                                </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="254" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Nombre">
                                 <rect key="frame" x="20" y="111" width="280" height="30"/>
@@ -266,6 +296,9 @@
                                 <constraints>
                                     <constraint id="257" firstAttribute="width" constant="280"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="111" width="280" height="30"/>
+                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="258" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Email">
                                 <rect key="frame" x="20" y="149" width="280" height="30"/>
@@ -274,6 +307,9 @@
                                 <constraints>
                                     <constraint id="261" firstAttribute="width" constant="280"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="149" width="280" height="30"/>
+                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="262" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Password" misplaced="YES">
                                 <rect key="frame" x="13" y="1653" width="280" height="30"/>
@@ -290,6 +326,9 @@
                                 <constraints>
                                     <constraint id="318" firstAttribute="width" constant="280"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="187" width="280" height="30"/>
+                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="267" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Dirección">
                                 <rect key="frame" x="20" y="225" width="280" height="30"/>
@@ -298,6 +337,9 @@
                                 <constraints>
                                     <constraint id="315" firstAttribute="width" constant="280"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="225" width="280" height="30"/>
+                                </variation>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Datos Laborales" lineBreakMode="tailTruncation" minimumFontSize="10" id="268" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="20" y="263" width="135" height="21"/>
@@ -309,6 +351,9 @@
                                     <constraint id="321" firstAttribute="width" constant="135"/>
                                     <constraint id="322" firstAttribute="height" constant="21"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="263" width="135" height="21"/>
+                                </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="269" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Email">
                                 <rect key="frame" x="20" y="292" width="280" height="30"/>
@@ -317,6 +362,9 @@
                                 <constraints>
                                     <constraint id="326" firstAttribute="width" constant="280"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="292" width="280" height="30"/>
+                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="270" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Telefono">
                                 <rect key="frame" x="20" y="330" width="280" height="30"/>
@@ -325,17 +373,26 @@
                                 <constraints>
                                     <constraint id="330" firstAttribute="width" constant="280"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="330" width="280" height="30"/>
+                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="271" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Direccion">
                                 <rect key="frame" x="20" y="368" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="368" width="280" height="30"/>
+                                </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="272" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="125" y="406" width="70" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="272" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="125" y="406" width="350" height="30"/>
                                 <state key="normal" title="Registrate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="125" y="406" width="70" height="30"/>
+                                </variation>
                             </button>
                         </subviews>
                         <constraints>
@@ -393,7 +450,7 @@
                         <viewControllerLayoutGuide type="bottom" id="569"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="572">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
@@ -408,8 +465,8 @@
                                     <constraint id="632" firstAttribute="height" constant="21"/>
                                 </constraints>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="617" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="111" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="617" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="300" y="111" width="280" height="30"/>
                                 <state key="normal" title="Cuatro Servicios">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -417,11 +474,14 @@
                                     <constraint id="674" firstAttribute="width" constant="280"/>
                                 </constraints>
                                 <connections>
-                                    <segue id="724" destination="691" kind="push"/>
+                                    <segue id="724" destination="691" kind="show" identifier="segueFour"/>
                                 </connections>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="111" width="280" height="30"/>
+                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="618" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="149" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="618" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="300" y="149" width="280" height="30"/>
                                 <state key="normal" title="Seis Servicios">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -429,11 +489,14 @@
                                     <constraint id="677" firstAttribute="width" constant="280"/>
                                 </constraints>
                                 <connections>
-                                    <segue id="741" destination="691" kind="push"/>
+                                    <segue id="741" destination="691" kind="show"/>
                                 </connections>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="149" width="280" height="30"/>
+                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="619" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="187" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="619" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="300" y="187" width="280" height="30"/>
                                 <state key="normal" title="Diez Servicios">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -441,11 +504,14 @@
                                     <constraint id="680" firstAttribute="width" constant="280"/>
                                 </constraints>
                                 <connections>
-                                    <segue id="764" destination="691" kind="push"/>
+                                    <segue id="764" destination="691" kind="show"/>
                                 </connections>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="187" width="280" height="30"/>
+                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="620" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="225" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="620" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="300" y="225" width="280" height="30"/>
                                 <state key="normal" title="Doce Servicios">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -453,8 +519,11 @@
                                     <constraint id="683" firstAttribute="width" constant="280"/>
                                 </constraints>
                                 <connections>
-                                    <segue id="802" destination="691" kind="push"/>
+                                    <segue id="802" destination="691" kind="show"/>
                                 </connections>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="225" width="280" height="30"/>
+                                </variation>
                             </button>
                         </subviews>
                         <constraints>
@@ -489,12 +558,12 @@
                         <viewControllerLayoutGuide type="bottom" id="689"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="692">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="804" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Dirección Para el Servicio">
-                                <rect key="frame" x="20" y="83" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="804" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Dirección Para el Servicio" misplaced="YES">
+                                <rect key="frame" x="300" y="83" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <constraints>
@@ -564,13 +633,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="849" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="359" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="849" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="20" y="479" width="560" height="30"/>
                                 <state key="normal" title="Siguiente">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="893" destination="856" kind="push"/>
+                                    <segue id="893" destination="856" kind="show"/>
                                 </connections>
                                 <constraints>
                                     <constraint id="1017" firstAttribute="width" constant="280"/>
@@ -625,12 +694,12 @@
                         <viewControllerLayoutGuide type="bottom" id="854"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="857">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="895" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="117" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="895" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="20" y="117" width="560" height="30"/>
                                 <state key="normal" title="Efectivo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -638,32 +707,44 @@
                                     <constraint id="898" firstAttribute="width" constant="280"/>
                                 </constraints>
                                 <connections>
-                                    <segue id="970" destination="924" kind="push"/>
+                                    <segue id="970" destination="924" kind="show"/>
                                 </connections>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="117" width="280" height="30"/>
+                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="899" translatesAutoresizingMaskIntoConstraints="NO" enabled="NO">
-                                <rect key="frame" x="20" y="155" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="899" translatesAutoresizingMaskIntoConstraints="NO" enabled="NO" misplaced="YES">
+                                <rect key="frame" x="20" y="155" width="560" height="30"/>
                                 <state key="normal" title="Tarjeta de Crédito">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <constraints>
                                     <constraint id="910" firstAttribute="width" constant="280"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="155" width="280" height="30"/>
+                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="900" translatesAutoresizingMaskIntoConstraints="NO" enabled="NO">
-                                <rect key="frame" x="20" y="199" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="900" translatesAutoresizingMaskIntoConstraints="NO" enabled="NO" misplaced="YES">
+                                <rect key="frame" x="20" y="199" width="560" height="30"/>
                                 <state key="normal" title="Transferencia Bancaria">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <constraints>
                                     <constraint id="907" firstAttribute="width" constant="280"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="199" width="280" height="30"/>
+                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="901" translatesAutoresizingMaskIntoConstraints="NO" enabled="NO">
-                                <rect key="frame" x="20" y="237" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="901" translatesAutoresizingMaskIntoConstraints="NO" enabled="NO" misplaced="YES">
+                                <rect key="frame" x="20" y="237" width="560" height="30"/>
                                 <state key="normal" title="Depósito Bancario">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="237" width="280" height="30"/>
+                                </variation>
                             </button>
                         </subviews>
                         <constraints>
@@ -704,7 +785,7 @@
                         <viewControllerLayoutGuide type="bottom" id="922"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="925">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
@@ -719,8 +800,8 @@
                                     <constraint id="976" firstAttribute="height" constant="21"/>
                                 </constraints>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="977" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="5">
-                                <rect key="frame" x="20" y="104" width="280" height="185"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="977" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="5" misplaced="YES">
+                                <rect key="frame" x="300" y="104" width="280" height="185"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -752,6 +833,8 @@
                     </view>
                     <connections>
                         <outlet property="lblOrderDetails" destination="977" id="name-outlet-977"/>
+                        <outlet property="btnListo" destination="982" id="name-outlet-982"/>
+                        <outlet property="btnAddress" destination="983" id="name-outlet-983"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="926" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -759,12 +842,10 @@
             <point key="canvasLocation" x="130" y="-547"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
-    </simulatedMetricsContainer>
     <resources>
         <image name="Untitled.png" width="1024" height="1024"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
 </document>

@@ -2,6 +2,7 @@ using Foundation;
 using System;
 using System.CodeDom.Compiler;
 using UIKit;
+using R2G_Clientes.Shared;
 
 namespace Rapid2Go_iOS
 {
@@ -20,11 +21,18 @@ namespace Rapid2Go_iOS
 		{
 		}
 
+
+		public override void ViewWillAppear (bool animated)
+		{
+			base.ViewWillAppear (animated);
+			pack2 = pack;
+			size2 = size;
+		}
+
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			pack2 = pack;
-			size2 = size;
+
 
 
 
@@ -37,7 +45,7 @@ namespace Rapid2Go_iOS
 					days= days+ "Mon ";
 					break;
 				case 2:
-					days = days + "Tues	";
+					days = days + "Tue	";
 					break;
 				case 3:
 					days = days+ "Wed ";
@@ -70,13 +78,20 @@ namespace Rapid2Go_iOS
 		{
 			base.PrepareForSegue (segue, sender);
 
-			var paymentsVW = segue.DestinationViewController as PaymentViewController;
-			paymentsVW.pack = pack2;
-			paymentsVW.comments = comments;
-			paymentsVW.address = address;
-			paymentsVW.days = days;
-			paymentsVW.start = start;
-			paymentsVW.end = end;
+//			var paymentsVW = segue.DestinationViewController as PaymentViewController;
+//			paymentsVW.pack = pack2;
+//			paymentsVW.comments = comments;
+//			paymentsVW.address = address;
+//			paymentsVW.days = days;
+//			paymentsVW.start = start;
+//			paymentsVW.end = end;
+//			paymentsVW.size = size;
+			//var dt = new DataClass();
+			DataClass.comments = comments;
+			DataClass.address = address;
+			DataClass.days = days;
+			DataClass.end = end;
+			DataClass.start = start;
 		}
 
 

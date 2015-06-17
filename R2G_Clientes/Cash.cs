@@ -108,7 +108,7 @@ namespace R2G_Clientes
 		public string getURL(){
 			string baseurl = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/orders/new";
 			string requrl;
-			int userid = DataConnect.getUserID ();
+			int? userid = DataConnect.getUserID ();
 			int carid = CarConnect.getCarID ();
 			requrl = baseurl + "?orderAddr=" + WebUtility.UrlEncode(addrs) + "&startH=" + WebUtility.UrlEncode(shours) +  "&endH=" + WebUtility.UrlEncode(ehours) +
 				"&orderComm=" + WebUtility.UrlEncode( comments) + "&userID=" + userid + "&carID=" + carid + "&days=" + WebUtility.UrlEncode(seldays) + 

@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using R2G_Clientes.Shared;
-using UIKit;
 using MonoTouch;
+using UIKit;
 
 namespace Rapid2Go_iOS
 {
@@ -75,15 +75,23 @@ namespace Rapid2Go_iOS
 
 		}
 
-		public override void PrepareForSegue (UIStoryboardSegue segue, Foundation.NSObject sender)
+	public override void PrepareForSegue (UIStoryboardSegue segue, Foundation.NSObject sender)
 		{
+//	DataClass dt = new DataClass ();
+
 			base.PrepareForSegue (segue, sender);
 
-			var detailsViewController = segue.DestinationViewController as DetailsViewController;
-			detailsViewController.pack = pack;
-			detailsViewController.size = carsize;
+//			var cash = segue.DestinationViewController as CashViewController;
+//			var detailsViewController = segue.DestinationViewController as DetailsViewController;
+//			detailsViewController.pack = pack;
+//			detailsViewController.size = carsize;
+			DataClass.pack=pack;
+			DataClass.size = carsize;
+		
+			UIAlertView alert = new UIAlertView ("SHFDUF", DataClass.pack + pack.ToString(), null, "sdfj", null);
+			alert.Show ();
 
-		}
+	}
 
 
 

@@ -42,6 +42,7 @@ namespace Rapid2Go_iOS
 						string caruray = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/cars/onLogin/" + lg.userID;
 						json = await RequestHandler.FetchAsync(caruray);
 						parsemycar(json);
+						DataConnect.dataAccess(lg.userID);
 						CarConnect.dataAccess(cd.carid, cd.carsize);
 						string orderurl = "http://ps413027.dreamhost.com:8080/rapidtoREST/service/orders/onLogin/" + lg.userID;
 						json = await RequestHandler.FetchAsync(orderurl);
